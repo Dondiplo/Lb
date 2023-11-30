@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./Home.css";
 import Nav from "@/components/Nav";
 
-export default function page() {
+export default function Home() {
   return (
     <main className="snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth ">
       <div className="sticky top-8 z-10">
