@@ -24,7 +24,7 @@ export default function Home() {
         // style={{ backgroundImage: "url(/pexel1.png)" }}
       >
         <Image src={pexel} alt="pexel" className="hidden md:block md:h-screen"/>
-        <Image src={pexelsm} alt="pexel" className=" md:hidden md:h-screen"/>
+        <Image src={pexelsm} alt="pexel" className="h-screen md:hidden md:h-screen"/>
         <h1 className="absolute  text-white z-10 text-xl font-light">Hi 👋🏽 , I’m Tega</h1>
         <div className="absolute inset-0 bg-black opacity-80"></div>
       </section>
