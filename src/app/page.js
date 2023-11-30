@@ -20,9 +20,9 @@ export default function Home() {
       <section
         id="bg"
         class="snap-start min-h-screen flex justify-center relative items-center  bg-fixed bg-no-repeat bg-cover bg-center "
-        style={{ backgroundImage: "url(/pexel1.png)" }}
+        // style={{ backgroundImage: "url(/pexel1.png)" }}
       >
-        {/* <Image src={pexel} alt="pexel" className="h-screen md:h-screen"/> */}
+        <Image src={pexel} alt="pexel" className=" md:h-screen"/>
         <h1 className="absolute  text-white z-10 text-xl font-light">Hi 👋🏽 , I’m Tega</h1>
         <div className="absolute inset-0 bg-black opacity-80"></div>
       </section>
@@ -30,9 +30,9 @@ export default function Home() {
       <section
         id="bg"
         className="snap-start min-h-screen flex justify-center relative items-center  bg-fixed bg-no-repeat bg-cover bg-center"
-        style={{ backgroundImage: "url(/pexels.jpg)" }}
+        // style={{ backgroundImage: "url(/pexels.jpg)" }}
       >
-          {/* <Image src={pexels} alt="pexel" className="h-[100dvh]"/> */}
+          <Image src={pexels} alt="pexel" className="md:h-[100dvh]"/>
         <h1 className="text-white absolute z-10 w-[80%] md:w-[40%] text-center font-light text-xl">
           I’m a designer from Lagos, Nigeria. When I’m not designing I’m either
           sleeping, reading or trying out a meal. I enjoy exploring, could be
