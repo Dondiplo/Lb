@@ -6,7 +6,8 @@ import { GoArrowUp } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
 import arrow from "public/arrow.svg"
 import pexel from "public/pexel1.png"
-import pexels from "public/pexels.jpg"
+import pexels from "public/pexels.png"
+import pexelsm from "public/pixelsm.png"
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
         class="snap-start min-h-screen flex justify-center relative items-center  bg-fixed bg-no-repeat bg-cover bg-center "
         // style={{ backgroundImage: "url(/pexel1.png)" }}
       >
-        <Image src={pexel} alt="pexel" className=" md:h-screen"/>
+        <Image src={pexel} alt="pexel" className="hidden md:block md:h-screen"/>
+        <Image src={pexelsm} alt="pexel" className=" md:hidden md:h-screen"/>
         <h1 className="absolute  text-white z-10 text-xl font-light">Hi 👋🏽 , I’m Tega</h1>
         <div className="absolute inset-0 bg-black opacity-80"></div>
       </section>
