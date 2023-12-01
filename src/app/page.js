@@ -8,6 +8,7 @@ import arrow from "public/arrow.svg"
 import pexel from "public/pexel1.png"
 import pexels from "public/pexels.png"
 import pexelsm from "public/pixelsm.png"
+import  pexels1m from "public/pixels1m.jpg"
 
 export default function Home() {
   return (
@@ -34,7 +35,8 @@ export default function Home() {
         className="snap-start min-h-screen flex justify-center relative items-center  bg-fixed bg-no-repeat bg-cover bg-center"
         // style={{ backgroundImage: "url(/pexels.jpg)" }}
       >
-          <Image src={pexels} alt="pexel" className="md:h-[100dvh]"/>
+          <Image src={pexels} alt="pexels" className="hidden md:block md:h-screen"/>
+        <Image src={pexels1m} alt="pexels1m" className="h-screen md:hidden md:h-screen"/>
         <h1 className="text-white absolute z-10 w-[80%] md:w-[40%] text-center font-light text-xl">
           I’m a designer from Lagos, Nigeria. When I’m not designing I’m either
           sleeping, reading or trying out a meal. I enjoy exploring, could be
