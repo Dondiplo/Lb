@@ -13,7 +13,7 @@ import  pexels1m from "public/pixels1m.jpg"
 export default function Home() {
   return (
     <main className="snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth  ">
-      <div className="sticky top-12 z-10">
+      <div className="">
         <Nav />
       </div>
 <div className="z-10  opacity-[60%] fixed top-[50%] right-10 ">

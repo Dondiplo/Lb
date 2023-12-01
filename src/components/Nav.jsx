@@ -4,8 +4,8 @@ import to from "public/T-O.svg"
 const Nav = () => {
   return (
 
-    <section >
-    <div className=' container my-14 flex justify-between'>
+    <section className='fixed top-14 md:top-12 z-10' >
+    <div className=' container  flex justify-between'>
 <div>
 <Image src={to} alt='to'/>
 </div>
