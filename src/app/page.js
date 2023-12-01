@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./Home.css";
-import Nav from "@/components/Nav";
+import Nav from "@/components/nav/Nav";
 import { GoArrowUp } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
 import arrow from "public/arrow.svg"
