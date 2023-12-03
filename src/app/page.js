@@ -11,6 +11,7 @@ import pexelsm from "public/pixelsm.png";
 import pexels1m from "public/pixels1m.jpg";
 import pexels2 from "public/pexels2.png";
 import pexels2m from "public/pexels2m.jpg";
+import Lines from "@/components/lines/Lines";
 
 export default function Home() {
   return (
@@ -36,9 +37,14 @@ export default function Home() {
           alt="pexel"
           className="h-screen md:hidden md:h-screen"
         />
-        <h1 className="absolute text-white z-10 text-xl font-light">
+        <h1 className="absolute text-white  text-xl font-light">
           Hi 👋🏽, I’m Tega
         </h1>
+
+        <div className="absolute">
+          {" "}
+          <Lines />
+        </div>
         <div className="absolute inset-0 bg-black opacity-80"></div>
       </section>
 
@@ -57,12 +63,16 @@ export default function Home() {
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen"
         />
-        <h1 className="text-white absolute z-10 w-[80%] md:w-[40%] text-center font-light text-xl">
+        <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-xl">
           I’m a designer from Lagos, Nigeria. When I’m not designing I’m either
           sleeping, reading or trying out a meal. I enjoy exploring, could be
           with colors, places, fonts, skincare or restaurants. Welcome to my
           portfolio 🤩.
         </h1>
+        <div className="absolute">
+          {" "}
+          <Lines />
+        </div>
         <div className="absolute inset-0 bg-black opacity-90"></div>
       </section>
 
@@ -80,7 +90,7 @@ export default function Home() {
           alt="pexels2m"
           className="h-screen md:hidden md:h-screen"
         />
-        <h1 className="text-white absolute z-10 w-[80%] md:w-[40%] font-light text-xl text-center">
+        <h1 className="text-white absolute  w-[80%] md:w-[40%] font-light text-xl text-center">
           You get to see a few of my favourite projects, some from a few years
           back and others more recently designed. Once again welcome to my
           portfolio, happy touring! ✌🏽

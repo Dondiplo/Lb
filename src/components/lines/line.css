@@ -1,0 +1,14 @@
+#line{
+    color: white;
+    height: 2px;
+    width: 100vw;
+    z-index: 10;
+}
+
+#lines{
+    color: white;
+
+    width: 100%;
+    z-index: 10;
+    rotate: 90deg;
+}

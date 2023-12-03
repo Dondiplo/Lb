@@ -9,3 +9,6 @@
 #bg3{
     background-image: url("../../public/pexels2.jpg");
 } */
+h1{
+    z-index: 5;
+}
