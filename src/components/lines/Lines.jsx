@@ -9,7 +9,7 @@ const Lines = () => {
         <hr id="line" />
         <hr id="line" />
         <hr id="line" />
-        <span id="line" className="relative"><hr className="bg-white rounded-full h-2 w-2 absolute -top-1"/> </span>
+        <span id="line" className="relative"><hr className="bg-white rounded-full h-2 w-2 absolute -top-[5.5px]"/> </span>
       </span>
 
       <span className="space-x-64 ">

@@ -1,5 +1,5 @@
 "use client";
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import "./Home.css";
 import Nav from "@/components/nav/Nav";
@@ -43,7 +43,12 @@ export default function Home() {
           alt="pexel"
           className="h-screen md:hidden md:h-screen"
         />
-        <h1 data-aos="fade-up" className="absolute text-white overflow-hidden text-xl font-light">
+        <h1
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="800"
+          className="absolute text-white overflow-hidden text-xl font-light"
+        >
           Hi 👋🏽, I’m Tega
         </h1>
 
@@ -69,7 +74,8 @@ export default function Home() {
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen"
         />
-        <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-xl">
+        <h1
+         className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-xl">
           I’m a designer from Lagos, Nigeria. When I’m not designing I’m either
           sleeping, reading or trying out a meal. I enjoy exploring, could be
           with colors, places, fonts, skincare or restaurants. Welcome to my
