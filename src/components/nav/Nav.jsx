@@ -61,7 +61,7 @@ const Nav = () => {
        
        {showNav && (
          <div className="fixed top-0 left-0 right-0 bg-black  transition ease-in-out z-[70%] h-[100vh]   ">
-           <div className="pt-12  ">
+           <div className="pt-24 ">
              {" "}
              {navLinks.map((d, i) => (
                <div key={i} className="text-white  opacity-[60%] pt-4 capitalize font-bold text-[18px]">

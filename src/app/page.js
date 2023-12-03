@@ -25,7 +25,7 @@ export default function Home() {
       <div>
         <Nav />
       </div>
-      <div className="z-10 opacity-[60%] fixed top-[50%] right-5 md:right-10">
+      <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10">
         <Image src={arrow} alt="arrow" />
       </div>
       <section
