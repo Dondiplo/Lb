@@ -1,4 +1,5 @@
 "use client";
+import React,{useEffect} from "react";
 import Image from "next/image";
 import "./Home.css";
 import Nav from "@/components/nav/Nav";
@@ -12,8 +13,13 @@ import pexels1m from "public/pixels1m.jpg";
 import pexels2 from "public/pexels2.png";
 import pexels2m from "public/pexels2m.jpg";
 import Lines from "@/components/lines/Lines";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <main className="snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
       <div>
@@ -37,7 +43,7 @@ export default function Home() {
           alt="pexel"
           className="h-screen md:hidden md:h-screen"
         />
-        <h1 className="absolute text-white  text-xl font-light">
+        <h1 data-aos="fade-up" className="absolute text-white overflow-hidden text-xl font-light">
           Hi 👋🏽, I’m Tega
         </h1>
 
