@@ -40,7 +40,7 @@ const Page = () => {
                   PACE RECRUITING
                 </h1>
                 <p className="lg:text-left">Job recruitment platform</p>
-                <div className="flex text-[#08A65B]">
+                <div className="hidden  md:flex text-[#08A65B]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
@@ -48,9 +48,6 @@ const Page = () => {
             </div>
           </div>
         </section>
-
-
-
 
         <section className="snap-start h-full  relative">
           <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
@@ -64,7 +61,7 @@ const Page = () => {
                   PAYVICE AGENT APP
                 </h1>
                 <p className="lg:text-left">Financial mobile app</p>
-                <div className="flex text-[#BA8433]">
+                <div className="hidden  md:flex text-[#BA8433]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
@@ -72,7 +69,7 @@ const Page = () => {
             </div>
           </div>
         </section>
-       
+
         <section className="snap-start h-full  relative">
           <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
             <div className="w-[95%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
@@ -85,7 +82,7 @@ const Page = () => {
                   PAYVICE AGENT APP
                 </h1>
                 <p className="lg:text-left">Financial mobile app</p>
-                <div className="flex text-[#BA8433]">
+                <div className="hidden  md:flex text-[#BA8433]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
