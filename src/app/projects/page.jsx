@@ -29,7 +29,7 @@ const Page = () => {
           </div>
         </div>
         <section className="snap-start h-full  relative">
-          <div className="pt-64 lg:flex justify-end relative ">
+          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
             <div className="w-[95%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={pace} alt="pace" className="" />
             </div>
@@ -53,7 +53,7 @@ const Page = () => {
 
 
         <section className="snap-start h-full  relative">
-          <div className="pt-64 lg:flex justify-end relative ">
+          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
             <div className="w-[95%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={payvice} alt="payvice" className="" />
             </div>
@@ -74,7 +74,7 @@ const Page = () => {
         </section>
        
         <section className="snap-start h-full  relative">
-          <div className="pt-64 lg:flex justify-end relative ">
+          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
             <div className="w-[95%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={payvice} alt="payvice" className="" />
             </div>
