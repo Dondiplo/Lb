@@ -34,7 +34,7 @@ const Page = () => {
               <Image src={pace} alt="pace" className="" />
             </div>
 
-            <div className="lg:absolute pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
                   PACE RECRUITING
@@ -55,7 +55,7 @@ const Page = () => {
               <Image src={payvice} alt="payvice" className="" />
             </div>
 
-            <div className="lg:absolute pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
                   PAYVICE AGENT APP
@@ -76,7 +76,7 @@ const Page = () => {
               <Image src={payvice} alt="payvice" className="" />
             </div>
 
-            <div className="lg:absolute pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
                   PAYVICE AGENT APP
