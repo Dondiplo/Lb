@@ -32,9 +32,11 @@ const Nav = () => {
   return (
     <section className="fixed top-14 md:top-12 z-10 text-white w-full ">
       <div className="container flex justify-between  ">
+        <Link href="/">
         <div className="hover:animate-bounce">
           <Image src={to} alt="to"  width={30}/>
         </div>
+        </Link>
         <div className="space-x-10 hidden md:flex ">
           {navLinks.map((d, i) => (
             <Link id="nav" key={i} href={d.href}>
