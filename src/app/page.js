@@ -38,11 +38,7 @@ export default function Home() {
           alt="pexel"
           className="hidden md:block md:h-screen fixed"
         /> */}
-        <Image
-          src={pexelsm}
-          alt="pexel"
-          className="h-screen md:hidden md:h-screen fixed"
-        />
+       
         
         <h1
           // data-aos="fade-up"
