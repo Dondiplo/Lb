@@ -12,9 +12,9 @@ import pexelsm from "public/pixelsm.png";
 import pexels1m from "public/pixels1m.jpg";
 import pexels2 from "public/pexels2.png";
 import pexels2m from "public/pexels2m.jpg";
-import Lines from "@/components/lines/Lines";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ScrollAnimation from 'react-scroll-animation';
 
 export default function Home() {
   useEffect(() => {
@@ -31,49 +31,51 @@ export default function Home() {
       <section
         id="bg"
         className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
-        // style={{ backgroundImage: "url(/pexel1.png)" }}
+        style={{ backgroundImage: "url(/pexel1.png)" }}
       >
-        <Image
+        {/* <Image
           src={pexel}
           alt="pexel"
-          className="hidden md:block md:h-screen"
-        />
+          className="hidden md:block md:h-screen fixed"
+        /> */}
         <Image
           src={pexelsm}
           alt="pexel"
-          className="h-screen md:hidden md:h-screen"
+          className="h-screen md:hidden md:h-screen fixed"
         />
+        
         <h1
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="800"
-          className="absolute text-white overflow-hidden text-xl font-light"
+          // data-aos="fade-up"
+          // data-aos-easing="linear"
+          // data-aos-duration="800"
+          className=" text-white overflow-hidden text-xl font-light "
         >
           Hi 👋🏽, I’m Tega
         </h1>
 
         <div className="absolute">
           {" "}
-          <Lines />
+      
         </div>
         <div className="absolute inset-0 bg-black opacity-80"></div>
       </section>
 
       <section
-        id="bg"
+        id="bg1"
         className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
-        // style={{ backgroundImage: "url(/pexels.jpg)" }}
+        style={{ backgroundImage: "url(/pexels.png)" }}
+        
       >
-        <Image
+        {/* <Image
           src={pexels}
           alt="pexels"
-          className="hidden md:block md:h-screen"
-        />
-        <Image
+          className="hidden md:block md:h-screen md:w-screen "
+        /> */}
+        {/* <Image
           src={pexels1m}
           alt="pexels1m"
-          className="h-screen md:hidden md:h-screen"
-        />
+          className="h-screen md:hidden md:h-screen "
+        /> */}
         <h1
          className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-xl">
           I’m a designer from Lagos, Nigeria. When I’m not designing I’m either
@@ -83,7 +85,7 @@ export default function Home() {
         </h1>
         <div className="absolute">
           {" "}
-          <Lines />
+  
         </div>
         <div className="absolute inset-0 bg-black opacity-90"></div>
       </section>
@@ -91,8 +93,9 @@ export default function Home() {
       <section
         id="bg3"
         className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
-      >
-        <Image
+        style={{ backgroundImage: "url(/pexels2.png)" }}
+     >
+        {/* <Image
           src={pexels2}
           alt="pexels2"
           className="hidden md:block md:h-screen"
@@ -101,7 +104,7 @@ export default function Home() {
           src={pexels2m}
           alt="pexels2m"
           className="h-screen md:hidden md:h-screen"
-        />
+        /> */}
         <h1 className="text-white absolute  w-[80%] md:w-[40%] font-light text-xl text-center">
           You get to see a few of my favourite projects, some from a few years
           back and others more recently designed. Once again welcome to my
