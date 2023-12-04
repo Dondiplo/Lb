@@ -10,6 +10,9 @@ import Nav from "@/components/nav/Nav";
 import { FaArrowRightLong } from "react-icons/fa6";
 import pace from "public/pace.svg";
 import payvice from "public/payvice.svg";
+import thebulb from "public/thebulb.svg";
+import startup from "public/startupa.svg"
+import uba from "public/ubamoney.svg"
 
 const Page = () => {
   const [loading, setLoading] = useState(true);
@@ -30,7 +33,7 @@ const Page = () => {
         </div>
         <section className="snap-start h-full  relative">
           <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
-            <div className="w-[95%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
+            <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={pace} alt="pace" className="" />
             </div>
 
@@ -51,7 +54,7 @@ const Page = () => {
 
         <section className="snap-start h-full  relative">
           <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
-            <div className="w-[95%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
+            <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={payvice} alt="payvice" className="" />
             </div>
 
@@ -72,14 +75,54 @@ const Page = () => {
 
         <section className="snap-start h-full  relative">
           <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
-            <div className="w-[95%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
-              <Image src={payvice} alt="payvice" className="" />
+            <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
+              <Image src={thebulb} alt="thebulb" className="" />
             </div>
 
             <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
-                  PAYVICE AGENT APP
+                  THE BULB AFRICA
+                </h1>
+                <p className="lg:text-left">Company website</p>
+                <div className="hidden  md:flex text-[#11C2B7]">
+                  <p>View Project -- </p>
+                  <FaArrowRightLong className="mt-[5px] ml-3" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="snap-start h-full  relative">
+          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
+            <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
+              <Image src={startup} alt="startup" className="" />
+            </div>
+
+            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
+              <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
+                <h1 className="md:text-[32px] lg:text-right">
+                STARTUP ACADEMY
+                </h1>
+                <p className="lg:text-left">School for Startup founders</p>
+                <div className="hidden  md:flex text-[#BA8433]">
+                  <p>View Project -- </p>
+                  <FaArrowRightLong className="mt-[5px] ml-3" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="snap-start h-full  relative">
+          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
+            <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
+              <Image src={uba} alt="uba" className="" />
+            </div>
+
+            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
+              <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
+                <h1 className="md:text-[32px] lg:text-right">
+                UBA MONI AGENT APP
                 </h1>
                 <p className="lg:text-left">Financial mobile app</p>
                 <div className="hidden  md:flex text-[#BA8433]">
@@ -90,8 +133,6 @@ const Page = () => {
             </div>
           </div>
         </section>
-        <section className="snap-start h-screen justify-center relative bg-orange-400"></section>
-        <section className="snap-start h-screen justify-center relative bg-purple-400"></section>
       </div>
     </div>
   );
