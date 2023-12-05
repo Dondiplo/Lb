@@ -16,17 +16,17 @@ const Loading = ({ setLoading }) => {
   }, [setLoading]);
 
   return (
-    <section>
-      <div className="fixed top-[40%] left-[45%]">
+    <section className="bg-black w-screen h-screen">
+      <div className="md:hidden fixed top-[40%] left-[38%] ">
         <div className="relative w-[95%]">
-          <Image src={words} alt="words" />
+          <Image src={words} alt="words" className="]"/>
           <Lottie
             className="w-12 absolute top-9 left-9"
             animationData={animationData}
           />
         </div>
       </div>
-      <div className="absolute inset-0 bg-black opacity-40"></div>
+      {/* <div className="absolute inset-0 bg-black opacity-95 z-[10]"></div> */}
     </section>
   );
 };

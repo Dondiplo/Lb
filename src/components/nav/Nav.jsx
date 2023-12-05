@@ -19,7 +19,7 @@ const navLinks = [
   },
   {
     label: "CONTACT ME",
-    href: "#",
+    href: "contact",
   },
 ];
 
@@ -33,7 +33,7 @@ const Nav = () => {
     <section className="fixed top-14 md:top-12 z-10 text-white w-full ">
       <div className="container flex justify-between  ">
         <Link href="/">
-        <div className="hover:animate-bounce">
+        <div className="hover:animate-bounce z-20">
           <Image src={to} alt="to"  width={30}/>
         </div>
         </Link>

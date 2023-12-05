@@ -11,8 +11,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import pace from "public/pace.svg";
 import payvice from "public/payvice.svg";
 import thebulb from "public/thebulb.svg";
-import startup from "public/startupa.svg"
-import uba from "public/ubamoney.svg"
+import startup from "public/startupa.svg";
+import uba from "public/ubamoney.svg";
+import arrow from "public/arrow.svg";
 
 const Page = () => {
   const [loading, setLoading] = useState(true);
@@ -22,7 +23,7 @@ const Page = () => {
       {loading && <Loading setLoading={setLoading} />}
       <Nav />
       <div className="snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth bg-[#1E1E1E]">
-        <div className="hidden lg:block fixed top-[40%] left-[5%] z-10">
+        <div className="hidden lg:block fixed top-[40%] left-[5%] z-0">
           <div className="relative w-[95%] ">
             <Image src={words} alt="words" />
             <Lottie
@@ -31,19 +32,24 @@ const Page = () => {
             />
           </div>
         </div>
+        <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10">
+          <Image src={arrow} alt="arrow" />
+        </div>
         <section className="snap-start h-full  relative">
-          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
+          <div className="pt-40 lg:pt-40 lg:flex justify-end relative ">
             <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
-              <Image src={pace} alt="pace" className="" />
+              <Image src={pace} alt="pace" className="z-0" />
             </div>
 
-            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-40 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
                   PACE RECRUITING
                 </h1>
-                <p className="lg:text-left">Job recruitment platform</p>
-                <div className="hidden  md:flex text-[#08A65B]">
+                <p className="lg:text-left font-light md:font-medium">
+                  Job recruitment platform
+                </p>
+                <div className="hidden  md:flex hover:text-[#08A65B]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
@@ -53,18 +59,20 @@ const Page = () => {
         </section>
 
         <section className="snap-start h-full  relative">
-          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
+          <div className="pt-40 lg:pt-40 lg:flex justify-end relative ">
             <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={payvice} alt="payvice" className="" />
             </div>
 
-            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-40 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
                   PAYVICE AGENT APP
                 </h1>
-                <p className="lg:text-left">Financial mobile app</p>
-                <div className="hidden  md:flex text-[#BA8433]">
+                <p className="lg:text-left font-light md:font-medium">
+                  Financial mobile app
+                </p>
+                <div className="hidden  md:flex hover:text-[#BA8433]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
@@ -74,18 +82,20 @@ const Page = () => {
         </section>
 
         <section className="snap-start h-full  relative">
-          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
+          <div className="pt-40 lg:pt-40 lg:flex justify-end relative ">
             <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={thebulb} alt="thebulb" className="" />
             </div>
 
-            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-40 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
                   THE BULB AFRICA
                 </h1>
-                <p className="lg:text-left">Company website</p>
-                <div className="hidden  md:flex text-[#11C2B7]">
+                <p className="lg:text-left font-light md:font-medium">
+                  Company website
+                </p>
+                <div className="hidden  md:flex hover:text-[#11C2B7]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
@@ -94,18 +104,20 @@ const Page = () => {
           </div>
         </section>
         <section className="snap-start h-full  relative">
-          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
+          <div className="pt-40 lg:pt-40 lg:flex justify-end relative ">
             <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={startup} alt="startup" className="" />
             </div>
 
-            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-40 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
-                STARTUP ACADEMY
+                  STARTUP ACADEMY
                 </h1>
-                <p className="lg:text-left">School for Startup founders</p>
-                <div className="hidden  md:flex text-[#BA8433]">
+                <p className="lg:text-left font-light md:font-medium">
+                  School for Startup founders
+                </p>
+                <div className="hidden  md:flex hover:text-[#BA8433]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
@@ -114,18 +126,20 @@ const Page = () => {
           </div>
         </section>
         <section className="snap-start h-full  relative">
-          <div className="pt-32 lg:pt-64 lg:flex justify-end relative ">
+          <div className="pt-40 lg:pt-40 lg:flex justify-end relative ">
             <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
               <Image src={uba} alt="uba" className="" />
             </div>
 
-            <div className="lg:absolute pt-12 md:pt-20 left-[27%]">
+            <div className="lg:absolute pt-12 md:pt-40 left-[27%]">
               <div className="font-[700] opacity-60 text-white space-y-8 text-left w-[95%] mx-auto lg:w-full   z-10">
                 <h1 className="md:text-[32px] lg:text-right">
-                UBA MONI AGENT APP
+                  UBA MONI AGENT APP
                 </h1>
-                <p className="lg:text-left">Financial mobile app</p>
-                <div className="hidden  md:flex text-[#BA8433]">
+                <p className="lg:text-left font-light md:font-medium">
+                  Financial mobile app
+                </p>
+                <div className="hidden  md:flex hover:text-[#9985B9]">
                   <p>View Project -- </p>
                   <FaArrowRightLong className="mt-[5px] ml-3" />
                 </div>
