@@ -14,7 +14,8 @@ import pexels2 from "public/pexels2.png";
 import pexels2m from "public/pexels2m.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import ScrollAnimation from 'react-scroll-animation';
+import ScrollAnimation from "react-scroll-animation";
+import lineb from "public/lineb.svg";
 
 export default function Home() {
   useEffect(() => {
@@ -33,26 +34,16 @@ export default function Home() {
         className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: "url(/pexel1.png)" }}
       >
-        {/* <Image
-          src={pexel}
-          alt="pexel"
-          className="hidden md:block md:h-screen fixed"
-        /> */}
-       
-        
         <h1
           // data-aos="fade-up"
           // data-aos-easing="linear"
           // data-aos-duration="800"
-          className=" text-white overflow-hidden text-xl font-light "
+          className=" text-white overflow-hidden  absolute  text-xl font-light z-10 "
         >
           Hi 👋🏽, I’m Tega
         </h1>
 
-        <div className="absolute">
-          {" "}
-      
-        </div>
+        <div className="absolute"> </div>
         <div className="absolute inset-0 bg-black opacity-80"></div>
       </section>
 
@@ -60,29 +51,24 @@ export default function Home() {
         id="bg1"
         className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: "url(/pexels.png)" }}
-        
       >
-        {/* <Image
-          src={pexels}
-          alt="pexels"
-          className="hidden md:block md:h-screen md:w-screen "
-        /> */}
+        <Image
+          src={lineb}
+          alt="lineb"
+          className="hidden md:block md:h-screen md:w-screen z-10"
+        />
         {/* <Image
           src={pexels1m}
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen "
         /> */}
-        <h1
-         className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-xl">
+        <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-xl">
           I’m a designer from Lagos, Nigeria. When I’m not designing I’m either
           sleeping, reading or trying out a meal. I enjoy exploring, could be
           with colors, places, fonts, skincare or restaurants. Welcome to my
           portfolio 🤩.
         </h1>
-        <div className="absolute">
-          {" "}
-  
-        </div>
+        <div className="absolute"> </div>
         <div className="absolute inset-0 bg-black opacity-90"></div>
       </section>
 
@@ -90,13 +76,13 @@ export default function Home() {
         id="bg3"
         className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: "url(/pexels2.png)" }}
-     >
-        {/* <Image
-          src={pexels2}
-          alt="pexels2"
-          className="hidden md:block md:h-screen"
-        />
+      >
         <Image
+          src={lineb}
+          alt="lineb"
+          className="hidden md:block md:h-screen z-10"
+        />
+        {/* <Image
           src={pexels2m}
           alt="pexels2m"
           className="h-screen md:hidden md:h-screen"
