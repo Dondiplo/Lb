@@ -9,10 +9,7 @@ import { Form } from "@/components/Form";
 
 const Page = () => {
   return (
-    <div
-      id="body"
-      className="h-[100dvh]  mx-auto pt-10 bg-[#1E1E1E] text-white "
-    >
+    <div id="body" className="h-screen  mx-auto pt-10 bg-[#1E1E1E] text-white ">
       <Nav />
 
       <section className="mx-auto  pt-20">
@@ -32,14 +29,13 @@ const Page = () => {
 
       <div className="pt-6 px-10 grid grid-cols-1 lg:grid-cols-1  lg:gap-0">
         <div className="text-center">
-          <p className="text-center   text-xl pt-2 md:pt-6">
-            Got a question ,proposal or something you want to work <br /> on
-            together?Feel free to reach out{" "}
+          <p className="text-center  text-[14px] lg:text-xl pt-2 md:pt-6">
+            Got a question, proposal or something you want to work on together ?
+            Feel free to reach out .
           </p>
         </div>
-
-        <Form />
       </div>
+      <Form />
     </div>
   );
 };

@@ -8,9 +8,11 @@ import {
   Textarea,
   Button,
   Container,
+  color,
+  background,
 } from "@chakra-ui/react";
-import { useToast } from '@chakra-ui/react'
-import { useForm, ValidationError } from '@formspree/react';
+import { useToast } from "@chakra-ui/react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const initValues = {
   name: "",
@@ -45,9 +47,13 @@ export const Form = () => {
   };
 
   return (
-    <Container className="w-[20rem] pb-6 pt-4 md:pt-0">
+    <Container className="w-[20rem] pb-6 pt-24 md:pt-0">
       <form onSubmit={handleSubmit}>
-        <FormControl isRequired isInvalid={touched.name && !values.name}   style={{ borderColor: '#64748b' }}>
+        <FormControl
+          isRequired
+          isInvalid={touched.name && !values.name}
+          style={{ borderColor: "#64748b" }}
+        >
           <FormLabel>Name</FormLabel>
           <Input
             type="text"
@@ -60,7 +66,12 @@ export const Form = () => {
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
 
-        <FormControl isRequired isInvalid={touched.email && !values.email}   style={{ borderColor: '#64748b' }}>
+        <FormControl
+          isRequired
+          isInvalid={touched.email && !values.email}
+          style={{ borderColor: "#64748b" }}
+          paddingTop={4}
+        >
           <FormLabel>Email</FormLabel>
           <Input
             type="email"
@@ -73,7 +84,12 @@ export const Form = () => {
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
 
-        <FormControl isRequired isInvalid={touched.subject && !values.subject}   style={{ borderColor: '#64748b' }}>
+        <FormControl
+          isRequired
+          isInvalid={touched.subject && !values.subject}
+          style={{ borderColor: "#64748b" }}
+          paddingTop={4}
+        >
           <FormLabel>Subject</FormLabel>
           <Input
             type="text"
@@ -86,7 +102,12 @@ export const Form = () => {
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
 
-        <FormControl isRequired isInvalid={touched.message && !values.message}   style={{ borderColor: '#64748b' }}>
+        <FormControl
+          isRequired
+          isInvalid={touched.message && !values.message}
+          style={{ borderColor: "#64748b" }}
+          paddingTop={4}
+        >
           <FormLabel>Message</FormLabel>
           <Textarea
             type="text"
@@ -102,16 +123,19 @@ export const Form = () => {
         <Button
           mt={10}
           variant="outline"
-          colorScheme="black"
+          colorScheme="green"
+          _hover-colorScheme="blue"
           isLoading={isLoading || formState.submitting}
-          disabled={!values.name || !values.email || !values.subject || !values.message}
+          disabled={
+            !values.name || !values.email || !values.subject || !values.message
+          }
           type="submit"
           onClick={() => {
             toast({
-              title: 'Message sent.',
-              description: 'Your message has been successfully sent.',
-              status: 'success',
-              duration: 9000,
+              title: "Message sent.",
+              description: "Your message has been successfully sent.",
+              status: "success",
+              duration: 4000,
               isClosable: true,
             });
             resetForm(); // Reset the form after displaying the toast
@@ -119,9 +143,7 @@ export const Form = () => {
         >
           Send
         </Button>
-
       </form>
-      
     </Container>
   );
 };
