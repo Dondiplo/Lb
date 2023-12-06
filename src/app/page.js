@@ -93,13 +93,13 @@ export default function Home() {
         <section
           id="bg"
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: "url(/pixelsm.png)" }}
+          // style={{ backgroundImage: "url(/pixelsm.png)" }}
         >
-          {/* <Image
+          <Image
             src={pexelsm}
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
-          /> */}
+          />
           <h1
             data-aos="fade-up"
             data-aos-easing="linear"
