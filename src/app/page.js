@@ -93,17 +93,18 @@ export default function Home() {
         <section
           id="bg"
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
+          style={{ backgroundImage: "url(/pixelsm.png)" }}
         >
-          <Image
+          {/* <Image
             src={pexelsm}
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
-          />
+          /> */}
           <h1
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="800"
-            className=" text-white overflow-hidden text-[14px] absolute  text-xl font-light z-10 "
+            className=" text-white overflow-hidden text-[14px] absolute  text-xl font-light  "
           >
             Hi 👋🏽, I’m Tega
           </h1>
@@ -114,13 +115,16 @@ export default function Home() {
         <section
           id="bg1"
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
+          // style={{ backgroundImage: "url(/pexels.png)" }}
         >
           <Image
             src={pexels1m}
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl">
+          <h1
+         
+          className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl">
             I’m a designer from Lagos, Nigeria. When I’m not designing I’m
             either sleeping, reading or trying out a meal. I enjoy exploring,
             could be with colors, places, fonts, skincare or restaurants.
@@ -137,7 +141,7 @@ export default function Home() {
           <Image
             src={pexels2m}
             alt="pexels2m"
-            className="h-screen md:hidden md:h-screen"
+            className="h-screen "
           />
           <h1 className="text-white absolute  w-[80%] md:w-[40%] font-light text-[14px] md:text-xl text-center">
             You get to see a few of my favourite projects, some from a few years

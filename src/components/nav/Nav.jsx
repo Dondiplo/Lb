@@ -33,9 +33,9 @@ const Nav = () => {
     <section className="fixed top-14 md:top-12 z-10 text-white w-full ">
       <div className="container flex justify-between  ">
         <Link href="/">
-        <div className="hover:animate-bounce z-20">
-          <Image src={to} alt="to"  width={30}/>
-        </div>
+          <div className="z-20">
+            <Image src={to} alt="to" width={30} />
+          </div>
         </Link>
         <div className="space-x-10 hidden md:flex ">
           {navLinks.map((d, i) => (
@@ -55,31 +55,30 @@ const Nav = () => {
             <RxHamburgerMenu className="text-[30px]" />
           )}
         </button>
-
-        
       </div>
 
       <div className="">
-       
-       {showNav && (
-         <div className="fixed top-0 left-0 right-0 bg-black  transition ease-in-out z-[70%] h-[100vh]   ">
-           <div className="pt-24 ">
-             {" "}
-             {navLinks.map((d, i) => (
-               <div key={i} className="text-white  opacity-[60%] pt-4 capitalize font-bold text-[18px]">
-                 <Link
-                   href={d.href}
-                   className="flex flex-row  justify-end pr-6 pt-6 hover:capitalize"
-                 >
-                   {d.label}
-                 </Link>
-               </div>
-             ))}
-           </div>
-         </div>
-       )}
-     </div>
-
+        {showNav && (
+          <div className="fixed top-0 left-0 right-0 bg-black  transition ease-in-out z-[70%] h-[100vh]   ">
+            <div className="pt-24 ">
+              {" "}
+              {navLinks.map((d, i) => (
+                <div
+                  key={i}
+                  className="text-white  opacity-[60%] pt-4 capitalize font-bold text-[18px]"
+                >
+                  <Link
+                    href={d.href}
+                    className="flex flex-row  justify-end pr-6 pt-6 hover:capitalize"
+                  >
+                    {d.label}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </section>
   );
 };
