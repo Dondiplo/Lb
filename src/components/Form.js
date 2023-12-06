@@ -122,7 +122,6 @@ export const Form = () => {
           mt={10}
           variant="outline"
           colorScheme="purple"
-          _hover-background="blue"
           isLoading={isLoading || formState.submitting}
           disabled={
             !values.name || !values.email || !values.subject || !values.message
