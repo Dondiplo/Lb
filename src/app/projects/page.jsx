@@ -74,7 +74,7 @@ const Page = () => {
       <Nav />
       <div className="snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth bg-[#1E1E1E]">
         {/* Words and Lottie Animation */}
-        <div className="lg:block fixed bottom-10 md:top-[40%] left-[5%] z-0">
+        <div className="lg:block fixed bottom-5 md:top-[40%] left-[5%] z-0">
           <div className="relative w-[50%] md:w-[95%] ">
             <Image src={words} alt="words" />
             <Lottie
@@ -116,7 +116,7 @@ const Page = () => {
             </div>
 
             {/* Project Details */}
-            <div className="lg:absolute pt-6 md:pt-40 left-[27%]">
+            <div className="lg:absolute pt-4 md:pt-40 left-[27%]">
               <div
                 className="font-[700] opacity-60 text-white space-y-4 md:space-y-8 text-left w-[95%] mx-auto lg:w-full z-10"
                 
