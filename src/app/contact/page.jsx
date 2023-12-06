@@ -7,6 +7,7 @@ import animation from "public/mail.json";
 import Nav from "@/components/nav/Nav";
 import { Form } from "@/components/Form";
 
+
 const Page = () => {
   return (
     <div id="body" className="h-screen  mx-auto pt-10 bg-[#1E1E1E] text-white ">
@@ -35,7 +36,7 @@ const Page = () => {
           </p>
         </div>
       </div>
-      <Form />
+<Form/>
     </div>
   );
 };

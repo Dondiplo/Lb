@@ -8,8 +8,6 @@ import {
   Textarea,
   Button,
   Container,
-  color,
-  background,
 } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 import { useForm, ValidationError } from "@formspree/react";
@@ -47,7 +45,7 @@ export const Form = () => {
   };
 
   return (
-    <Container className="w-[20rem] pb-6 pt-24 md:pt-0">
+    <Container className="w-[20rem] pb-6 pt-24 md:pt-12">
       <form onSubmit={handleSubmit}>
         <FormControl
           isRequired
@@ -123,8 +121,8 @@ export const Form = () => {
         <Button
           mt={10}
           variant="outline"
-          colorScheme="green"
-          _hover-colorScheme="blue"
+          colorScheme="purple"
+          _hover-background="blue"
           isLoading={isLoading || formState.submitting}
           disabled={
             !values.name || !values.email || !values.subject || !values.message
