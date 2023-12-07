@@ -39,7 +39,7 @@ const Nav = () => {
         </Link>
         <div className="space-x-10 hidden md:flex ">
           {navLinks.map((d, i) => (
-            <Link id="nav" key={i} href={d.href}>
+            <Link id="nav" key={i} href={d.href} className="hov">
               {d.label}
             </Link>
           ))}

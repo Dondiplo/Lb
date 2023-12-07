@@ -10,15 +10,31 @@ import pexels2 from "public/pexels2.png";
 import pexels2m from "public/pexels2m.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import ScrollAnimation from "react-scroll-animation";
 
 export default function Home() {
   useEffect(() => {
     Aos.init();
   }, []);
+
+  useEffect(() => {
+    const scrollContainer = document.getElementById('yourScrollContainer'); // Set the actual ID of your scroll container
+    const scrollSpeed = 2; // Adjust this value to control scroll speed
+
+    const handleScroll = (event) => {
+      scrollContainer.scrollTop += event.deltaY * scrollSpeed;
+      event.preventDefault();
+    };
+
+    scrollContainer.addEventListener('wheel', handleScroll);
+
+    return () => {
+      scrollContainer.removeEventListener('wheel', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
+      <main  className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
         <div>
           <Nav />
         </div>
@@ -52,7 +68,10 @@ export default function Home() {
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen "
         /> */}
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl">
+          <h1
+           
+            className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl "
+          >
             I’m a designer from Lagos, Nigeria. When I’m not designing I’m
             either sleeping, reading or trying out a meal. I enjoy exploring,
             could be with colors, places, fonts, skincare or restaurants.
@@ -83,7 +102,7 @@ export default function Home() {
 
       {/* mobile */}
 
-      <main className="md:hidden  snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
+      <main id="yourScrollContainer" className="md:hidden  snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
         <div>
           <Nav />
         </div>
@@ -92,29 +111,22 @@ export default function Home() {
         </div>
         <section
           id="bg"
-          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
+          className="snap-center min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
           // style={{ backgroundImage: "url(/pixelsm.png)" }}
         >
           <Image
             src={pexelsm}
             alt="pexels1m"
-            className="h-screen md:hidden md:h-screen "
+            className="h-screen md:hidden md:h-screen  fixed"
           />
-          <h1
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            className=" text-white overflow-hidden text-[14px] absolute  text-xl font-light  "
-          >
-            Hi 👋🏽, I’m Tega
-          </h1>
+          <h1 className="text-[14px] text-white">Hi 👋🏽, I’m Tega</h1>
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
 
         <section
           id="bg1"
-          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
+          className="snap-center min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
           // style={{ backgroundImage: "url(/pexels.png)" }}
         >
           <Image
@@ -122,9 +134,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <h1
-         
-          className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl">
+          <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl">
             I’m a designer from Lagos, Nigeria. When I’m not designing I’m
             either sleeping, reading or trying out a meal. I enjoy exploring,
             could be with colors, places, fonts, skincare or restaurants.
@@ -138,11 +148,7 @@ export default function Home() {
           id="bg3"
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         >
-          <Image
-            src={pexels2m}
-            alt="pexels2m"
-            className="h-screen "
-          />
+          <Image src={pexels2m} alt="pexels2m" className="h-screen " />
           <h1 className="text-white absolute  w-[80%] md:w-[40%] font-light text-[14px] md:text-xl text-center">
             You get to see a few of my favourite projects, some from a few years
             back and others more recently designed. Once again welcome to my

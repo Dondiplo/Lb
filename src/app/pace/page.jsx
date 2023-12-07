@@ -32,8 +32,10 @@ const page = () => {
           competitors aren’t solving.
         </p>
 
-        <Image src={employ} alt="employ" />
-        <Image src={flow1} alt="flow1" />
+        <div className="md:flex space-y-4 md:space-y-0">
+          <Image src={employ} alt="employ" className="mx-auto" />
+          <Image src={flow1} alt="flow1" className="mx-auto" />
+        </div>
 
         <h1>RESEARCH PROCESS</h1>
         <p>
@@ -82,11 +84,13 @@ const page = () => {
           </p>
         </button>
         <h1>USER PERSONAS</h1>
-        <Image src={pace1} alt="pace1" />
-        <Image src={pace2} alt="pace2" />
-        <Image src={pace4} alt="pace4" />
 
-        <h1 className="text-xl">THE END</h1>
+        <div className="block md:flex">
+          <Image src={pace1} alt="pace1" className="mx-auto" />
+          <Image src={pace2} alt="pace2" className="mx-auto" />
+          <Image src={pace4} alt="pace4" className="mx-auto" />
+        </div>
+        <h1 className="text-xl font-[600] pt-8">THE END</h1>
         <p className="pb-10">
           This project spans to both the web and mobile version, you can access
           the live version of this work at pace.africa. See ya at the next case
