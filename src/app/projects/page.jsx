@@ -116,7 +116,7 @@ const Page = () => {
             </div>
 
             {/* Project Details */}
-            <div className="lg:absolute pt-12 md:pt-40 left-[27%]">
+            <div className="lg:absolute pt-8 md:pt-40 left-[27%]">
               <div
                 className="font-[700] opacity-60 text-white space-y-4 md:space-y-8 text-left w-[95%] mx-auto lg:w-full z-10"
                 
