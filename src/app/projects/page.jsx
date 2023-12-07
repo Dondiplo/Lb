@@ -94,9 +94,9 @@ const Page = () => {
         {projects.map((project, index) => (
           <section
             key={index}
-            className="snap-start h-full  relative pt-40 lg:pt-40 lg:flex justify-end"
+            className="snap-start h-full  relative pt-40 lg:pt-40 lg:flex justify-end lg:w-[90%]"
           >
-            <div className="w-[90%] mx-auto lg:mx-0 lg:w-[780px] lg:h-[505px]">
+            <div className="w-[90%] mx-auto lg:mx-0 lg:w-[700px] lg:h-[505px]">
               {/* Project Image */}
               {project.link && (
                 <Link href={project.link}>
