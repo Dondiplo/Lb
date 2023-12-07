@@ -9,11 +9,11 @@ import Nav from "@/components/nav/Nav";
 
 import animationData from "public/eyes.json";
 import words from "public/words.svg";
-import pace from "public/pace.svg";
-import payvice from "public/payvice.svg";
+import pace from "public/pace.png";
+import payvice from "public/payvice.png";
 import thebulb from "public/thebulb.svg";
-import startup from "public/startupa.svg";
-import uba from "public/ubamoney.svg";
+import startup from "public/startup.png";
+import uba from "public/ubamoney.png";
 import arrow from "public/arrow.svg";
 import bulb from "public/bulb.png"
 
