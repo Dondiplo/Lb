@@ -6,6 +6,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import to from "public/T-O.svg";
 import Link from "next/link";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { usePathname } from 'next/navigation'
 import "./nav.css";
 
 const navLinks = [
@@ -29,33 +30,37 @@ const Nav = () => {
   function toggleMenu() {
     setNav(!showNav);
   }
+  const pathname = usePathname()
   return (
     <section className="fixed top-14 md:top-12 z-10 text-white w-full ">
-      <div className="container flex justify-between  ">
-        <Link href="/">
-          <div className="z-20">
-            <Image src={to} alt="to" width={30} />
-          </div>
-        </Link>
-        <div className="space-x-10 hidden md:flex ">
-          {navLinks.map((d, i) => (
-            <Link id="nav" key={i} href={d.href} className="hov">
-              {d.label}
-            </Link>
-          ))}
-        </div>
-        <button
-          className=" md:hidden z-50"
-          ref={animationParent}
-          onClick={toggleMenu}
-        >
-          {showNav ? (
-            <IoCloseOutline className="text-[30px] text-white" />
-          ) : (
-            <RxHamburgerMenu className="text-[30px]" />
-          )}
-        </button>
-      </div>
+    <div className="container flex justify-between">
+  <Link href="/">
+    <div className="z-20">
+      <Image src={to} alt="to" width={30} />
+    </div>
+  </Link>
+  <div className="space-x-10 hidden md:flex">
+    {navLinks.map((d, i) => (
+      <Link key={i} href={d.href} className="relative group">
+        {d.label}
+        <div className="absolute inset-x-0 bottom-0 left-0 bg-white h-0 w-0 group-hover:h-[2px] group-hover:w-full transition-all duration-300"></div>
+      </Link>
+    ))}
+  </div>
+  <button
+    className="md:hidden z-50"
+    ref={animationParent}
+    onClick={toggleMenu}
+  >
+    {showNav ? (
+      <IoCloseOutline className="text-[30px] text-white" />
+    ) : (
+      <RxHamburgerMenu className="text-[30px]" />
+    )}
+  </button>
+</div>
+
+
 
       <div className="">
         {showNav && (

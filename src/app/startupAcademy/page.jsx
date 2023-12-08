@@ -3,7 +3,7 @@ import start1 from "public/start1.svg";
 
 import start2 from "public/start2.svg";
 import start3 from "public/start3.png";
-import pace4 from "public/pace4.svg";
+import start4 from "public/start4.svg";
 import Image from "next/image";
 const page = () => {
   return (
@@ -19,7 +19,7 @@ const page = () => {
           accelerate their startups with the help of industry giants and well
           known founders of successful startups.
         </p>
-
+<Image src={start4} alt="start4" className="mx-auto"/>
         <p>
           Pace already existed before but I worked on a version update with
           multiple changes. Pace previously catered to just people in the tech
@@ -34,7 +34,7 @@ const page = () => {
           competitors aren’t solving.
         </p>
 
-        <Image src={start1} alt="start1" />
+        <Image src={start1} alt="start1" className="mx-auto"/>
 
         <h1>RESEARCH PROCESS</h1>
         <p>
@@ -46,8 +46,8 @@ const page = () => {
           recruitment, the food business etc. I spoke to 6 people who fell into
           the target market audience stated above
         </p>
-
-        <button className="p-6 bg-[#1C1C1C] space-y-4 rounded-2xl">
+<div className="md:flex mx-auto md:space-x-16 md:w-10/12">
+        <button className="px-6 py-14 bg-[#1C1C1C] space-y-4 rounded-2xl">
           <h1 className="text-[25px]">New Startup Founders</h1>
           <p className="text-[15px]">
             {" "}
@@ -72,11 +72,13 @@ const page = () => {
             create growth in the existing community?
           </p>
         </button>
+        </div>
 
         <h1>USER PERSONAS</h1>
+        <div className="md:flex ">
         <Image src={start2} alt="start2" />
         <Image src={start3} alt="start3" />
-
+        </div>
         <h1 className="text-xl">CONCLUSION</h1>
         <p className="pb-10">
           This is one of the fastest projects I’ve ever worked on. Working on
