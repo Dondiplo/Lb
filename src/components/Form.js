@@ -119,27 +119,30 @@ export const Form = () => {
         </FormControl>
 
         <Button
-          mt={10}
-          variant="outline"
-          colorScheme="purple"
-          isLoading={isLoading || formState.submitting}
-          disabled={
-            !values.name || !values.email || !values.subject || !values.message
-          }
-          type="submit"
-          onClick={() => {
-            toast({
-              title: "Message sent.",
-              description: "Your message has been successfully sent.",
-              status: "success",
-              duration: 4000,
-              isClosable: true,
-            });
-            resetForm(); // Reset the form after displaying the toast
-          }}
-        >
-          Send
-        </Button>
+  mt={10}
+  variant="outline"
+  colorScheme="purple"
+  isLoading={isLoading || formState.submitting}
+  disabled={!values.name || !values.email || !values.subject || !values.message}
+  type="submit"
+  onClick={() => {
+    toast({
+      title: "Message sent.",
+      description: "Your message has been successfully sent.",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
+    resetForm(); // Reset the form after displaying the toast
+  }}
+  _hover={{
+    bgColor: 'purple.600', // Background color on hover
+    color: 'white', // Text color on hover
+  }}
+>
+  Send
+</Button>
+
       </form>
     </Container>
   );
