@@ -7,7 +7,7 @@ import Nav from "@/components/nav/Nav";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
-      <Nav />
+      <Nav/>
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
         <h1 className="font-[400] text-xl md:text-[40px] opacity-60">
           Payvice Agents’ App
