@@ -136,8 +136,9 @@ export const Form = () => {
     resetForm(); // Reset the form after displaying the toast
   }}
   _hover={{
-    bgColor: 'purple.600', // Background color on hover
+    bgColor: 'purple.900', // Background color on hover
     color: 'white', // Text color on hover
+    border:"black"
   }}
 >
   Send
