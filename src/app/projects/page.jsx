@@ -39,7 +39,7 @@ const projects = [
     image: bulb,
     description: "Company website",
     color: "#11C2B7",
-    link: "https://www.figma.com/proto/qSpevcz8tXXdP71eLLZ68S/Tega's-portfolio?page-id=0%3A1&type=design&node-id=181-6477&viewport=1845%2C949%2C0.22&t=joxRQvkDvrpuJB8I-1&scaling=min-zoom&mode=design",
+    link: "/thebulb",
     hoverColor: "#11C2B7",
   },
   {
