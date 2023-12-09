@@ -22,7 +22,7 @@ const page = () => {
           The Bulb Africa Website (redesign)
         </h1>
 
-        <p>
+        <p className="opacity-60">
           A redesign of selected screens and introduction of new screens of a
           digital agency’s website. Redesigned with the aim of updating users
           and clients on new goals and aspirations as restrategized by the
@@ -32,7 +32,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           WEBSITE OVERVIEW
         </h1>
-        <p>
+        <p className="opacity-60">
           Prior to this redesign, The Bulb Africa’s website stated their
           promises and what they had plans to do as the company was founded in
           2020 and had very little traction. There were no solutions or
@@ -41,7 +41,7 @@ const page = () => {
           grow and attain full potential, also they wanted to help individuals
           get introduced to tech as that new interesting career path.
         </p>
-        <p>
+        <p className="opacity-60">
           I worked on the total redesign of this website, this involved user and
           market research to understand the message we were trying to pass, the
           businesses we were trying to bring onboard as The Bulb Africa offers
@@ -49,7 +49,7 @@ const page = () => {
           understand how available resources were to help them achieve whatever
           vision they had for their companies.{" "}
         </p>
-        <p>
+        <p className="opacity-60">
           I couldn’t stray from what already existed since it wasn’t an end to
           end design, just transforming the most important screens as selected
           by the Product Manager for this project. The company reported a 35%
@@ -71,7 +71,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           CHALLENGES
         </h1>
-        <p>
+        <p className="opacity-60">
           Feedback - In selecting the most important screens to redesign, we had
           to look for ways to actually find out from users what screens they
           visited the most. We couldn’t make the decisions on what to change as
@@ -83,7 +83,7 @@ const page = () => {
           continuously reach out to get their feedback before we could start on
           this project.
         </p>
-        <p>
+        <p className="opacity-60">
           Time - Anyone who has worked with an agency understands the constant
           haste that comes with projects, working through each design process
           phase in order to get the best result required splitting the usual
@@ -92,7 +92,7 @@ const page = () => {
           vision, mission and objectives were. The time constraints required
           faster processing time.
         </p>
-        <p>
+        <p className="opacity-60">
           Creating Emotions - “How do you evoke emotions in shrewd business men
           and women?” It was important to ensure the business seemed as
           relatable as possible. I needed to ensure the content, structure,
@@ -111,7 +111,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           WIRE FRAMES
         </h1>
-        <p>
+        <p className="opacity-60">
           During the iteration process, I created mutliple skeletal designs, I
           scrapped a lot of designs till I got the one that I felt would convey
           the message the company had in mind. Working in an agile environment
@@ -128,7 +128,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           HIGH FIDELITY DESIGNS
         </h1>
-        <p>
+        <p className="opacity-60">
           Wireframes already existed, the idea was formed, colors picked out,
           since it was a redesign and integration of certain screens, fonts were
           already in place and there was no need for a total overhaul of the
@@ -150,7 +150,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           COMPARING TO OTHER TECHNOLOGY AGENCIES
         </h1>
-        <p>
+        <p className="opacity-60">
           We compared the solution we had built as at the end of the design
           phase to already existing solutions that were similar and it was easy
           to see that we had built an exciting product that was seamless, easy
@@ -159,7 +159,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           WHAT I LEARNT
         </h1>
-        <p>
+        <p className="opacity-60">
           Prior to this, I had never designed an agency’s website and it further
           showed that all products are different. There are different final
           consumers and ultimately no two designs are the exact same no matter
@@ -169,7 +169,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           THE END
         </h1>
-       <div>
+       <div className="opacity-60">
         <Link href="https://thebulb.africa/">Please check out the live version of this project at thebulb.africa See ya at the next case study, thanks for reading 👋🏾</Link>
        </div>
       </div>

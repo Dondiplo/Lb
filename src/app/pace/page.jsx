@@ -24,14 +24,14 @@ const page = () => {
     <div className="bg-neutral-950 w-full">
       <div className="w-[95%] mx-auto  text-white pt-8 space-y-6 pb-12">
         <h1 className="text-[20px] md:text-[40px]">Pace Recruitment </h1>
-        <p>
+        <p className="opacity-60">
           Pace is a recruitment app created to help people get jobs within their
           community. It also helps employers simplify the recruitment process.
           This case study is focused on the jobseeker’s side of things and
           understanding what the process of putting together a usable product
           for a jobseeker was like.{" "}
         </p>
-        <p>
+        <p className="opacity-60">
           Pace already existed before but I worked on a version update with
           multiple changes. Pace previously catered to just people in the tech
           space but a market was seen within the rising number of unemployed
@@ -55,7 +55,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           Research Process{" "}
         </h1>
-        <p>
+        <p className="opacity-60">
           User research - I took a week to speak to about 8 people that fit
           within the target market category (3 people looking to get hired, 3
           people who already had jobs but were hoping for something better, 2 HR
@@ -73,7 +73,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
           HIGH FIDELITY DESIGNS
         </h1>
-        <p>
+        <p className="opacity-60">
           Creating these designs came after I had sketched out flows on papers
           and then created wireframes, I used Balsamiq for the wireframes of
           this project. Creating wireframes made it much easier to create the
@@ -87,13 +87,13 @@ const page = () => {
 
         <div className=" md:hidden space-y-6 ">
         <Image src={pace4} alt="pace4" className="mx-auto" />
-        <Image src={pace5} alt="pace5" />
-        <Image src={pace6} alt="pace6" />
-        <Image src={pace7} alt="pace7" />
-        <Image src={pace8} alt="pace8" />
-        <Image src={pace9} alt="pace9" />
-        <Image src={pace10} alt="pace10" />
-        <Image src={pace11} alt="pace11" />
+        <Image src={pace5} alt="pace5" className="mx-auto" />
+        <Image src={pace6} alt="pace6" className="mx-auto"/>
+        <Image src={pace7} alt="pace7" className="mx-auto" />
+        <Image src={pace8} alt="pace8" className="mx-auto"/>
+        <Image src={pace9} alt="pace9" className="mx-auto"/>
+        <Image src={pace10} alt="pace10" className="mx-auto"/>
+        <Image src={pace11} alt="pace11" className="mx-auto"/>
         </div>
         <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
          THE END
