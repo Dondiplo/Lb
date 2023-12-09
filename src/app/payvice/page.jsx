@@ -3,11 +3,13 @@ import pay1 from "public/pay1.svg";
 import pay2 from "public/pay2.svg";
 import pay3 from "public/pay3.svg";
 import Image from "next/image";
+import Nav from "@/components/nav/Nav";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
-      <div className="w-[95%] mx-auto  text-white pt-8 space-y-8  pb-10">
-        <h1 className="font-[400] text-xl md:text-[40px]">
+      <Nav />
+      <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
+        <h1 className="font-[400] text-xl md:text-[40px] opacity-60">
           Payvice Agents’ App
         </h1>
         <p>
@@ -18,8 +20,10 @@ const page = () => {
         </p>
         <Image src={pay1} alt="pay1" className="mx-auto" />
 
-        <h1 className="font-[400] text-xl  md:text-[40px]">APP OVERVIEW</h1>
-        <p>
+        <h1 className="font-[400] text-xl  md:text-[40px] opacity-60">
+          APP OVERVIEW
+        </h1>
+        <p className="opacity-60">
           A quick and easy bill payment app used by a category of users called
           “agents”. These agents are available to assist the unbanked,
           day-to-day customers who need funds for emergencies etc. As this was
@@ -30,7 +34,9 @@ const page = () => {
           simplicity is key in terms of feature upgrades for this app.
         </p>
 
-        <h1 className="font-[400] text-xl  md:text-[40px]  pt-4">CHALLENGES</h1>
+        <h1 className="font-[400] text-xl  md:text-[40px]  pt-4 opacity-60">
+          CHALLENGES
+        </h1>
         <p>
           App UX - An important change to be made was to create shorter steps to
           get to the point for easy usability and customer retention. This
@@ -43,7 +49,7 @@ const page = () => {
           usage.
         </p>
 
-        <p>
+        <p className="opacity-60">
           Interface redemption - Our users ranged in the age groups of 20s to
           60s so we were catering to both people who liked pretty and flashy app
           systems and those who just wanted to carry out their businesses and be
@@ -52,15 +58,15 @@ const page = () => {
           to slack on any region concerning the interface or experience.
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4">
+        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
           WHITEBOARD FEATURE RESEARCH
         </h1>
         <Image src={pay2} alt="pay2" className="mx-auto" />
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4">
+        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
           SOME QUESTIONS WITHIN DESIGN TEAM
         </h1>
-        <p>
+        <p className="opacity-60">
           As this was a team project and involved collaborative effort, it was
           important to note what issues arose the most from designers and users.
           Some of the questions noted were : Will the onboarding process require
@@ -73,11 +79,11 @@ const page = () => {
           system?
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4">
+        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
           COMPETITIVE MARKET ANALYSIS
         </h1>
 
-        <p>
+        <p className="opacity-60">
           This phase of the process required us to check as many financial apps
           as we could. The design team split feature research into buckets and
           assigned them to each user with a timeline attached. The project
@@ -89,11 +95,11 @@ const page = () => {
           we could work on to make better.
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4">
+        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
           SKETCHING & WIREFRRAMES
         </h1>
 
-        <p>
+        <p className="opacity-60">
           This process was quick as we understood what problems we were solving,
           I used the tool Whimsical for wireframes in order to make it
           accessible to the PMs, stakeholders and development team. Designing
@@ -108,9 +114,11 @@ const page = () => {
           <Image src={pay3} alt="pay3" />
         </button>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4">CONCLUSION</h1>
+        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
+          CONCLUSION
+        </h1>
 
-        <p>
+        <p className="opacity-60">
           This project was one of my favourite projects to work on, I’ve
           designed multiple financial apps and websites but this was enjoyable
           because of the research and time that went into it. Expectations were

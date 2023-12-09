@@ -13,11 +13,13 @@ import bulb10 from "public/bulb10.svg";
 import bulb11 from "public/bulb11.svg";
 import bulb12 from "public/bulb12.png";
 import Link from "next/link";
+import Nav from "@/components/nav/Nav";
 
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
-      <div className="w-[95%] mx-auto  text-white pt-8 space-y-8  pb-10">
+      <Nav/>
+      <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
         <h1 className="font-[400] text-xl md:text-[40px]">
           The Bulb Africa Website (redesign)
         </h1>

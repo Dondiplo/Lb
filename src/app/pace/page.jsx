@@ -18,11 +18,13 @@ import pace13 from "public/pace13.svg";
 import pace16 from "public/pace16.png";
 import paceg from "public/paceg.png";
 import Image from "next/image";
+import Nav from "@/components/nav/Nav";
 
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
-      <div className="w-[95%] mx-auto  text-white pt-8 space-y-6 pb-12">
+      <Nav/>
+      <div className="w-[95%] mx-auto  text-white pt-28 space-y-6 pb-12">
         <h1 className="text-[20px] md:text-[40px]">Pace Recruitment </h1>
         <p className="opacity-60">
           Pace is a recruitment app created to help people get jobs within their

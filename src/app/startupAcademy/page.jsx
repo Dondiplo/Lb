@@ -5,10 +5,12 @@ import start2 from "public/start2.svg";
 import start3 from "public/start3.png";
 import start4 from "public/start4.svg";
 import Image from "next/image";
+import Nav from "@/components/nav/Nav";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
-      <div className="w-[95%] mx-auto  text-white pt-8 space-y-6">
+      <Nav/>
+      <div className="w-[95%] mx-auto  text-white pt-28  space-y-6">
         <h1 className="text-xl font-bold">Startup Academy </h1>
         <p>
           According to statistics (cannot confirm this data) there are about 305
