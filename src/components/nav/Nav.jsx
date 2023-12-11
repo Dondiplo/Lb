@@ -12,7 +12,7 @@ import "./nav.css";
 const navLinks = [
   {
     label: "RESUME",
-    href: "#",
+    href: "https://yellow-rhianon-42.tiiny.site/",
   },
   {
     label: "PROJECTS",
