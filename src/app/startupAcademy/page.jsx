@@ -11,8 +11,8 @@ const page = () => {
     <div className="bg-neutral-950 w-full">
       <Nav/>
       <div className="w-[95%] mx-auto  text-white pt-28  space-y-6">
-        <h1 className="text-xl font-bold">Startup Academy </h1>
-        <p>
+        <h1 className="text-xl font-bold opacity-60">Startup Academy </h1>
+        <p className="opacity-60">
           According to statistics (cannot confirm this data) there are about 305
           million startups created yearly. Most of them are by founders who have
           amazing ideas but creating a business and ensuring it stays relevant
@@ -22,7 +22,7 @@ const page = () => {
           known founders of successful startups.
         </p>
 <Image src={start4} alt="start4" className="mx-auto"/>
-        <p>
+        <p className="opacity-60">
           Pace already existed before but I worked on a version update with
           multiple changes. Pace previously catered to just people in the tech
           space but a market was seen within the rising number of unemployed
@@ -38,8 +38,8 @@ const page = () => {
 
         <Image src={start1} alt="start1" className="mx-auto"/>
 
-        <h1>RESEARCH PROCESS</h1>
-        <p>
+        <h1 className="opacity-60">RESEARCH PROCESS</h1>
+        <p className="opacity-60">
           User research - A lot of people hope to start their own companies or
           businesses at the least. Getting founders to interview was pretty easy
           as almost everyone had a small or mid-scale business that began with a
@@ -48,10 +48,10 @@ const page = () => {
           recruitment, the food business etc. I spoke to 6 people who fell into
           the target market audience stated above
         </p>
-<div className="md:flex mx-auto md:space-x-16 md:w-10/12">
+<div className="md:flex mx-auto md:space-x-16 md:w-10/12  space-y-4">
         <button className="px-6 py-14 bg-[#1C1C1C] space-y-4 rounded-2xl">
-          <h1 className="text-[25px]">New Startup Founders</h1>
-          <p className="text-[15px]">
+          <h1 className="text-[25px] opacity-60">New Startup Founders</h1>
+          <p className="text-[15px] opacity-60">
             {" "}
             Issues with this category of people revolved around connection and
             networking to reach the right people. Scaling up, idea progression,
@@ -63,8 +63,8 @@ const page = () => {
           </p>
         </button>
         <button className="p-6 bg-[#1C1C1C] space-y-4 rounded-2xl">
-          <h1 className="text-[25px]">Established Startup Founders</h1>
-          <p className="text-[15px]">
+          <h1 className="text-[25px] opacity-60">Established Startup Founders</h1>
+          <p className="text-[15px] opacity-60">
             {" "}
             Some scripted questions from this interview session were : What
             refreshing solutions can we bring to your company’s existing
@@ -76,13 +76,13 @@ const page = () => {
         </button>
         </div>
 
-        <h1>USER PERSONAS</h1>
+        <h1 className="opacity-60">USER PERSONAS</h1>
         <div className="md:flex ">
         <Image src={start2} alt="start2" />
         <Image src={start3} alt="start3" />
         </div>
-        <h1 className="text-xl">CONCLUSION</h1>
-        <p className="pb-10">
+        <h1 className="text-xl opacity-60">CONCLUSION</h1>
+        <p className="pb-10 opacity-60">
           This is one of the fastest projects I’ve ever worked on. Working on
           this project as a lone designer meant most design decisions were made
           by me but I ensured I got stakeholders’ input and thoughts on through

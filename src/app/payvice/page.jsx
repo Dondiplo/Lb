@@ -2,6 +2,7 @@ import React from "react";
 import pay1 from "public/pay1.svg";
 import pay2 from "public/pay2.svg";
 import pay3 from "public/pay3.svg";
+import pay4 from "public/pay4.svg"
 import Image from "next/image";
 import Nav from "@/components/nav/Nav";
 const page = () => {
@@ -18,8 +19,9 @@ const page = () => {
           funds, make withdrawals, carry out bill payments, enable account
           opening and creating financial ease quickly.
         </p>
+      
         <Image src={pay1} alt="pay1" className="mx-auto" />
-
+       
         <h1 className="font-[400] text-xl  md:text-[40px] opacity-60">
           APP OVERVIEW
         </h1>
@@ -37,7 +39,7 @@ const page = () => {
         <h1 className="font-[400] text-xl  md:text-[40px]  pt-4 opacity-60">
           CHALLENGES
         </h1>
-        <p>
+        <p className="opacity-60">
           App UX - An important change to be made was to create shorter steps to
           get to the point for easy usability and customer retention. This
           required us involving th data team to track fall off points during
@@ -61,8 +63,11 @@ const page = () => {
         <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
           WHITEBOARD FEATURE RESEARCH
         </h1>
+        <div className=" lg:flex md:space-x-6">
         <Image src={pay2} alt="pay2" className="mx-auto" />
+        <Image src={pay4} alt="pay4" className="mx-auto pt-6 md:pt-0" />
 
+        </div>
         <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
           SOME QUESTIONS WITHIN DESIGN TEAM
         </h1>

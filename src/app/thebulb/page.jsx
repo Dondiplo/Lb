@@ -20,7 +20,7 @@ const page = () => {
     <div className="bg-neutral-950 w-full ">
       <Nav/>
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
-        <h1 className="font-[400] text-xl md:text-[40px]">
+        <h1 className="font-[400] text-xl md:text-[40px] opacity-60">
           The Bulb Africa Website (redesign)
         </h1>
 
@@ -140,8 +140,9 @@ const page = () => {
         </p>
 
         <Image src={bulb12} alt="bulb12" className="mx-auto hidden md:block" />
+
         <div className="md:hidden space-y-6">
-          <Image src={bulb5} alt="bulb5" className="mx-auto " />
+         
           <Image src={bulb6} alt="bulb6" className="mx-auto " />
           <Image src={bulb7} alt="bulb7" className="mx-auto " />
           <Image src={bulb8} alt="bulb8" className="mx-auto " />
