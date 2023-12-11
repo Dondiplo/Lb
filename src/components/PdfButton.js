@@ -70,7 +70,7 @@ const Pdf = () => {
             </h1>
           </div>
 
-          <div>
+          <div className="text-end">
             <h1>(234) 9020081291</h1>
             <h1>Gmail</h1>
 
