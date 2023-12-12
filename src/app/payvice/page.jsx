@@ -115,7 +115,7 @@ const page = () => {
           with the introduction of a dark and light theme, thereby catering to
           most of our customer base, age . ranging from 25 - 55 years.
         </p>
-        <button className="hidden md:flex p-6 bg-gray-400 mx-auto justify-center rounded-2xl">
+        <button className="flex p-6 bg-gray-400 mx-auto justify-center rounded-2xl">
           <Image src={pay3} alt="pay3" />
         </button>
 
