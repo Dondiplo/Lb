@@ -68,6 +68,31 @@ const Pdf = () => {
               Edukoya <br /> -
               <span className="text-xs">  Senior Product Designer [Contractor]</span>
             </h1>
+            <div className=" space-y-3">
+              <p>
+                -Managing the team, <br /> ensuring up to date <br /> and
+                standard <br /> designs from every team member
+              </p>
+
+              <p>
+                -Meetings with major, <br /> stakeholders on upcoming <br />
+                projects and maintaining
+                <br /> quarterly timelines
+              </p>
+
+              <p>
+                -Design projections and <br /> expectations based off of
+                <br />
+                data gotten from
+                <br /> previously created designs
+              </p>
+
+              <p>
+                -Designing and working <br /> with the team to
+                <br />
+                maintain design coordination.
+              </p>
+            </div>
           </div>
 
           <div className="text-end">
