@@ -10,7 +10,7 @@ import { Form } from "@/components/Form";
 
 const Page = () => {
   return (
-    <div id="body" className="h-[100dvh] mx-auto pt-10 bg-[#1E1E1E] text-white ">
+    <div id="body" className=" mx-auto min-h-screen  pt-10 bg-[#1E1E1E] text-white ">
       <Nav />
 
       <section className="mx-auto  pt-20">
