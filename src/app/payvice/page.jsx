@@ -13,7 +13,7 @@ const page = () => {
         <h1 className="font-[400] text-xl md:text-[40px] opacity-60">
           Payvice Agents’ App
         </h1>
-        <p>
+        <p className="opacity-60">
           An extensive redesign of a Nigerian financial app used mostly by
           agency banking merchants aiding regular day-to-day people transfer
           funds, make withdrawals, carry out bill payments, enable account
