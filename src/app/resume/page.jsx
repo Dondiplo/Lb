@@ -1,12 +1,11 @@
-import Pdf from '@/components/PdfButton'
-import React from 'react'
+import React from 'react';
 
-const page = () => {
+const Page = () => {
   return (
-    <div>
-      <Pdf/>
+    <div className="h-[100%] md:h-[100vh]">
+      <iframe src="/Tegaresume.pdf" width="100%" height="100%" className="" />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

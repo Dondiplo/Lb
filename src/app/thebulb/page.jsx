@@ -141,7 +141,7 @@ const page = () => {
 
         <Image src={bulb12} alt="bulb12" className="mx-auto hidden md:block" />
 
-        <div className="md:hidden space-y-6">
+        <div className="md:hidden  md:space-y-6">
          
           <Image src={bulb6} alt="bulb6" className="mx-auto " />
           <Image src={bulb7} alt="bulb7" className="mx-auto " />

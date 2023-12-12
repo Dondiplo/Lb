@@ -32,6 +32,7 @@ const Nav = () => {
     setNav(!showNav);
   }
   const pathname = usePathname()
+  const resumePdf = "public/Tegaresume.pdf"
   return (
     <section className="fixed top-14 md:top-12 z-10 text-white w-full ">
     <div className="container flex justify-between">

@@ -87,7 +87,7 @@ const page = () => {
 
         <Image src={paceg} alt="paceg" className="mx-auto hidden md:block"/>
 
-        <div className=" md:hidden space-y-6 ">
+        <div className=" md:hidden -space-y-4 md:space-y-6 ">
         <Image src={pace4} alt="pace4" className="mx-auto" />
         <Image src={pace5} alt="pace5" className="mx-auto" />
         <Image src={pace6} alt="pace6" className="mx-auto"/>
