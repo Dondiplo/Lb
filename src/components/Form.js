@@ -45,7 +45,7 @@ export const Form = () => {
   };
 
   return (
-    <Container className="w-[20rem] pb-6 pt-24 md:pt-12">
+    <Container className="w-[20rem] pb-6 pt-12 md:pt-12">
       <form onSubmit={handleSubmit}>
         <FormControl
           isRequired
