@@ -18,12 +18,14 @@ import pace13 from "public/pace13.svg";
 import pace16 from "public/pace16.png";
 import paceg from "public/paceg.png";
 import Image from "next/image";
-import Nav from "@/components/nav/Nav";
+import Navbar from "@/components/nav/Navbar";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa6";
 
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
-     <Nav fixedStyle={false}/>
+     <Navbar fixed={false}/>
       <div className="w-[95%] mx-auto  text-white pt-28 space-y-6 pb-12">
         <h1 className="text-[20px] md:text-[40px] font-bold">Pace Recruitment </h1>
         <p className="opacity-60">
@@ -95,12 +97,17 @@ const page = () => {
         <Image src={pace8} alt="pace8" className="mx-auto"/>
         <Image src={pace9} alt="pace9" className="mx-auto"/>
         <Image src={pace10} alt="pace10" className="mx-auto"/>
-        <Image src={pace11} alt="pace11" className="mx-auto"/>
+        <Image src={pace11} alt="pace11" className="mx-auto w-[90%]"/>
         </div>
         <h1 className="text-[20px]  font-bold md:text-[20px] opacity-60 pt-8">
          THE END
         </h1>
         <p className="pb-12">See ya at the next case study, thanks for reading 👋🏾</p>
+
+        <div className="text-[#5D17CE] flex pt-6 justify-end">
+            <Link href="/payvice">PAYVICE</Link>
+            <FaArrowRight className="mt-1 ml-2" />
+          </div>
       </div>
 
     </div>

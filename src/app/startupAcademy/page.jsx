@@ -9,12 +9,12 @@ import start6 from "public/start6.svg";
 import start7 from "public/start7.svg";
 import Image from "next/image";
 import { FaArrowLeft } from "react-icons/fa6";
-import Nav from "@/components/nav/Nav";
 import Link from "next/link";
+import Navbar from "@/components/nav/Navbar";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
-      <Nav fixed={false}/>
+      <Navbar fixed={false}/>
       <div className="w-[95%] mx-auto  text-white pt-28  space-y-6">
         <h1 className="text-[20px] md:text-[40px] font-bold  ">Startup Academy </h1>
         <p className="opacity-60">
@@ -55,7 +55,7 @@ const page = () => {
               one word “Networking”
             </p>
           </button>
-          <button className="px-8 py-4  font-boldbg-[#1C1C1C] space-y-4 rounded-2xl">
+          <button className="px-8 py-4  font-bold bg-[#1C1C1C] space-y-4 rounded-2xl">
             <h1 className="text-[20px] font-bold opacity-60 pt-4">
               Established Startup Founders
             </h1>
@@ -90,7 +90,7 @@ const page = () => {
         </p>
 
 
-        <div className=" hidden md:flex text-[#5D17CE] pt-12 pb-12">
+        <div className=" flex text-[#5D17CE] pt-12 pb-12">
             <FaArrowLeft className="mt-1 mr-2" />
             <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
           </div>

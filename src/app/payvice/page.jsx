@@ -8,10 +8,11 @@ import Nav from "@/components/nav/Nav";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import Navbar from "@/components/nav/Navbar";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
-      <Nav />
+      <Navbar  fixed={false}/>
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
         <h1 className="font-bold text-[20px] md:text-[40px]  pt-8">
           Payvice Agents’ App
@@ -148,14 +149,14 @@ const page = () => {
           time.
         </p>
 
-        <div className="md:flex justify-between pt-10 hidden">
+        <div className="flex justify-between pt-10 ">
           <div className="flex text-[#5D17CE]">
             <FaArrowLeft className="mt-1 mr-2" />
             <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
           </div>
           <div className="text-[#5D17CE] flex">
             <Link href="/thebulb">THE BULB AFRICA WEBSITE</Link>
-            <FaArrowRight className="mt-1 ml-2" />
+            <FaArrowRight className="mt-1 md:ml-2" />
           </div>
         </div>
       </div>

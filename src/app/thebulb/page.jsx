@@ -13,14 +13,14 @@ import bulb10 from "public/bulb10.svg";
 import bulb11 from "public/bulb11.svg";
 import bulb12 from "public/bulb12.png";
 import Link from "next/link";
-import Nav from "@/components/nav/Nav";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
+import Navbar from "@/components/nav/Navbar";
 
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
-      <Nav fixedStyle={false} />
+      <Navbar fixed={false} />
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
         <h1 className="font-bold text-[20px] md:text-[40px] ">
           The Bulb Africa Website (redesign)
@@ -164,14 +164,14 @@ const page = () => {
           </Link>
         </div>
 
-        <div className="md:flex justify-between pt-10 hidden">
+        <div className=" flex justify-between pt-10 ">
           <div className="flex text-[#5D17CE]">
             <FaArrowLeft className="mt-1 mr-2" />
             <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
           </div>
           <div className="text-[#5D17CE] flex">
             <Link href="/startupAcademy">STARTUP ACADEMY</Link>
-            <FaArrowRight className="mt-1 ml-2" />
+            <FaArrowRight className="mt-1 md:ml-2" />
           </div>
         </div>
           
