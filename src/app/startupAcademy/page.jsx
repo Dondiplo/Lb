@@ -14,7 +14,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
-      <Nav fixedStyle={false} />
+      <Nav fixed={false}/>
       <div className="w-[95%] mx-auto  text-white pt-28  space-y-6">
         <h1 className="text-[20px] md:text-[40px] font-bold  ">Startup Academy </h1>
         <p className="opacity-60">
