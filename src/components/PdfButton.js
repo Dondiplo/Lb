@@ -7,7 +7,7 @@ const Pdf = () => {
   return (
     <div className="h-[100%] md:h-[100vh]">
       <iframe
-        src="https://drive.google.com/file/d/1KYQZ1dIedrxV466C56k64cVocGDZlNSI/preview?usp=sharing"
+        src="/Tegaresume.pdf"
         width="100%"
         height="100%"
         className="hidden md:block"
