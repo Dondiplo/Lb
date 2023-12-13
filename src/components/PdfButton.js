@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Pdf = () => {
   return (
-    <div className="h-[100%] md:h-[100vh]">
+    <div className="min-h-screen md:h-[100vh]">
       <iframe
         src="/Tegaresume.pdf"
         width="100%"
