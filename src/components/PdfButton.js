@@ -6,14 +6,14 @@ import Link from "next/link";
 const Pdf = () => {
   return (
     <div className="h-[100%] md:h-[100vh]">
-      <iframe
-        src="/Tegaresume.pdf"
+      <embed
+        src="https://drive.google.com/file/d/1KYQZ1dIedrxV466C56k64cVocGDZlNSI/preview?usp=sharing"
         width="100%"
         height="100%"
         className="hidden md:block"
       />
 
-      <div className="md:hidden bg-[#434343]  h-full pt-12 text-white text-sm">
+      {/* <div className="md:hidden bg-[#434343]  h-full pt-12 text-white text-sm">
         <div className="flex justify-between w-11/12 mx-auto">
           <div className="space-y-2">
             <h1>Tega Odiavbara</h1>
@@ -89,7 +89,7 @@ const Pdf = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
