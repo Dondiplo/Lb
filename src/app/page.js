@@ -36,7 +36,7 @@ export default function Home() {
     <div>
       <main  className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
         <div>
-          <Nav fixed={true} />
+          <Nav />
         </div>
         <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10">
           <Image src={arrow} alt="arrow" />
