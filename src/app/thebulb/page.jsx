@@ -22,7 +22,7 @@ const page = () => {
     <div className="bg-neutral-950 w-full ">
       <Nav fixedStyle={false} />
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
-        <h1 className="font-[400] text-[20px] opacity-60">
+        <h1 className="font-bold text-[20px] md:text-[40px] ">
           The Bulb Africa Website (redesign)
         </h1>
 
@@ -58,7 +58,7 @@ const page = () => {
           increase in revenue since the changes were made as users felt more
           comfortable bringing in businesses and investments.
         </p>
-        <h1 className="text-[20px]  opacity-60 pt-8">TARGET MARKET</h1>
+        <h1 className="text-[20px] font-bold opacity-60 pt-8">TARGET MARKET</h1>
         <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10 justify-center p-12 bg-[#1C1C1C] rounded-2xl">
           <button className="bg-[#125A1E] rounded-2xl p-20">Businesses</button>
           <button className="bg-[#125A1E] rounded-2xl p-20 ">
@@ -68,7 +68,7 @@ const page = () => {
             Entrepreneurs
           </button>
         </div>
-        <h1 className="text-[20px]  opacity-60 pt-8 md:pt-16 ">CHALLENGES</h1>
+        <h1 className="text-[20px] font-bold opacity-60 pt-8 md:pt-16 ">CHALLENGES</h1>
         <p className="opacity-60">
           Feedback - In selecting the most important screens to redesign, we had
           to look for ways to actually find out from users what screens they
@@ -101,10 +101,10 @@ const page = () => {
           in reaching their full potential.
         </p>
 
-        <h1 className="text-[20px]  opacity-60 pt-8 md:pt-16">USER'S EXPECTATIONS</h1>
+        <h1 className="text-[20px] font-bold opacity-60 pt-8 md:pt-16">USER'S EXPECTATIONS</h1>
         <Image src={bulb2} alt="bulb2" className="mx-auto" />
 
-        <h1 className="text-[20px]  opacity-60 pt-8">WIRE FRAMES</h1>
+        <h1 className="text-[20px] font-bold opacity-60 pt-8">WIRE FRAMES</h1>
         <p className="opacity-60">
           During the iteration process, I created mutliple skeletal designs, I
           scrapped a lot of designs till I got the one that I felt would convey
@@ -119,8 +119,8 @@ const page = () => {
           <Image src={bulb4} alt="bulb4" className="mx-auto" />
         </div>
 
-        <h1 className="text-[20px]  opacity-60 pt-8 md:pt-12 md:hidden">HIGH FIDELITY DESIGNS</h1>
-        <p className="opacity-60 md:hidden ">
+        <h1 className="text-[20px] font-bold opacity-60 pt-8 md:pt-12 ">HIGH FIDELITY DESIGNS</h1>
+        <p className="opacity-60  ">
           Wireframes already existed, the idea was formed, colors picked out,
           since it was a redesign and integration of certain screens, fonts were
           already in place and there was no need for a total overhaul of the
@@ -129,7 +129,7 @@ const page = () => {
           changes along the way but at this point, it was all smooth.
         </p>
 
-        <Image src={bulb12} alt="bulb12" className="mx-auto hidden md:block" />
+        <Image src={bulb12} alt="bulb12" className="mx-auto hidden md:block pt-6" />
 
         <div className="md:hidden  md:space-y-6 p-4 bg-[#718D75] rounded-xl">
           <Image src={bulb6} alt="bulb6" className="mx-auto " />
@@ -139,7 +139,7 @@ const page = () => {
           <Image src={bulb10} alt="bulb10" className="mx-auto " />
           <Image src={bulb11} alt="bulb11" className="mx-auto " />
         </div>
-        <h1 className="text-[20px] opacity-60 pt-8">
+        <h1 className="text-[20px] font-bold opacity-60 pt-8">
           COMPARING TO OTHER TECHNOLOGY AGENCIES
         </h1>
         <p className="opacity-60">
@@ -148,7 +148,7 @@ const page = () => {
           to see that we had built an exciting product that was seamless, easy
           and usable.
         </p>
-        <h1 className="text-[20px]  opacity-60 pt-8">WHAT I LEARNT</h1>
+        <h1 className="text-[20px] font-bold opacity-60 pt-8">WHAT I LEARNT</h1>
         <p className="opacity-60">
           Prior to this, I had never designed an agency’s website and it further
           showed that all products are different. There are different final
@@ -156,7 +156,7 @@ const page = () => {
           how similar. I’m proud of the designs and what it has been able to
           help the business achieve ultimately.
         </p>
-        <h1 className="text-[20px]  opacity-60 pt-8">THE END</h1>
+        <h1 className="text-[20px] font-bold  opacity-60 pt-8">THE END</h1>
         <div className="opacity-60">
           <Link href="https://thebulb.africa/">
             Please check out the live version of this project at thebulb.africa

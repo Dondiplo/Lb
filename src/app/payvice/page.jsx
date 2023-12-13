@@ -13,7 +13,7 @@ const page = () => {
     <div className="bg-neutral-950 w-full ">
       <Nav />
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
-        <h1 className="font-[400] text-xl md:text-[20px] opacity-60 pt-8">
+        <h1 className="font-bold text-[20px] md:text-[40px]  pt-8">
           Payvice Agents’ App
         </h1>
         <p className="opacity-60">
@@ -25,7 +25,7 @@ const page = () => {
 
         <Image src={pay1} alt="pay1" className="mx-auto pt-6" />
 
-        <h1 className="font-[400] text-xl  md:text-[20px] opacity-60 pt-12">
+        <h1 className="font-bold text-xl  md:text-[20px] opacity-60 pt-12">
           APP OVERVIEW
         </h1>
         <p className="opacity-60  ">
@@ -39,7 +39,7 @@ const page = () => {
           simplicity is key in terms of feature upgrades for this app.
         </p>
 
-        <h1 className="font-[400] text-xl  md:text-[20px]   opacity-60  pt-8">
+        <h1 className="font-bold text-xl  md:text-[20px]   opacity-60  pt-8">
           CHALLENGES
         </h1>
         <p className="opacity-60">
@@ -63,14 +63,14 @@ const page = () => {
           to slack on any region concerning the interface or experience.
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[20px]  opacity-60 pt-8">
+        <h1 className="font-bold text-xl md:text-[20px]  opacity-60 pt-8">
           WHITEBOARD FEATURE RESEARCH
         </h1>
         <div className=" lg:flex md:space-x-6 pt-8">
           <Image src={pay2} alt="pay2" className="mx-auto" />
           <Image src={pay4} alt="pay4" className="mx-auto pt-6 md:pt-0" />
         </div>
-        <h1 className="font-[400] text-xl md:text-[20px]  opacity-60 pt-12">
+        <h1 className="font-bold text-xl md:text-[20px]  opacity-60 pt-12">
           SOME QUESTIONS WITHIN DESIGN TEAM
         </h1>
         <p className="opacity-60">
@@ -86,7 +86,7 @@ const page = () => {
           system?
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[20px] pt-4  md:pt-8 opacity-60">
+        <h1 className="font-bold text-xl md:text-[20px] pt-4  md:pt-8 opacity-60">
           COMPETITIVE MARKET ANALYSIS
         </h1>
 
@@ -102,7 +102,7 @@ const page = () => {
           we could work on to make better.
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
+        <h1 className="font-bold text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
           SKETCHING & WIREFRRAMES
         </h1>
 
@@ -117,11 +117,25 @@ const page = () => {
           with the introduction of a dark and light theme, thereby catering to
           most of our customer base, age . ranging from 25 - 55 years.
         </p>
-        <button className="flex p-6 bg-gray-400 mx-auto justify-center md:pt-8 rounded-2xl">
+
+        <h1 className="font-bold text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
+          HIGH FIDELITY DESIGNS
+        </h1>
+
+        <p className="opacity-60">
+          Designing for this project took a short while because we understood
+          what was to be done, it took a relatively short amount of time seeing
+          as all bases had been covered. Designing this high fidelity screens
+          took 3 weeks in total. A decision was also made to make it as flexible
+          as possible with the introduction of a dark and light theme, thereby
+          catering to most of our customer base, age . ranging from 25 - 55
+          years.
+        </p>
+        <button className="flex p-8 bg-[#B4A998] mx-auto justify-center md:pt-8 rounded-2xl">
           <Image src={pay3} alt="pay3" />
         </button>
 
-        <h1 className="font-[400] text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
+        <h1 className="font-bold text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
           CONCLUSION
         </h1>
 

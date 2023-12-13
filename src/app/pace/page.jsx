@@ -25,7 +25,7 @@ const page = () => {
     <div className="bg-neutral-950 w-full">
      <Nav fixedStyle={false}/>
       <div className="w-[95%] mx-auto  text-white pt-28 space-y-6 pb-12">
-        <h1 className="text-[20px] md:text-[40px]">Pace Recruitment </h1>
+        <h1 className="text-[20px] md:text-[40px] font-bold">Pace Recruitment </h1>
         <p className="opacity-60">
           Pace is a recruitment app created to help people get jobs within their
           community. It also helps employers simplify the recruitment process.
@@ -54,7 +54,7 @@ const page = () => {
           <Image src={pace3} alt="pace3" />
         </div>
 
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
+        <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
           Research Process{" "}
         </h1>
         <p className="opacity-60">
@@ -72,7 +72,7 @@ const page = () => {
 
         <Image src={pace16} alt="pace16" className="mx-auto" />
 
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
+        <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
           HIGH FIDELITY DESIGNS
         </h1>
         <p className="opacity-60">
@@ -97,7 +97,7 @@ const page = () => {
         <Image src={pace10} alt="pace10" className="mx-auto"/>
         <Image src={pace11} alt="pace11" className="mx-auto"/>
         </div>
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
+        <h1 className="text-[20px]  font-bold md:text-[20px] opacity-60 pt-8">
          THE END
         </h1>
         <p className="pb-12">See ya at the next case study, thanks for reading 👋🏾</p>

@@ -16,7 +16,7 @@ const page = () => {
     <div className="bg-neutral-950 w-full">
       <Nav fixedStyle={false} />
       <div className="w-[95%] mx-auto  text-white pt-28  space-y-6">
-        <h1 className="text-[20px] font-bold opacity-60 ">Startup Academy </h1>
+        <h1 className="text-[20px] md:text-[40px] font-bold  ">Startup Academy </h1>
         <p className="opacity-60">
           According to statistics (cannot confirm this data) there are about 305
           million startups created yearly. Most of them are by founders who have
@@ -27,23 +27,11 @@ const page = () => {
           known founders of successful startups.
         </p>
         <Image src={start4} alt="start4" className="mx-auto md:pt-8" />
-        <p className="opacity-60">
-          Pace already existed before but I worked on a version update with
-          multiple changes. Pace previously catered to just people in the tech
-          space but a market was seen within the rising number of unemployed
-          people outside the tech space and how to bridge the gap between
-          employers and applicants, it splits in two (the jobseeker’s side and
-          the employer’s side) and while I designed for both set of people at
-          seperate times, it was very important to not lose focus of who I was
-          designing for at each point. This case study focuses on the
-          jobseeker’s problems, the design process, the solution that was
-          introduced and how these solutions would solve problems we believe our
-          competitors aren’t solving.
-        </p>
+        
 
         <Image src={start1} alt="start1" className="mx-auto md:pt-8" />
 
-        <h1 className="opacity-60 text-[20px] md:pt-8">RESEARCH PROCESS</h1>
+        <h1 className="opacity-60 text-[20px] font-bold md:pt-8">RESEARCH PROCESS</h1>
         <p className="opacity-60">
           User research - A lot of people hope to start their own companies or
           businesses at the least. Getting founders to interview was pretty easy
@@ -55,7 +43,7 @@ const page = () => {
         </p>
         <div className="md:flex mx-auto md:space-x-16 md:w-10/12  space-y-4 md:space-y-0 pt-8">
           <button className="px-6 py-20 bg-[#1C1C1C] space-y-4 rounded-2xl">
-            <h1 className="text-[20px] opacity-60">New Startup Founders</h1>
+            <h1 className="text-[20px] opacity-60 pt-2">New Startup Founders</h1>
             <p className=" opacity-60">
               {" "}
               Issues with this category of people revolved around connection and
@@ -67,8 +55,8 @@ const page = () => {
               one word “Networking”
             </p>
           </button>
-          <button className="px-8 bg-[#1C1C1C] space-y-4 rounded-2xl">
-            <h1 className="text-[20px] opacity-60">
+          <button className="px-8 py-4  font-boldbg-[#1C1C1C] space-y-4 rounded-2xl">
+            <h1 className="text-[20px] font-bold opacity-60 pt-4">
               Established Startup Founders
             </h1>
             <p className=" opacity-60">
@@ -83,14 +71,14 @@ const page = () => {
           </button>
         </div>
         <Image src={start5} alt="start5" className="pt-12 mx-auto" />
-        <h1 className="opacity-60 pt-12">USER PERSONAS</h1>
+        <h1 className="opacity-60 font-bold pt-12">HIGHE FIDELITY DESIGNS</h1>
         <div className="md:grid grid-cols-2 bg-[#2B3273] p-4 rounded-2xl ">
           <Image src={start6} alt="start6" />
           <Image src={start7} alt="start7" />
           <Image src={start3} alt="start3" />
           <Image src={start2} alt="start2" />
         </div>
-        <h1 className="text-[20px] opacity-60">CONCLUSION</h1>
+        <h1 className="text-[20px] font-bold opacity-60">CONCLUSION</h1>
         <p className="pb-10 opacity-60">
           This is one of the fastest projects I’ve ever worked on. Working on
           this project as a lone designer meant most design decisions were made
