@@ -60,7 +60,7 @@ const page = () => {
               one word “Networking”
             </p>
           </button>
-          <button className="px-8 py-4  font-bold bg-[#1C1C1C] space-y-4 rounded-2xl">
+          <button className="px-8 py-4   bg-[#1C1C1C] space-y-4 rounded-2xl">
             <h1 className="text-[20px] font-bold opacity-60 pt-4">
               Established Startup Founders
             </h1>
