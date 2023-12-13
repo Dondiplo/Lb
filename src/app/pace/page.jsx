@@ -23,7 +23,7 @@ import Nav from "@/components/nav/Nav";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
-      <Nav/>
+     <Nav fixedStyle={false}/>
       <div className="w-[95%] mx-auto  text-white pt-28 space-y-6 pb-12">
         <h1 className="text-[20px] md:text-[40px]">Pace Recruitment </h1>
         <p className="opacity-60">

@@ -132,7 +132,7 @@ const Page = () => {
                 {project.link && (
                   <Link href={project.link}>
                     <div
-                      className={`hidden md:flex`}
+                      className={`hidden md:flex pt-6`}
                       style={getHoverColorStyle(project)}
                     >
                       <p>View Project -- </p>

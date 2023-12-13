@@ -2,15 +2,18 @@ import React from "react";
 import pay1 from "public/pay1.svg";
 import pay2 from "public/pay2.svg";
 import pay3 from "public/pay3.svg";
-import pay4 from "public/pay4.svg"
+import pay4 from "public/pay4.svg";
 import Image from "next/image";
 import Nav from "@/components/nav/Nav";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
-      <Nav/>
+      <Nav />
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
-        <h1 className="font-[400] text-xl md:text-[40px] opacity-60">
+        <h1 className="font-[400] text-xl md:text-[20px] opacity-60 pt-8">
           Payvice Agents’ App
         </h1>
         <p className="opacity-60">
@@ -19,13 +22,13 @@ const page = () => {
           funds, make withdrawals, carry out bill payments, enable account
           opening and creating financial ease quickly.
         </p>
-      
-        <Image src={pay1} alt="pay1" className="mx-auto" />
-       
-        <h1 className="font-[400] text-xl  md:text-[40px] opacity-60">
+
+        <Image src={pay1} alt="pay1" className="mx-auto pt-6" />
+
+        <h1 className="font-[400] text-xl  md:text-[20px] opacity-60 pt-12">
           APP OVERVIEW
         </h1>
-        <p className="opacity-60">
+        <p className="opacity-60  ">
           A quick and easy bill payment app used by a category of users called
           “agents”. These agents are available to assist the unbanked,
           day-to-day customers who need funds for emergencies etc. As this was
@@ -36,7 +39,7 @@ const page = () => {
           simplicity is key in terms of feature upgrades for this app.
         </p>
 
-        <h1 className="font-[400] text-xl  md:text-[40px]  pt-4 opacity-60">
+        <h1 className="font-[400] text-xl  md:text-[20px]   opacity-60  pt-8">
           CHALLENGES
         </h1>
         <p className="opacity-60">
@@ -51,7 +54,7 @@ const page = () => {
           usage.
         </p>
 
-        <p className="opacity-60">
+        <p className="opacity-60 pt-8">
           Interface redemption - Our users ranged in the age groups of 20s to
           60s so we were catering to both people who liked pretty and flashy app
           systems and those who just wanted to carry out their businesses and be
@@ -60,15 +63,14 @@ const page = () => {
           to slack on any region concerning the interface or experience.
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
+        <h1 className="font-[400] text-xl md:text-[20px]  opacity-60 pt-8">
           WHITEBOARD FEATURE RESEARCH
         </h1>
-        <div className=" lg:flex md:space-x-6">
-        <Image src={pay2} alt="pay2" className="mx-auto" />
-        <Image src={pay4} alt="pay4" className="mx-auto pt-6 md:pt-0" />
-
+        <div className=" lg:flex md:space-x-6 pt-8">
+          <Image src={pay2} alt="pay2" className="mx-auto" />
+          <Image src={pay4} alt="pay4" className="mx-auto pt-6 md:pt-0" />
         </div>
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
+        <h1 className="font-[400] text-xl md:text-[20px]  opacity-60 pt-12">
           SOME QUESTIONS WITHIN DESIGN TEAM
         </h1>
         <p className="opacity-60">
@@ -84,7 +86,7 @@ const page = () => {
           system?
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
+        <h1 className="font-[400] text-xl md:text-[20px] pt-4  md:pt-8 opacity-60">
           COMPETITIVE MARKET ANALYSIS
         </h1>
 
@@ -100,7 +102,7 @@ const page = () => {
           we could work on to make better.
         </p>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
+        <h1 className="font-[400] text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
           SKETCHING & WIREFRRAMES
         </h1>
 
@@ -115,11 +117,11 @@ const page = () => {
           with the introduction of a dark and light theme, thereby catering to
           most of our customer base, age . ranging from 25 - 55 years.
         </p>
-        <button className="flex p-6 bg-gray-400 mx-auto justify-center rounded-2xl">
+        <button className="flex p-6 bg-gray-400 mx-auto justify-center md:pt-8 rounded-2xl">
           <Image src={pay3} alt="pay3" />
         </button>
 
-        <h1 className="font-[400] text-xl md:text-[40px] pt-4 opacity-60">
+        <h1 className="font-[400] text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
           CONCLUSION
         </h1>
 
@@ -131,6 +133,17 @@ const page = () => {
           collaborative period for this project and it made for a memorable
           time.
         </p>
+
+        <div className="md:flex justify-between pt-10 hidden">
+          <div className="flex text-[#5D17CE]">
+            <FaArrowLeft className="mt-1 mr-2" />
+            <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
+          </div>
+          <div className="text-[#5D17CE] flex">
+            <Link href="/thebulb">THE BULB AFRICA WEBSITE</Link>
+            <FaArrowRight className="mt-1 ml-2" />
+          </div>
+        </div>
       </div>
     </div>
   );

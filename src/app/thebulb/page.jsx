@@ -14,13 +14,15 @@ import bulb11 from "public/bulb11.svg";
 import bulb12 from "public/bulb12.png";
 import Link from "next/link";
 import Nav from "@/components/nav/Nav";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
-      <Nav/>
+      <Nav fixedStyle={false} />
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
-        <h1 className="font-[400] text-xl md:text-[40px] opacity-60">
+        <h1 className="font-[400] text-[20px] opacity-60">
           The Bulb Africa Website (redesign)
         </h1>
 
@@ -31,10 +33,8 @@ const page = () => {
           company.
         </p>
         <Image src={bulb1} alt="bulb1" className="mx-auto" />
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          WEBSITE OVERVIEW
-        </h1>
-        <p className="opacity-60">
+        <h1 className="text-[20px]  opacity-60 md:pt-8">WEBSITE OVERVIEW</h1>
+        <p className="opacity-60 md:pt-8">
           Prior to this redesign, The Bulb Africa’s website stated their
           promises and what they had plans to do as the company was founded in
           2020 and had very little traction. There were no solutions or
@@ -43,7 +43,7 @@ const page = () => {
           grow and attain full potential, also they wanted to help individuals
           get introduced to tech as that new interesting career path.
         </p>
-        <p className="opacity-60">
+        <p className="opacity-60 pt-8">
           I worked on the total redesign of this website, this involved user and
           market research to understand the message we were trying to pass, the
           businesses we were trying to bring onboard as The Bulb Africa offers
@@ -58,21 +58,17 @@ const page = () => {
           increase in revenue since the changes were made as users felt more
           comfortable bringing in businesses and investments.
         </p>
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          TARGET MARKET
-        </h1>
-        <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10 justify-center ">
+        <h1 className="text-[20px]  opacity-60 pt-8">TARGET MARKET</h1>
+        <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10 justify-center p-12 bg-[#1C1C1C] rounded-2xl">
           <button className="bg-[#125A1E] rounded-2xl p-20">Businesses</button>
-          <button className="bg-[#125A1E] rounded-2xl p-20">
+          <button className="bg-[#125A1E] rounded-2xl p-20 ">
             Tech Enthusiasts
           </button>
-          <button className="bg-[#125A1E] rounded-2xl p-20">
+          <button className="bg-[#125A1E] rounded-2xl p-20 md:mt-20">
             Entrepreneurs
           </button>
         </div>
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          CHALLENGES
-        </h1>
+        <h1 className="text-[20px]  opacity-60 pt-8 md:pt-16 ">CHALLENGES</h1>
         <p className="opacity-60">
           Feedback - In selecting the most important screens to redesign, we had
           to look for ways to actually find out from users what screens they
@@ -105,14 +101,10 @@ const page = () => {
           in reaching their full potential.
         </p>
 
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          USER'S EXPECTATIONS
-        </h1>
+        <h1 className="text-[20px]  opacity-60 pt-8 md:pt-16">USER'S EXPECTATIONS</h1>
         <Image src={bulb2} alt="bulb2" className="mx-auto" />
 
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          WIRE FRAMES
-        </h1>
+        <h1 className="text-[20px]  opacity-60 pt-8">WIRE FRAMES</h1>
         <p className="opacity-60">
           During the iteration process, I created mutliple skeletal designs, I
           scrapped a lot of designs till I got the one that I felt would convey
@@ -127,10 +119,8 @@ const page = () => {
           <Image src={bulb4} alt="bulb4" className="mx-auto" />
         </div>
 
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          HIGH FIDELITY DESIGNS
-        </h1>
-        <p className="opacity-60">
+        <h1 className="text-[20px]  opacity-60 pt-8 md:pt-12 md:hidden">HIGH FIDELITY DESIGNS</h1>
+        <p className="opacity-60 md:hidden ">
           Wireframes already existed, the idea was formed, colors picked out,
           since it was a redesign and integration of certain screens, fonts were
           already in place and there was no need for a total overhaul of the
@@ -141,8 +131,7 @@ const page = () => {
 
         <Image src={bulb12} alt="bulb12" className="mx-auto hidden md:block" />
 
-        <div className="md:hidden  md:space-y-6">
-         
+        <div className="md:hidden  md:space-y-6 p-4 bg-[#718D75] rounded-xl">
           <Image src={bulb6} alt="bulb6" className="mx-auto " />
           <Image src={bulb7} alt="bulb7" className="mx-auto " />
           <Image src={bulb8} alt="bulb8" className="mx-auto " />
@@ -150,7 +139,7 @@ const page = () => {
           <Image src={bulb10} alt="bulb10" className="mx-auto " />
           <Image src={bulb11} alt="bulb11" className="mx-auto " />
         </div>
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
+        <h1 className="text-[20px] opacity-60 pt-8">
           COMPARING TO OTHER TECHNOLOGY AGENCIES
         </h1>
         <p className="opacity-60">
@@ -159,9 +148,7 @@ const page = () => {
           to see that we had built an exciting product that was seamless, easy
           and usable.
         </p>
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          WHAT I LEARNT
-        </h1>
+        <h1 className="text-[20px]  opacity-60 pt-8">WHAT I LEARNT</h1>
         <p className="opacity-60">
           Prior to this, I had never designed an agency’s website and it further
           showed that all products are different. There are different final
@@ -169,12 +156,25 @@ const page = () => {
           how similar. I’m proud of the designs and what it has been able to
           help the business achieve ultimately.
         </p>
-        <h1 className="text-[20px] md:text-[20px] opacity-60 pt-8">
-          THE END
-        </h1>
-       <div className="opacity-60">
-        <Link href="https://thebulb.africa/">Please check out the live version of this project at thebulb.africa See ya at the next case study, thanks for reading 👋🏾</Link>
-       </div>
+        <h1 className="text-[20px]  opacity-60 pt-8">THE END</h1>
+        <div className="opacity-60">
+          <Link href="https://thebulb.africa/">
+            Please check out the live version of this project at thebulb.africa
+            See ya at the next case study, thanks for reading 👋🏾
+          </Link>
+        </div>
+
+        <div className="md:flex justify-between pt-10 hidden">
+          <div className="flex text-[#5D17CE]">
+            <FaArrowLeft className="mt-1 mr-2" />
+            <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
+          </div>
+          <div className="text-[#5D17CE] flex">
+            <Link href="/startupAcademy">STARTUP ACADEMY</Link>
+            <FaArrowRight className="mt-1 ml-2" />
+          </div>
+        </div>
+          
       </div>
     </div>
   );
