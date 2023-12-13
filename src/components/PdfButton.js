@@ -10,7 +10,7 @@ const Pdf = () => {
         src="/Tegaresume.pdf"
         width="100%"
         height="100%"
-        className="hidden md:block"
+        className=""
       />
 
       <div className="hidden bg-[#434343]  h-full pt-12 text-white text-sm">
