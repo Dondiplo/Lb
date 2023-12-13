@@ -73,7 +73,7 @@ const Page = () => {
   return (
     <div>
       <Nav />
-      <div className="snap-y snap-mandatory min-h-screen w-screen overflow-scroll scroll-smooth bg-[#1E1E1E]">
+      <div className="snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth bg-[#1E1E1E]">
         {/* Words and Lottie Animation */}
         <div className="lg:block fixed bottom-5 md:top-[40%] left-[5%] z-0">
           <div className="relative w-[50%] md:w-[95%] ">
@@ -94,7 +94,7 @@ const Page = () => {
         {projects.map((project, index) => (
           <section
             key={index}
-            className="snap-start h-full  relative pt-40 lg:pt-44 lg:flex justify-end lg:w-[90%]"
+            className="snap-start h-full  relative pt-40 lg:pt-48 lg:flex justify-end lg:w-[90%]"
           >
             <div className="w-[90%] mx-auto lg:mx-0 lg:w-[700px] lg:h-[505px]">
               {/* Project Image */}
