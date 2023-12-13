@@ -81,7 +81,7 @@ const page = () => {
           </button>
         </div>
         <Image src={start5} alt="start5" className="pt-12 mx-auto" />
-        <h1 className="opacity-60 font-bold pt-12">HIGHE FIDELITY DESIGNS</h1>
+        <h1 className="opacity-60 font-bold pt-12">HIGH FIDELITY DESIGNS</h1>
 
         <p className="opacity-60 ">
           Working on the high fidelity designs for this product was very
