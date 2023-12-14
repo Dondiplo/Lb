@@ -26,13 +26,13 @@ const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
   <Navbar fixed={false} />
-  <div className="w-[95%] mx-auto text-white pt-28 space-y-6 pb-12">
-    <div className="mx-auto md:max-w-[60%]">
+  <div className="w-[96%] md:w-[75%] lg:w-[75%] mx-auto text-white pt-28 space-y-6 pb-12">
+    <div className="mx-auto ">
       <h1 className="text-[20px] md:text-[40px] font-bold">
         Pace Recruitment
       </h1>
 
-      <p className="opacity-60">
+      <p className="opacity-60 text-[15px]">
         Pace is a recruitment app created to help people get jobs within
         their community. It also helps employers simplify the recruitment
         process. This case study is focused on the jobseeker’s side of
@@ -40,7 +40,7 @@ const page = () => {
         usable product for a jobseeker was like.
       </p>
 
-      <p className="opacity-60 pt-8">
+      <p className="opacity-60 pt-8 text-[15px]">
         Pace already existed before but I worked on a version update with
         multiple changes. Pace previously catered to just people in the tech
         space but a market was seen within the rising number of unemployed
@@ -59,16 +59,16 @@ const page = () => {
       <Image src={pace1} alt="pace1" className="" />
     </div>
 
-    <div className="md:flex md:space-x-12 space-y-12 md:space-y-0 md:mt-8 justify-center">
+    <div className="grid md:grid-cols-2 gap-4">
       <Image src={pace2} alt="pace2" />
       <Image src={pace3} alt="pace3" />
     </div>
 
-    <div className="mx-auto md:max-w-[60%]">
+    <div className="mx-auto">
       <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
         Research Process
       </h1>
-      <p className="opacity-60">
+      <p className="opacity-60 text-[15px]">
         User research - I took a week to speak to about 8 people that fit
         within the target market category (3 people looking to get hired, 3
         people who already had jobs but were hoping for something better, 2
@@ -84,11 +84,11 @@ const page = () => {
 
     <Image src={pace16} alt="pace16" className="mx-auto" />
 
-    <div className="mx-auto md:max-w-[60%]">
+    <div className="mx-auto">
       <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
         HIGH FIDELITY DESIGNS
       </h1>
-      <p className="opacity-60">
+      <p className="opacity-60 text-[15px]">
         Creating these designs came after I had sketched out flows on papers
         and then created wireframes, I used Balsamiq for the wireframes of
         this project. Creating wireframes made it much easier to create the
@@ -98,7 +98,7 @@ const page = () => {
       </p>
     </div>
 
-    <Image src={paceg} alt="paceg" className="hidden md:flex ml-12" />
+    <Image src={paceg} alt="paceg" className="hidden md:flex " />
 
     <div className="md:hidden -space-y-4 md:space-y-6 rounded-xl bg-[#9E784099] ">
       <Image src={pace4} alt="pace4" className="mx-auto" />

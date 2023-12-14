@@ -7,6 +7,7 @@ import start4 from "public/start4.svg";
 import start5 from "public/start5.png";
 import start6 from "public/start6.svg";
 import start7 from "public/start7.svg";
+import start8 from "public/start8.svg";
 import Image from "next/image";
 import { FaArrowLeft } from "react-icons/fa6";
 import Link from "next/link";
@@ -20,7 +21,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[40px] font-bold ">
           Startup Academy{" "}
         </h1>
-        <p className="opacity-60">
+        <p className="opacity-60 text-[15px]">
           According to statistics (cannot confirm this data) there are about 305
           million startups created yearly. Most of them are by founders who have
           amazing ideas but creating a business and ensuring it stays relevant
@@ -37,7 +38,7 @@ const page = () => {
         <h1 className="opacity-60 text-[20px] font-bold md:pt-8">
           RESEARCH PROCESS
         </h1>
-        <p className="opacity-60">
+        <p className="opacity-60 text-[15px]">
           User research - A lot of people hope to start their own companies or
           businesses at the least. Getting founders to interview was pretty easy
           as almost everyone had a small or mid-scale business that began with a
@@ -52,7 +53,7 @@ const page = () => {
             <h1 className="text-[20px] opacity-60 pt-2">
               New Startup Founders
             </h1>
-            <p className=" opacity-60">
+            <p className=" opacity-60 text-[15px]">
               {" "}
               Issues with this category of people revolved around connection and
               networking to reach the right people. Scaling up, idea
@@ -88,7 +89,7 @@ const page = () => {
         <div className="mx-auto  space-y-8">
         <h1 className="opacity-60 font-bold pt-12">HIGH FIDELITY DESIGNS</h1>
 
-        <p className="opacity-60 ">
+        <p className="opacity-60 text-[15px]">
           Working on the high fidelity designs for this product was very
           interesting as the use of colors, font type, stock photos, icons etc
           had to be properly thought out in order to represent the idea and give
@@ -97,15 +98,16 @@ const page = () => {
           order to make corrections and implement feedback before final handover
         </p>
         </div>
-        <div className="md:grid grid-cols-2 bg-[#2B3273] p-4 md:p-8 rounded-2xl ">
+        <div className="md:grid grid-cols-2 bg-[#2B3273] p-4 md:p-8 rounded-2xl  relative">
           <Image src={start6} alt="start6" />
-          <Image src={start7} alt="start7" />
+          <Image src={start8} alt="start8"  className="md:absolute top-[20%]"/>
+          <Image src={start7} alt="start7" className="md:absolute top-[65rem] -left-40" />
           <Image src={start3} alt="start3" />
-          <Image src={start2} alt="start2" />
+          <Image src={start2} alt="start2" className="flex justify-end" />
         </div>
         <div className="mx-auto  space-y-8">
         <h1 className="text-[20px] font-bold opacity-60">CONCLUSION</h1>
-        <p className="pb-10 opacity-60">
+        <p className="pb-10 opacity-60 text-[15px]">
           This is one of the fastest projects I’ve ever worked on. Working on
           this project as a lone designer meant most design decisions were made
           by me but I ensured I got stakeholders’ input and thoughts on through

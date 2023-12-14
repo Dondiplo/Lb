@@ -21,13 +21,13 @@ const page = () => {
   return (
     <div className="bg-neutral-950 w-full ">
       <Navbar fixed={false} />
-      <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+      <div className="w-[95%] md:w-[75%] mx-auto  text-white  space-y-8  pt-28 pb-10">
+        <div className="mx-auto  space-y-8">
           <h1 className="font-bold text-[20px] md:text-[40px] ">
             The Bulb Africa Website (redesign)
           </h1>
 
-          <p className="opacity-60">
+          <p className="opacity-60 text-[15px]">
             A redesign of selected screens and introduction of new screens of a
             digital agency’s website. Redesigned with the aim of updating users
             and clients on new goals and aspirations as restrategized by the
@@ -36,9 +36,9 @@ const page = () => {
         </div>
         <Image src={bulb1} alt="bulb1" className="mx-auto" />
 
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+        <div className="mx-auto  space-y-8">
           <h1 className="text-[20px]  opacity-60 md:pt-8">WEBSITE OVERVIEW</h1>
-          <p className="opacity-60 md:pt-8">
+          <p className="opacity-60 md:pt-8 text-[15px]">
             Prior to this redesign, The Bulb Africa’s website stated their
             promises and what they had plans to do as the company was founded in
             2020 and had very little traction. There were no solutions or
@@ -48,7 +48,7 @@ const page = () => {
             individuals get introduced to tech as that new interesting career
             path.
           </p>
-          <p className="opacity-60 pt-8">
+          <p className="opacity-60 pt-8 text-[15px]">
             I worked on the total redesign of this website, this involved user
             and market research to understand the message we were trying to
             pass, the businesses we were trying to bring onboard as The Bulb
@@ -56,7 +56,7 @@ const page = () => {
             end users understand how available resources were to help them
             achieve whatever vision they had for their companies.{" "}
           </p>
-          <p className="opacity-60">
+          <p className="opacity-60 text-[15px]">
             I couldn’t stray from what already existed since it wasn’t an end to
             end design, just transforming the most important screens as selected
             by the Product Manager for this project. The company reported a 35%
@@ -74,12 +74,12 @@ const page = () => {
             Entrepreneurs
           </button>
         </div>
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+        <div className="mx-auto  space-y-8">
           {" "}
           <h1 className="text-[20px] font-bold opacity-60 pt-8 md:pt-16 ">
             CHALLENGES
           </h1>
-          <p className="opacity-60">
+          <p className="opacity-60 text-[15px]">
             Feedback - In selecting the most important screens to redesign, we
             had to look for ways to actually find out from users what screens
             they visited the most. We couldn’t make the decisions on what to
@@ -91,7 +91,7 @@ const page = () => {
             as we had to continuously reach out to get their feedback before we
             could start on this project.
           </p>
-          <p className="opacity-60">
+          <p className="opacity-60 text-[15px]">
             Time - Anyone who has worked with an agency understands the constant
             haste that comes with projects, working through each design process
             phase in order to get the best result required splitting the usual
@@ -100,7 +100,7 @@ const page = () => {
             Bulb’s vision, mission and objectives were. The time constraints
             required faster processing time.
           </p>
-          <p className="opacity-60">
+          <p className="opacity-60 text-[15px]">
             Creating Emotions - “How do you evoke emotions in shrewd business
             men and women?” It was important to ensure the business seemed as
             relatable as possible. I needed to ensure the content, structure,
@@ -115,9 +115,9 @@ const page = () => {
           USER'S EXPECTATIONS
         </h1>
         <Image src={bulb2} alt="bulb2" className="mx-auto w-full" />
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+        <div className="mx-auto  space-y-8">
         <h1 className="text-[20px] font-bold opacity-60 pt-8">WIRE FRAMES</h1>
-        <p className="opacity-60">
+        <p className="opacity-60 text-[15px]">
           During the iteration process, I created mutliple skeletal designs, I
           scrapped a lot of designs till I got the one that I felt would convey
           the message the company had in mind. Working in an agile environment
@@ -127,15 +127,15 @@ const page = () => {
           for this redesign.
         </p>
         </div>
-        <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-10 justify-center ">
+        <div className="grid md:grid-cols-2 gap-4 pt-4">
           <Image src={bulb3} alt="bulb3" className="mx-auto" />
           <Image src={bulb4} alt="bulb4" className="mx-auto" />
         </div>
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+        <div className="mx-auto  space-y-8">
         <h1 className="text-[20px] font-bold opacity-60 pt-8 md:pt-12 ">
           HIGH FIDELITY DESIGNS
         </h1>
-        <p className="opacity-60  ">
+        <p className="opacity-60 text-[15px] ">
           Wireframes already existed, the idea was formed, colors picked out,
           since it was a redesign and integration of certain screens, fonts were
           already in place and there was no need for a total overhaul of the
@@ -158,11 +158,11 @@ const page = () => {
           <Image src={bulb10} alt="bulb10" className="mx-auto " />
           <Image src={bulb11} alt="bulb11" className="mx-auto " />
         </div>
-        <div className="mx-auto md:max-w-[60%] space-y-8"> 
+        <div className="mx-auto  space-y-8"> 
         <h1 className="text-[20px] font-bold opacity-60 pt-8">
           COMPARING TO OTHER TECHNOLOGY AGENCIES
         </h1>
-        <p className="opacity-60">
+        <p className="opacity-60 text-[15px]">
           We compared the solution we had built as at the end of the design
           phase to already existing solutions that were similar and it was easy
           to see that we had built an exciting product that was seamless, easy
