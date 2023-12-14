@@ -99,8 +99,8 @@ const page = () => {
     </div>
 
     <Image src={paceg} alt="paceg" className="hidden md:flex " />
-
-    <div className="md:hidden -space-y-4 md:space-y-6 rounded-xl bg-[#9E784099] ">
+<div className="w-[95%] mx-auto">
+    <div className="md:hidden space-y-4 p-2 rounded-xl bg-[#9E784099] ">
       <Image src={pace4} alt="pace4" className="mx-auto" />
       <Image src={pace5} alt="pace5" className="mx-auto" />
       <Image src={pace6} alt="pace6" className="mx-auto" />
@@ -109,6 +109,7 @@ const page = () => {
       <Image src={pace9} alt="pace9" className="mx-auto" />
       <Image src={pace10} alt="pace10" className="mx-auto" />
       <Image src={pace11} alt="pace11" className="mx-auto w-[90%]" />
+    </div>
     </div>
     <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
       THE END
