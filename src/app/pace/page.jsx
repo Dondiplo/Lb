@@ -56,7 +56,7 @@ const page = () => {
     </div>
 
     <div className="flex justify-center">
-      <Image src={pace1} alt="pace1" className="w-full" />
+      <Image src={pace1} alt="pace1" className="" />
     </div>
 
     <div className="md:flex md:space-x-12 space-y-12 md:space-y-0 md:mt-8 justify-center">

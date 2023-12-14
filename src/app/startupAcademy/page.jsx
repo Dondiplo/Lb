@@ -15,8 +15,8 @@ const page = () => {
   return (
     <div className="bg-neutral-950 w-full">
       <Navbar fixed={false} />
-      <div className="w-[95%] mx-auto  text-white pt-28  space-y-6">
-      <div className="mx-auto md:max-w-[60%] space-y-8">
+      <div className="w-[95%] md:w-[85%] lg:w-[75%] mx-auto  text-white pt-28  space-y-6">
+      <div className="mx-auto  space-y-8">
         <h1 className="text-[20px] md:text-[40px] font-bold ">
           Startup Academy{" "}
         </h1>
@@ -33,7 +33,7 @@ const page = () => {
         <Image src={start4} alt="start4" className="mx-auto md:pt-8" />
 
         <Image src={start1} alt="start1" className="mx-auto md:pt-8" />
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+        <div className="mx-auto space-y-8">
         <h1 className="opacity-60 text-[20px] font-bold md:pt-8">
           RESEARCH PROCESS
         </h1>
@@ -47,7 +47,7 @@ const page = () => {
           the target market audience stated above
         </p>
         </div>
-        <div className="md:grid  md:grid-cols-2 mx-auto md:space-x-16 md:w-10/12  space-y-4 md:space-y-0 pt-8">
+        <div className="md:grid  md:grid-cols-2 mx-auto md:space-x-16  space-y-4 md:space-y-0 pt-8">
           <button className="px-6 py-20 bg-[#1C1C1C] space-y-4 rounded-2xl">
             <h1 className="text-[20px] opacity-60 pt-2">
               New Startup Founders
@@ -85,7 +85,7 @@ const page = () => {
           </button>
         </div>
         <Image src={start5} alt="start5" className="pt-12 mx-auto" />
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+        <div className="mx-auto  space-y-8">
         <h1 className="opacity-60 font-bold pt-12">HIGH FIDELITY DESIGNS</h1>
 
         <p className="opacity-60 ">
@@ -103,7 +103,7 @@ const page = () => {
           <Image src={start3} alt="start3" />
           <Image src={start2} alt="start2" />
         </div>
-        <div className="mx-auto md:max-w-[60%] space-y-8">
+        <div className="mx-auto  space-y-8">
         <h1 className="text-[20px] font-bold opacity-60">CONCLUSION</h1>
         <p className="pb-10 opacity-60">
           This is one of the fastest projects I’ve ever worked on. Working on
