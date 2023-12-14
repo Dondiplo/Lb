@@ -45,7 +45,7 @@ const Nav = () => {
     {navLinks.map((d, i) => (
       <Link key={i} href={d.href} className="relative group">
         {d.label}
-        <div className="absolute inset-x-0 bottom-0 left-0 bg-white h-0 w-0 group-hover:h-[2px] group-hover:w-full transition-all duration-300"></div>
+        <div className="absolute inset-x-0 bottom-0 top-7 left-0 bg-white h-0 w-0 group-hover:h-[1px] group-hover:w-full transition-all duration-500"></div>
       </Link>
     ))}
   </div>

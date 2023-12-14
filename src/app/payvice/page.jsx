@@ -14,6 +14,8 @@ const page = () => {
     <div className="bg-neutral-950 w-full ">
       <Navbar  fixed={false}/>
       <div className="w-[95%] mx-auto  text-white  space-y-8  pt-28 pb-10">
+
+      <div className="mx-auto md:max-w-[60%] space-y-8">
         <h1 className="font-bold text-[20px] md:text-[40px]  pt-8">
           Payvice Agents’ App
         </h1>
@@ -23,9 +25,10 @@ const page = () => {
           funds, make withdrawals, carry out bill payments, enable account
           opening and creating financial ease quickly.
         </p>
-
+        </div>
         <Image src={pay1} alt="pay1" className="mx-auto pt-6" />
 
+        <div className="mx-auto md:max-w-[60%] space-y-8">
         <h1 className="font-bold text-xl  md:text-[20px] opacity-60 pt-12">
           APP OVERVIEW
         </h1>
@@ -66,11 +69,15 @@ const page = () => {
 
         <h1 className="font-bold text-xl md:text-[20px]  opacity-60 pt-8">
           WHITEBOARD FEATURE RESEARCH
-        </h1>
+        </h1></div>
         <div className=" lg:flex md:space-x-6 pt-8">
           <Image src={pay2} alt="pay2" className="mx-auto" />
           <Image src={pay4} alt="pay4" className="mx-auto pt-6 md:pt-0" />
         </div>
+
+
+
+        <div className="mx-auto md:max-w-[60%] space-y-8">
         <h1 className="font-bold text-xl md:text-[20px]  opacity-60 pt-12">
           SOME QUESTIONS WITHIN DESIGN TEAM
         </h1>
@@ -131,11 +138,11 @@ const page = () => {
           as possible with the introduction of a dark and light theme, thereby
           catering to most of our customer base, age . ranging from 25 - 55
           years.
-        </p>
+        </p></div>
         <button className="flex p-8 bg-[#B4A998] mx-auto justify-center md:pt-8 rounded-2xl">
           <Image src={pay3} alt="pay3" />
         </button>
-
+        <div className="mx-auto md:max-w-[60%] space-y-8">
         <h1 className="font-bold text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
           CONCLUSION
         </h1>
@@ -148,8 +155,8 @@ const page = () => {
           collaborative period for this project and it made for a memorable
           time.
         </p>
-
-        <div className="flex justify-between pt-10 ">
+        </div>
+        <div className="flex justify-between pt-10">
           <div className="flex text-[#5D17CE]">
             <FaArrowLeft className="mt-1 mr-2" />
             <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
