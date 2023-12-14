@@ -8,6 +8,7 @@ import start5 from "public/start5.png";
 import start6 from "public/start6.svg";
 import start7 from "public/start7.svg";
 import start8 from "public/start8.svg";
+import start9 from "public/start9.png";
 import Image from "next/image";
 import { FaArrowLeft } from "react-icons/fa6";
 import Link from "next/link";
@@ -98,13 +99,16 @@ const page = () => {
           order to make corrections and implement feedback before final handover
         </p>
         </div>
-        <div className="md:grid grid-cols-2 bg-[#2B3273] p-4 md:p-8 rounded-2xl  relative">
-          <Image src={start6} alt="start6" />
-          <Image src={start8} alt="start8"  className="md:absolute top-[20%]"/>
-          <Image src={start7} alt="start7" className="md:absolute top-[65rem] -left-40" />
-          <Image src={start3} alt="start3" />
-          <Image src={start2} alt="start2" className="flex justify-end" />
-        </div>
+        <Image src={start9} alt="start9" className="hidden md:block "/>
+        <div className="grid  bg-[#2B3273] gap-4  rounded-2xl relative md:hidden ">
+  <Image src={start6} alt="start6"/>
+  <Image src={start8} alt="start8"/>
+  <Image src={start7} alt="start7"/>
+  <Image src={start3} alt="start3"/>
+  <Image src={start2} alt="start2"/>
+</div>
+
+
         <div className="mx-auto  space-y-8">
         <h1 className="text-[20px] font-bold opacity-60">CONCLUSION</h1>
         <p className="pb-10 opacity-60 text-[15px]">
