@@ -36,8 +36,8 @@ export const Form = () => {
       },
     }));
   };
-
-  const [formState, handleSubmit] = useForm("xleykzgj");
+  
+  const [formState, handleSubmit] = useForm("myyqerjl");
   const toast = useToast();
   const resetForm = () => {
     setState(initState);
@@ -118,7 +118,35 @@ export const Form = () => {
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
 
-        <Button
+
+        <Button 
+        mt={10}
+        variant="outline"
+        colorScheme="purple" type="submit" 
+
+  isLoading={isLoading || formState.submitting}
+        disabled={!values.name || !values.email || !values.subject || !values.message}
+        onClick={() => {
+          toast({
+            title: "Message sent.",
+            description: "Your message has been successfully sent.",
+            status: "success",
+            duration: 2000,
+            isClosable: true,
+          });
+          setTimeout(() => {
+            resetForm();
+          }, 1000);
+        
+        }}
+        _hover={{
+          bgColor: 'purple.900', 
+          color: 'white', 
+          border:"black"
+        }}>
+        Submit
+      </Button>
+        {/* <Button
   mt={10}
   variant="outline"
   colorScheme="purple"
@@ -133,18 +161,51 @@ export const Form = () => {
       duration: 4000,
       isClosable: true,
     });
-    resetForm(); // Reset the form after displaying the toast
+    resetForm(); 
   }}
   _hover={{
-    bgColor: 'purple.900', // Background color on hover
-    color: 'white', // Text color on hover
+    bgColor: 'purple.900', 
+    color: 'white', 
     border:"black"
   }}
 >
   Send
-</Button>
+</Button> */}
 
       </form>
+
+
+
+      {/* <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form> */}
     </Container>
   );
 };
+
+
+// xleykzgj
