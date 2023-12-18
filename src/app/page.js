@@ -25,7 +25,7 @@ export default function Home() {
 const imgRef = useRef(null);
 useEffect(() => {
 const el = imgRef.current;
-gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
+gsap.to(el,{y:180,opacity:1, scrollTrigger:{trigger:el}})
 },[]) 
   return (
     <div>
@@ -33,7 +33,7 @@ gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
         <div>
           <Nav />
         </div>
-        <div className="z-[5]  fixed top-[50%] right-5 md:right-10 text-white  h-72">
+        <div className="z-[5]  fixed  md:top-[50%] right-5 md:right-10 text-white  h-72">
            <FaArrowUp className="opacity-60" />
           <span className="pl-[6px]  opacity-60">|</span>
 
@@ -106,7 +106,7 @@ gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
         <div>
           <Nav />
         </div>
-        <div className="z-[5]  fixed top-[50%] right-5 md:right-10 text-white ">
+        <div className="z-[5]  fixed bottom-[10%] right-5  text-white ">
           <FaArrowUp className="opacity-[60%]" />
           <span className="pl-[6px]  opacity-[60%]">|</span>
 

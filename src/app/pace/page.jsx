@@ -32,7 +32,7 @@ const page = () => {
         Pace Recruitment
       </h1>
 
-      <p className="opacity-60 text-[15px]">
+      <p className="opacity-60 text-[15px] md:text-[18px]">
         Pace is a recruitment app created to help people get jobs within
         their community. It also helps employers simplify the recruitment
         process. This case study is focused on the jobseeker’s side of
@@ -40,7 +40,7 @@ const page = () => {
         usable product for a jobseeker was like.
       </p>
 
-      <p className="opacity-60 pt-8 text-[15px]">
+      <p className="opacity-60 pt-8 text-[15px] md:text-[18px]">
         Pace already existed before but I worked on a version update with
         multiple changes. Pace previously catered to just people in the tech
         space but a market was seen within the rising number of unemployed
@@ -68,7 +68,7 @@ const page = () => {
       <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
        RESEARCH PROCESS 
       </h1>
-      <p className="opacity-60 text-[15px]">
+      <p className="opacity-60 text-[15px] md:text-[18px]">
         User research - I took a week to speak to about 8 people that fit
         within the target market category (3 people looking to get hired, 3
         people who already had jobs but were hoping for something better, 2
@@ -88,7 +88,7 @@ const page = () => {
       <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
         HIGH FIDELITY DESIGNS
       </h1>
-      <p className="opacity-60 text-[15px]">
+      <p className="opacity-60 text-[15px] md:text-[18px]">
         Creating these designs came after I had sketched out flows on papers
         and then created wireframes, I used Balsamiq for the wireframes of
         this project. Creating wireframes made it much easier to create the
