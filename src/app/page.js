@@ -25,7 +25,7 @@ export default function Home() {
 const imgRef = useRef(null);
 useEffect(() => {
 const el = imgRef.current;
-gsap.from,(el,{y:-100})
+gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
 },[]) 
   return (
     <div>
@@ -34,11 +34,11 @@ gsap.from,(el,{y:-100})
           <Nav />
         </div>
         <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10 text-white ">
-          {/* <FaArrowUp />
+           <FaArrowUp />
           <span className="pl-[6px] ">|</span>
 
-          <FaArrowDown className="animate-pulse" /> */}
-          <Image src={arrow} alt="arrow" />
+          <FaArrowDown className="animate-pulse" /> 
+       
         </div>
         <section
           id="bg"
@@ -46,10 +46,10 @@ gsap.from,(el,{y:-100})
           style={{ backgroundImage: "url(/pexel1.png)" }}
         >
           <h1
+          
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="800"
-        
             className=" text-white overflow-hidden text-[14px] absolute  text-xl font-light z-10 "
           >
             Hi 👋🏽, I’m Tega
@@ -68,8 +68,7 @@ gsap.from,(el,{y:-100})
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen "
         /> */}
-          <h1 
-              ref={imgRef}  className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl ">
+          <h1  ref={imgRef}  className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl ">
             I’m a designer from Lagos, Nigeria. When I’m not designing I’m
             either sleeping, reading or trying out a meal. I enjoy exploring,
             could be with colors, places, fonts, skincare or restaurants.
