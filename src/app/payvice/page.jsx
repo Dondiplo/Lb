@@ -113,9 +113,15 @@ const page = () => {
             SKETCHING & WIREFRRAMES
           </h1>
 
-          
+          <p className="opacity-60 text-[15px]">
+            This process was quick as we understood what problems we were
+            solving, I used the tool Whimsical for wireframes in order to make
+            it accessible to the PMs, stakeholders and development team.
+          </p>
 
-         
+          <h1 className="font-bold text-xl md:text-[20px] pt-4 md:pt-8 opacity-60">
+            HIGH FIDELITY DESIGNS
+          </h1>
 
           <p className="opacity-60 text-[15px]">
             Designing for this project took a short while because we understood

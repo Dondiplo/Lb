@@ -4,6 +4,8 @@ import Image from "next/image";
 import Lottie from "lottie-react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa6";
 
 import Nav from "@/components/nav/Nav";
 
@@ -86,8 +88,12 @@ const Page = () => {
         </div>
 
         {/* Right Arrow */}
-        <div className="z-[5] opacity-[60%] fixed bottom-[5%] right-5 md:right-10">
-          <Image src={arrow} alt="arrow" />
+        <div className="z-[5] opacity-[60%] fixed bottom-[5%] right-5 md:right-10 text-white">
+        <FaArrowUp />
+          <span className="pl-[6px] ">|</span>
+
+          <FaArrowDown className="animate-pulse" /> 
+       
         </div>
 
         {/* Project Sections */}

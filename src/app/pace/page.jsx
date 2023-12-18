@@ -27,8 +27,8 @@ const page = () => {
     <div className="bg-neutral-950 w-full">
   <Navbar fixed={false} />
   <div className="w-[96%] md:w-[75%] lg:w-[75%] mx-auto text-white pt-28 space-y-6 pb-12">
-    <div className="mx-auto ">
-      <h1 className="text-[20px] md:text-[40px] font-bold">
+    <div className="mx-auto space-y-8">
+      <h1 className="text-[20px]  md:text-[40px] font-bold">
         Pace Recruitment
       </h1>
 
@@ -64,7 +64,7 @@ const page = () => {
       <Image src={pace3} alt="pace3" />
     </div>
 
-    <div className="mx-auto">
+    <div className="mx-auto space-y-8">
       <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
        RESEARCH PROCESS 
       </h1>
@@ -84,7 +84,7 @@ const page = () => {
 
     <Image src={pace16} alt="pace16" className="mx-auto" />
 
-    <div className="mx-auto">
+    <div className="mx-auto space-y-8">
       <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
         HIGH FIDELITY DESIGNS
       </h1>

@@ -33,7 +33,7 @@ gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
         <div>
           <Nav />
         </div>
-        <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10 text-white ">
+        <div className="z-[5]  fixed top-[50%] right-5 md:right-10 text-white ">
            <FaArrowUp />
           <span className="pl-[6px] ">|</span>
 
@@ -69,7 +69,7 @@ gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
           className="h-screen md:hidden md:h-screen "
         /> */}
           <h1  ref={imgRef}  className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl ">
-            I’m a designer from Lagos, Nigeria. When I’m not designing I’m
+            I’m a Product  designer from Lagos, Nigeria. When I’m not designing I’m
             either sleeping, reading or trying out a meal. I enjoy exploring,
             could be with colors, places, fonts, skincare or restaurants.
             Welcome to my portfolio 🤩.
@@ -106,9 +106,9 @@ gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
         <div>
           <Nav />
         </div>
-        <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10">
-          <FaArrowUp />
-          <span className="pl-[6px] ">|</span>
+        <div className="z-[5]  fixed top-[50%] right-5 md:right-10 text-white ">
+          <FaArrowUp className="opacity-[60%]" />
+          <span className="pl-[6px]  opacity-[60%]">|</span>
 
           <FaArrowDown className="animate-pulse" />
         </div>
