@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const Pdf = () => {
   return (
-    <div className="min-h-screen md:h-[100vh]">
+    <div className="h-screen md:h-[100vh]">
       <iframe
         src="/Tegaresume.pdf"
         width="100%"
         height="100%"
-        className=""
+        className="w-[100%] h-[100%]"
       />
 
       <div className="hidden bg-[#434343]  h-full pt-12 text-white text-sm">
