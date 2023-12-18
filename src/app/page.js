@@ -33,9 +33,9 @@ gsap.fromTo(el,{y:180,opacity:0 },{y:0 ,duration:5,opacity:1})
         <div>
           <Nav />
         </div>
-        <div className="z-[5]  fixed top-[50%] right-5 md:right-10 text-white ">
-           <FaArrowUp />
-          <span className="pl-[6px] ">|</span>
+        <div className="z-[5]  fixed top-[50%] right-5 md:right-10 text-white  h-72">
+           <FaArrowUp className="opacity-60" />
+          <span className="pl-[6px]  opacity-60">|</span>
 
           <FaArrowDown className="animate-pulse" /> 
        
