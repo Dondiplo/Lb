@@ -21,7 +21,7 @@ const Page = () => {
         <div className="w-[10rem] hidden md:block relative">
           <div className="absolute top ">
             {" "}
-            <a href="mailto:oladipupo.eke@gmail.com">
+            <a href="mailto:tegaodiabrava@gmail.com">
               <Lottie animationData={animation} />
             </a>
           </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import "./Home.css";
 import Nav from "@/components/nav/Nav";
@@ -10,36 +10,41 @@ import pexels2 from "public/pexels2.png";
 import pexels2m from "public/pexels2m.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa6";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   useEffect(() => {
     Aos.init();
   }, []);
 
+  const h1Refs = useRef([]);
   useEffect(() => {
-    const scrollContainer = document.getElementById('yourScrollContainer'); // Set the actual ID of your scroll container
-    const scrollSpeed = 2; // Adjust this value to control scroll speed
-
-    const handleScroll = (event) => {
-      scrollContainer.scrollTop += event.deltaY * scrollSpeed;
-      event.preventDefault();
-    };
-
-    scrollContainer.addEventListener('wheel', handleScroll);
-
-    return () => {
-      scrollContainer.removeEventListener('wheel', handleScroll);
-    };
+    h1Refs.current.forEach((h1Ref) => {
+      gsap.from(h1Ref, {
+        scrollTrigger: {
+          trigger: h1Ref,
+          opacity: 0,
+          y: 50,
+        },
+      });
+    });
   }, []);
-
   return (
     <div>
-      <main  className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
+      <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
         <div>
           <Nav />
         </div>
-        <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10">
-          <Image src={arrow} alt="arrow" />
+        <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10 text-white ">
+          <FaArrowUp />
+          <span className="pl-[6px] ">|</span>
+
+          <FaArrowDown className="animate-pulse" />
         </div>
         <section
           id="bg"
@@ -68,10 +73,7 @@ export default function Home() {
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen "
         /> */}
-          <h1
-           
-            className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl "
-          >
+          <h1  ref={(el) => h1Refs.current.push(el)} className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl ">
             I’m a designer from Lagos, Nigeria. When I’m not designing I’m
             either sleeping, reading or trying out a meal. I enjoy exploring,
             could be with colors, places, fonts, skincare or restaurants.
@@ -102,12 +104,18 @@ export default function Home() {
 
       {/* mobile */}
 
-      <main id="yourScrollContainer" className="md:hidden  snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
+      <main
+        id="yourScrollContainer"
+        className="md:hidden  snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth"
+      >
         <div>
           <Nav />
         </div>
         <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10">
-          <Image src={arrow} alt="arrow" />
+          <FaArrowUp />
+          <span className="pl-[6px] ">|</span>
+
+          <FaArrowDown className="animate-pulse" />
         </div>
         <section
           id="bg"

@@ -127,6 +127,7 @@ export const Form = () => {
   isLoading={isLoading || formState.submitting}
         disabled={!values.name || !values.email || !values.subject || !values.message}
         onClick={() => {
+          
           toast({
             title: "Message sent.",
             description: "Your message has been successfully sent.",
