@@ -13,27 +13,20 @@ import "aos/dist/aos.css";
 import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { Img } from "@chakra-ui/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
   useEffect(() => {
     Aos.init();
   }, []);
-
-  const h1Refs = useRef([]);
-  useEffect(() => {
-    h1Refs.current.forEach((h1Ref) => {
-      gsap.from(h1Ref, {
-        scrollTrigger: {
-          trigger: h1Ref,
-          opacity: 0,
-          y: 50,
-        },
-      });
-    });
-  }, []);
+const imgRef = useRef(null);
+useEffect(() => {
+const el = imgRef.current;
+gsap.from,(el,{y:-100})
+},[]) 
   return (
     <div>
       <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
@@ -41,10 +34,11 @@ export default function Home() {
           <Nav />
         </div>
         <div className="z-[5] opacity-[60%] fixed top-[50%] right-5 md:right-10 text-white ">
-          <FaArrowUp />
+          {/* <FaArrowUp />
           <span className="pl-[6px] ">|</span>
 
-          <FaArrowDown className="animate-pulse" />
+          <FaArrowDown className="animate-pulse" /> */}
+          <Image src={arrow} alt="arrow" />
         </div>
         <section
           id="bg"
@@ -55,6 +49,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="800"
+        
             className=" text-white overflow-hidden text-[14px] absolute  text-xl font-light z-10 "
           >
             Hi 👋🏽, I’m Tega
@@ -73,7 +68,8 @@ export default function Home() {
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen "
         /> */}
-          <h1  ref={(el) => h1Refs.current.push(el)} className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl ">
+          <h1 
+              ref={imgRef}  className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl ">
             I’m a designer from Lagos, Nigeria. When I’m not designing I’m
             either sleeping, reading or trying out a meal. I enjoy exploring,
             could be with colors, places, fonts, skincare or restaurants.

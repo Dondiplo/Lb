@@ -66,7 +66,7 @@ const page = () => {
 
     <div className="mx-auto">
       <h1 className="text-[20px] font-bold md:text-[20px] opacity-60 pt-8">
-        Research Process
+       RESEARCH PROCESS 
       </h1>
       <p className="opacity-60 text-[15px]">
         User research - I took a week to speak to about 8 people that fit

@@ -62,7 +62,7 @@ const page = () => {
               be a part of this academy. Understanding what expectations were
               during the interview ensured that their needs were catered to as a
               major UX solution. Key point noted from this category of users was
-              one word “Networking”
+              one word <span className="font-bold">“Networking”</span> 
             </p>
             
           </button>
@@ -88,7 +88,7 @@ const page = () => {
         </div>
         <Image src={start5} alt="start5" className="pt-12 mx-auto" />
         <div className="mx-auto  space-y-8">
-        <h1 className="opacity-60 font-bold pt-12">HIGH FIDELITY DESIGNS</h1>
+        <h1 className="opacity-60 text-[20px] font-bold pt-12">HIGH FIDELITY DESIGNS</h1>
 
         <p className="opacity-60 text-[15px]">
           Working on the high fidelity designs for this product was very
