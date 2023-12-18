@@ -25,7 +25,7 @@ export default function Home() {
 const imgRef = useRef(null);
 useEffect(() => {
 const el = imgRef.current;
-gsap.to(el,{y:180,opacity:1, scrollTrigger:{trigger:el}})
+gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
 },[]) 
   return (
     <div>

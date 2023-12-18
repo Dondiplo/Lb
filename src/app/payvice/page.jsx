@@ -18,7 +18,7 @@ const page = () => {
           <h1 className="font-bold text-[20px] md:text-[40px]  pt-8">
             Payvice Agents’ App
           </h1>
-          <p className="opacity-60 text-[15px]">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             An extensive redesign of a Nigerian financial app used mostly by
             agency banking merchants aiding regular day-to-day people transfer
             funds, make withdrawals, carry out bill payments, enable account
@@ -31,7 +31,7 @@ const page = () => {
           <h1 className="font-bold text-xl  md:text-[20px] opacity-60 pt-12">
             APP OVERVIEW
           </h1>
-          <p className="opacity-60 text-[15px] ">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             A quick and easy bill payment app used by a category of users called
             “agents”. These agents are available to assist the unbanked,
             day-to-day customers who need funds for emergencies etc. As this was
@@ -45,7 +45,7 @@ const page = () => {
           <h1 className="font-bold text-xl  md:text-[20px]   opacity-60  pt-8">
             CHALLENGES
           </h1>
-          <p className="opacity-60 text-[15px]">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             App UX - An important change to be made was to create shorter steps
             to get to the point for easy usability and customer retention. This
             required us involving th data team to track fall off points during
@@ -57,7 +57,7 @@ const page = () => {
             much usage.
           </p>
 
-          <p className="opacity-60 pt-8 text-[15px]">
+          <p className="opacity-60 pt-8 text-[15px] md:text-[18px]">
             Interface redemption - Our users ranged in the age groups of 20s to
             60s so we were catering to both people who liked pretty and flashy
             app systems and those who just wanted to carry out their businesses
@@ -80,7 +80,7 @@ const page = () => {
           <h1 className="font-bold text-xl md:text-[20px]  opacity-60 pt-12">
             SOME QUESTIONS WITHIN DESIGN TEAM
           </h1>
-          <p className="opacity-60 text-[15px]">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             As this was a team project and involved collaborative effort, it was
             important to note what issues arose the most from designers and
             users. Some of the questions noted were : Will the onboarding
@@ -97,7 +97,7 @@ const page = () => {
             COMPETITIVE MARKET ANALYSIS
           </h1>
 
-          <p className="opacity-60 text-[15px]">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             This phase of the process required us to check as many financial
             apps as we could. The design team split feature research into
             buckets and assigned them to each user with a timeline attached. The
@@ -113,7 +113,7 @@ const page = () => {
             SKETCHING & WIREFRRAMES
           </h1>
 
-          <p className="opacity-60 text-[15px]">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             This process was quick as we understood what problems we were
             solving, I used the tool Whimsical for wireframes in order to make
             it accessible to the PMs, stakeholders and development team.
@@ -123,7 +123,7 @@ const page = () => {
             HIGH FIDELITY DESIGNS
           </h1>
 
-          <p className="opacity-60 text-[15px]">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             Designing for this project took a short while because we understood
             what was to be done, it took a relatively short amount of time
             seeing as all bases had been covered. Designing this high fidelity
@@ -141,7 +141,7 @@ const page = () => {
             CONCLUSION
           </h1>
 
-          <p className="opacity-60 text-[15px]">
+          <p className="opacity-60 text-[15px] md:text-[18px]">
             This project was one of my favourite projects to work on, I’ve
             designed multiple financial apps and websites but this was enjoyable
             because of the research and time that went into it. Expectations

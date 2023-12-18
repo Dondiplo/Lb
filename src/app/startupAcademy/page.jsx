@@ -22,7 +22,7 @@ const page = () => {
         <h1 className="text-[20px] md:text-[40px] font-bold ">
           Startup Academy{" "}
         </h1>
-        <p className="opacity-60 text-[15px]">
+        <p className="opacity-60 text-[15px] md:text-[18px]">
           According to statistics (cannot confirm this data) there are about 305
           million startups created yearly. Most of them are by founders who have
           amazing ideas but creating a business and ensuring it stays relevant
@@ -39,7 +39,7 @@ const page = () => {
         <h1 className="opacity-60 text-[20px] font-bold md:pt-8">
           RESEARCH PROCESS
         </h1>
-        <p className="opacity-60 text-[15px]">
+        <p className="opacity-60 text-[15px] md:text-[18px]">
           User research - A lot of people hope to start their own companies or
           businesses at the least. Getting founders to interview was pretty easy
           as almost everyone had a small or mid-scale business that began with a
@@ -54,7 +54,7 @@ const page = () => {
             <h1 className="text-[20px] opacity-60 pt-2">
               New Startup Founders
             </h1>
-            <p className=" opacity-60 text-[15px]">
+            <p className=" opacity-60 text-[15px] md:text-[18px]">
               {" "}
               Issues with this category of people revolved around connection and
               networking to reach the right people. Scaling up, idea
@@ -70,17 +70,17 @@ const page = () => {
             <h1 className="text-[20px] font-bold opacity-60 pt-4">
               Established Startup Founders
             </h1>
-            <p className=" opacity-60 text-[15px] ">
+            <p className=" opacity-60 text-[15px] md:text-[18px]">
               {" "}
               Some scripted questions from this interview session were: <br />
               1. What refreshing solutions can we bring to your company’s
               existing problems? <br />{" "}
             </p>
-            <p className=" opacity-60 text-[15px] ">
+            <p className=" opacity-60 text-[15px] md:text-[18px]">
               2. What has your experience been like with other similar academies
               looking to improve networking in the African tech ecosystem?{" "}
             </p>
-            <p className=" opacity-60 text-[15px] ">
+            <p className=" opacity-60 text-[15px] md:text-[18px]">
               3.How can Startup Academy help you push for continuity and create
               growth in the existing community?
             </p>
@@ -90,7 +90,7 @@ const page = () => {
         <div className="mx-auto  space-y-8">
         <h1 className="opacity-60 text-[20px] font-bold pt-12">HIGH FIDELITY DESIGNS</h1>
 
-        <p className="opacity-60 text-[15px]">
+        <p className="opacity-60 text-[15px] md:text-[18px]">
           Working on the high fidelity designs for this product was very
           interesting as the use of colors, font type, stock photos, icons etc
           had to be properly thought out in order to represent the idea and give
@@ -111,7 +111,7 @@ const page = () => {
 
         <div className="mx-auto  space-y-8">
         <h1 className="text-[20px] font-bold opacity-60">CONCLUSION</h1>
-        <p className="pb-10 opacity-60 text-[15px]">
+        <p className="pb-10 opacity-60 text-[15px] md:text-[18px]">
           This is one of the fastest projects I’ve ever worked on. Working on
           this project as a lone designer meant most design decisions were made
           by me but I ensured I got stakeholders’ input and thoughts on through
