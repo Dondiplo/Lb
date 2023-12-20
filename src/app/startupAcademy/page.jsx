@@ -121,7 +121,7 @@ const page = () => {
           interesting one.
         </p>
 
-        <div className=" flex text-[#5D17CE] pt-12 pb-12">
+        <div className=" flex text-[#847AE3] pt-12 pb-12">
           <FaArrowLeft className="mt-1 mr-2" />
           <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
         </div>

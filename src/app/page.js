@@ -16,17 +16,17 @@ import gsap from "gsap";
 import { Img } from "@chakra-ui/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   useEffect(() => {
     Aos.init();
   }, []);
-const imgRef = useRef(null);
-useEffect(() => {
-const el = imgRef.current;
-gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
-},[]) 
+  const imgRef = useRef(null);
+  useEffect(() => {
+    const el = imgRef.current;
+    gsap.fromTo(el, { y: 180, opacity: 0 }, { y: 0, opacity: 1, duration: 5 });
+  }, []);
   return (
     <div>
       <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
@@ -34,11 +34,10 @@ gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
           <Nav />
         </div>
         <div className="z-[5]  fixed  md:top-[50%] right-5 md:right-10 text-white  h-72">
-           <FaArrowUp className="opacity-60" />
+          <FaArrowUp className="opacity-60" />
           <span className="pl-[6px]  opacity-60">|</span>
 
-          <FaArrowDown className="animate-pulse" /> 
-       
+          <FaArrowDown className="animate-pulse" />
         </div>
         <section
           id="bg"
@@ -46,11 +45,10 @@ gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
           style={{ backgroundImage: "url(/pexel1.png)" }}
         >
           <h1
-          
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="800"
-            className=" text-white overflow-hidden text-[14px] absolute  text-xl font-light z-10 "
+            className=" text-white overflow-hidden font-bold absolute  text-[45px]  z-10 "
           >
             Hi 👋🏽, I’m Tega
           </h1>
@@ -68,11 +66,13 @@ gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen "
         /> */}
-          <h1  ref={imgRef}  className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl ">
-            I’m a Product  designer from Lagos, Nigeria. When I’m not designing I’m
-            either sleeping, reading or trying out a meal. I enjoy exploring,
-            could be with colors, places, fonts, skincare or restaurants.
-            Welcome to my portfolio 🤩.
+          <h1
+            ref={imgRef}
+            className="text-white absolute  w-[80%] md:w-[40%] text-center font-medium text-[30px]  "
+          >
+            I’m a Product Designer with over 5 years of professional design
+            experience. I’ve worked on a variety of products ranging from
+            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩
           </h1>
 
           <div className="absolute inset-0 bg-black opacity-90"></div>
@@ -88,10 +88,10 @@ gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
           alt="pexels2m"
           className="h-screen md:hidden md:h-screen"
         /> */}
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] font-light text-[14px] md:text-xl text-center">
-            You get to see a few of my favourite projects, some from a few years
-            back and others more recently designed. Once again welcome to my
-            portfolio, happy touring! ✌🏽
+          <h1 className="text-white absolute  w-[80%] md:w-[40%] font-medium text-[30px]  text-center">
+            You get to see a few of my favorite projects, some from a fee years
+            back, others more recently designs. Welcome to my portfolio and
+            happy touring ✌🏼
           </h1>
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -138,10 +138,9 @@ gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
             className="h-screen md:hidden md:h-screen "
           />
           <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-light text-[14px] md:text-xl">
-            I’m a designer from Lagos, Nigeria. When I’m not designing I’m
-            either sleeping, reading or trying out a meal. I enjoy exploring,
-            could be with colors, places, fonts, skincare or restaurants.
-            Welcome to my portfolio 🤩.
+          I’m a Product Designer with over 5 years of professional design
+            experience. I’ve worked on a variety of products ranging from
+            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩
           </h1>
 
           <div className="absolute inset-0 bg-black opacity-90"></div>
@@ -153,9 +152,9 @@ gsap.fromTo(el,{y:180,opacity:0}, {y:0, opacity:1 ,duration:5})
         >
           <Image src={pexels2m} alt="pexels2m" className="h-screen " />
           <h1 className="text-white absolute  w-[80%] md:w-[40%] font-light text-[14px] md:text-xl text-center">
-            You get to see a few of my favourite projects, some from a few years
-            back and others more recently designed. Once again welcome to my
-            portfolio, happy touring! ✌🏽
+          You get to see a few of my favorite projects, some from a fee years
+            back, others more recently designs. Welcome to my portfolio and
+            happy touring ✌🏼
           </h1>
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>

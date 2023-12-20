@@ -118,7 +118,7 @@ const page = () => {
       See ya at the next case study, thanks for reading 👋🏾
     </p>
 
-    <div className="text-[#5D17CE] flex pt-6 justify-end">
+    <div className="text-[#847AE3] flex pt-6 justify-end">
       <Link href="/payvice">PAYVICE</Link>
       <FaArrowRight className="mt-1 ml-2" />
     </div>

@@ -186,11 +186,11 @@ const page = () => {
         </div>
 
         <div className=" flex justify-between pt-10 ">
-          <div className="flex text-[#5D17CE]">
+          <div className="flex text-[#847AE3]">
             <FaArrowLeft className="mt-1 mr-2" />
             <Link href="/pace">PACE RECRUITMENT WEBSITE </Link>
           </div>
-          <div className="text-[#5D17CE] flex">
+          <div className="text-[#847AE3] flex">
             <Link href="/startupAcademy">STARTUP ACADEMY</Link>
             <FaArrowRight className="mt-1 md:ml-2" />
           </div>
