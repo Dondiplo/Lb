@@ -11,7 +11,7 @@ const Pdf = () => {
         width="100%"
         height="100%"
         className="w-[100%] h-[100%]"
-      />
+      ></iframe>
 
       <div className="hidden bg-[#434343]  h-full pt-12 text-white text-sm">
         <div className="flex justify-between w-11/12 mx-auto">
