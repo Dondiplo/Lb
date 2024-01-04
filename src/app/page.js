@@ -129,7 +129,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen  fixed"
           />
-          <h1 className="text-[22px] text-white font-semibold">Hi 👋🏽, I’m Tega</h1>
+          <h1 className="text-[30px] text-white font-semibold">Hi 👋🏽, I’m Tega</h1>
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
