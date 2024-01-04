@@ -55,7 +55,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="800"
-            className=" text-white overflow-hidden font-bold absolute  text-[45px]  z-10 "
+            className=" text-white overflow-hidden font-[times-new-roman] font-bold absolute  text-[45px]  z-10 "
           >
             Hi 👋🏽, I’m Tega
           </h1>
@@ -75,7 +75,7 @@ export default function Home() {
         /> */}
           <h1
             ref={imgRef}
-            className="text-white absolute  w-[80%] md:w-[40%] text-center font-medium text-[30px]  "
+            className="text-white absolute  w-[80%] font-[times-new-roman] text-center font-medium text-[30px]  "
           >
             I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
@@ -95,7 +95,7 @@ export default function Home() {
           alt="pexels2m"
           className="h-screen md:hidden md:h-screen"
         /> */}
-          <h1 ref={imkRef} className="text-white absolute  w-[80%] md:w-[40%] font-medium text-[30px]  text-center">
+          <h1 ref={imkRef} className="text-white absolute  w-[80%] font-[times-new-roman] font-medium text-[30px]  text-center">
             You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
             happy touring ✌🏼
@@ -129,7 +129,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen  fixed"
           />
-          <h1 className="text-[30px] text-white font-semibold">Hi 👋🏽, I’m Tega</h1>
+          <h1 className="text-[30px] text-white font-semibold font-[times-new-roman]">Hi 👋🏽, I’m Tega</h1>
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -144,7 +144,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-medium text-[22px] md:text-xl">
+          <h1 className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] text-center font-medium text-[22px] md:text-xl">
           I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩
@@ -158,7 +158,7 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         >
           <Image src={pexels2m} alt="pexels2m" className="h-screen " />
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] font-medium text-[22px] md:text-xl text-center">
+          <h1 className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] font-medium text-[22px] md:text-xl text-center">
           You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
             happy touring ✌🏼
