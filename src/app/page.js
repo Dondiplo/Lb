@@ -25,6 +25,15 @@ export default function Home() {
     const el = imgRef.current;
     gsap.fromTo(el, { y: 180, opacity: 0 }, { y: 0, opacity: 1, duration: 5 });
   }, []);
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+  const imkRef = useRef(null);
+  useEffect(() => {
+    const ol = imkRef.current;
+    gsap.fromTo(ol, { y: 280, opacity: 0 }, { y: 0, opacity: 1, duration: 5 });
+  }, []);
   return (
     <div>
       <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
@@ -86,7 +95,7 @@ export default function Home() {
           alt="pexels2m"
           className="h-screen md:hidden md:h-screen"
         /> */}
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] font-medium text-[30px]  text-center">
+          <h1 ref={imkRef} className="text-white absolute  w-[80%] md:w-[40%] font-medium text-[30px]  text-center">
             You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
             happy touring ✌🏼
@@ -120,7 +129,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen  fixed"
           />
-          <h1 className="text-[30px] text-white font-semibold">Hi 👋🏽, I’m Tega</h1>
+          <h1 className="text-[22px] text-white font-semibold">Hi 👋🏽, I’m Tega</h1>
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -135,7 +144,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-medium text-[30px] md:text-xl">
+          <h1 className="text-white absolute  w-[80%] md:w-[40%] text-center font-medium text-[22px] md:text-xl">
           I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩
@@ -149,7 +158,7 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         >
           <Image src={pexels2m} alt="pexels2m" className="h-screen " />
-          <h1 className="text-white absolute  w-[80%] md:w-[40%] font-medium text-[30px] md:text-xl text-center">
+          <h1 className="text-white absolute  w-[80%] md:w-[40%] font-medium text-[22px] md:text-xl text-center">
           You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
             happy touring ✌🏼
