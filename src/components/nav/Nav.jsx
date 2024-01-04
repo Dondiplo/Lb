@@ -12,7 +12,7 @@ import "./nav.css";
 const navLinks = [
   {
     label: "RESUME",
-    href: "/resume",
+    href: "https://pdf.ac/31D0jB",
   },
   // https://yellow-rhianon-42.tiiny.site/
   {
