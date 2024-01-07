@@ -3,7 +3,6 @@ import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import "./Home.css";
 import Nav from "@/components/nav/Nav";
-import arrow from "public/arrow.svg";
 import pexelsm from "public/pixelsm.png";
 import pexels1m from "public/pixels1m.jpg";
 import pexels2m from "public/pexels2m.jpg";
@@ -12,9 +11,9 @@ import "aos/dist/aos.css";
 import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion"
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Home() {
   useEffect(() => {
@@ -51,14 +50,14 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: "url(/pexel1.png)" }}
         >
-          <h1
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="800"
+          <motion.h1
+            initial={{opacity:0,y:150}}
+            whileInView={{opacity:1,y:0}}
+            transition={{duration:1}}
             className=" text-white overflow-hidden font-[times-new-roman] font-bold absolute  text-[45px]  z-10 "
           >
             Hi 👋🏽, I’m Tega
-          </h1>
+          </motion.h1>
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -73,14 +72,16 @@ export default function Home() {
           alt="pexels1m"
           className="h-screen md:hidden md:h-screen "
         /> */}
-          <h1
-            ref={imgRef}
+          <motion.h1
+           initial={{opacity:0,y:250}}
+           whileInView={{opacity:1,y:0}}
+           transition={{duration:1}}
             className="text-white absolute  w-[80%] font-[times-new-roman] text-center font-medium text-[30px]  "
           >
             I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩
-          </h1>
+          </motion.h1>
 
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </section>
@@ -95,14 +96,16 @@ export default function Home() {
           alt="pexels2m"
           className="h-screen md:hidden md:h-screen"
         /> */}
-          <h1
-            ref={imkRef}
+          <motion.h1
+           initial={{opacity:0,y:250}}
+           whileInView={{opacity:1,y:0}}
+           transition={{duration:1}}
             className="text-white absolute  w-[80%] font-[times-new-roman] font-medium text-[30px]  text-center"
           >
             You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
             happy touring ✌🏼
-          </h1>
+          </motion.h1>
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
@@ -132,9 +135,13 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen  fixed"
           />
-          <h1 className="text-[30px] text-white font-semibold font-[times-new-roman]">
+          <motion.h1
+           initial={{opacity:0,y:150}}
+           whileInView={{opacity:1,y:0}}
+           transition={{duration:1}}
+          className="text-[30px] text-white font-semibold font-[times-new-roman]">
             Hi 👋🏽, I’m Tega
-          </h1>
+          </motion.h1>
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -149,11 +156,15 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <h1 className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] text-center font-medium text-[22px] md:text-xl">
+          <motion.h1
+           initial={{opacity:0,y:250}}
+           whileInView={{opacity:1,y:0}}
+           transition={{duration:1}}
+          className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] text-center font-medium text-[22px] md:text-xl">
             I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
-          </h1>
+          </motion.h1>
 
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </section>
@@ -163,11 +174,15 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         >
           <Image src={pexels2m} alt="pexels2m" className="h-screen " />
-          <h1 className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] font-medium text-[22px] md:text-xl text-center">
+          <motion.h1 
+           initial={{opacity:0,y:250}}
+           whileInView={{opacity:1,y:0}}
+           transition={{duration:1}}
+          className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] font-medium text-[22px] md:text-xl text-center">
             You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
             happy touring ✌🏼
-          </h1>
+          </motion.h1>
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
