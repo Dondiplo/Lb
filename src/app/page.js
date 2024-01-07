@@ -12,7 +12,30 @@ import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
 import { motion } from "framer-motion"
 
+const TypewriterText = ({ text }) => {
+  const words = text.split(' ');
 
+  return (
+    <motion.h1
+      initial={{ opacity: 0, y: 150 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[30px]"
+    >
+      {words.map((word, index) => (
+        <motion.span
+          key={index}
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: index * 0.3 }}
+          className="font-[times-new-roman]"
+        >
+          {word} {index !== words.length - 1 && ' '}
+        </motion.span>
+      ))}
+    </motion.h1>
+  );
+};
 
 export default function Home() {
   
@@ -33,14 +56,8 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: "url(/pexel1.png)" }}
         >
-          <motion.h1
-            initial={{opacity:0,y:150}}
-            whileInView={{opacity:1,y:0}}
-            transition={{duration:1}}
-            className=" text-white overflow-hidden font-[times-new-roman] font-bold absolute  text-[45px]  z-10 "
-          >
-            Hi 👋🏽, I’m Tega
-          </motion.h1>
+          <TypewriterText text="Hi 👋🏽, I’m Tega" />
+
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -50,22 +67,10 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: "url(/pexels.png)" }}
         >
-          {/* <Image
-          src={pexels1m}
-          alt="pexels1m"
-          className="h-screen md:hidden md:h-screen "
-        /> */}
-          <motion.h1
-           initial={{opacity:0,y:150}}
-           whileInView={{opacity:1,y:0}}
-           transition={{duration:1}}
-            className="text-white absolute  w-[80%] font-[times-new-roman] text-center font-medium text-[30px]  "
-          >
-            I’m a Product Designer with over 5 years of professional design
+          
+          <TypewriterText text="I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
-            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩
-          </motion.h1>
-
+            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩." />
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </section>
 
@@ -74,21 +79,9 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: "url(/pexels2.png)" }}
         >
-          {/* <Image
-          src={pexels2m}
-          alt="pexels2m"
-          className="h-screen md:hidden md:h-screen"
-        /> */}
-          <motion.h1
-           initial={{opacity:0,y:150}}
-           whileInView={{opacity:1,y:0}}
-           transition={{duration:1}}
-            className="text-white absolute  w-[80%] font-[times-new-roman] font-medium text-[30px]  text-center"
-          >
-            You get to see a few of my favorite projects, some from a few years
+         <TypewriterText text="You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
-            happy touring ✌🏼
-          </motion.h1>
+            happy touring ✌🏼" />
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
@@ -118,13 +111,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen  fixed"
           />
-          <motion.h1
-           initial={{opacity:0,y:150}}
-           whileInView={{opacity:1,y:0}}
-           transition={{duration:1}}
-          className="text-[30px] text-white font-semibold font-[times-new-roman]">
-            Hi 👋🏽, I’m Tega
-          </motion.h1>
+           <TypewriterText text="Hi 👋🏽, I’m Tega" />
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -139,15 +126,10 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <motion.h1
-           initial={{opacity:0,y:150}}
-           whileInView={{opacity:1,y:0}}
-           transition={{duration:1}}
-          className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] text-center font-medium text-[22px] md:text-xl">
-            I’m a Product Designer with over 5 years of professional design
+         
+         <TypewriterText text="I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
-            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
-          </motion.h1>
+            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩." />
 
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </section>
@@ -157,15 +139,9 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
         >
           <Image src={pexels2m} alt="pexels2m" className="h-screen " />
-          <motion.h1 
-           initial={{opacity:0,y:150}}
-           whileInView={{opacity:1,y:0}}
-           transition={{duration:1}}
-          className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] font-medium text-[22px] md:text-xl text-center">
-            You get to see a few of my favorite projects, some from a few years
+          <TypewriterText text="You get to see a few of my favorite projects, some from a few years
             back, others more recently designs. Welcome to my portfolio and
-            happy touring ✌🏼
-          </motion.h1>
+            happy touring ✌🏼" />
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
