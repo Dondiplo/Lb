@@ -10,29 +10,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
-import gsap from "gsap";
 import { motion } from "framer-motion"
 
 
 
 export default function Home() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-  const imgRef = useRef(null);
-  useEffect(() => {
-    const el = imgRef.current;
-    gsap.fromTo(el, { y: 180, opacity: 0 }, { y: 0, opacity: 1, duration: 5 });
-  }, []);
-
-  useEffect(() => {
-    Aos.init();
-  }, []);
-  const imkRef = useRef(null);
-  useEffect(() => {
-    const ol = imkRef.current;
-    gsap.fromTo(ol, { y: 280, opacity: 0 }, { y: 0, opacity: 1, duration: 5 });
-  }, []);
+  
   return (
     <div>
       <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
