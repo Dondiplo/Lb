@@ -56,7 +56,7 @@ export default function Home() {
           className="h-screen md:hidden md:h-screen "
         /> */}
           <motion.h1
-           initial={{opacity:0,y:250}}
+           initial={{opacity:0,y:150}}
            whileInView={{opacity:1,y:0}}
            transition={{duration:1}}
             className="text-white absolute  w-[80%] font-[times-new-roman] text-center font-medium text-[30px]  "
@@ -80,7 +80,7 @@ export default function Home() {
           className="h-screen md:hidden md:h-screen"
         /> */}
           <motion.h1
-           initial={{opacity:0,y:250}}
+           initial={{opacity:0,y:150}}
            whileInView={{opacity:1,y:0}}
            transition={{duration:1}}
             className="text-white absolute  w-[80%] font-[times-new-roman] font-medium text-[30px]  text-center"
@@ -140,7 +140,7 @@ export default function Home() {
             className="h-screen md:hidden md:h-screen "
           />
           <motion.h1
-           initial={{opacity:0,y:250}}
+           initial={{opacity:0,y:150}}
            whileInView={{opacity:1,y:0}}
            transition={{duration:1}}
           className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] text-center font-medium text-[22px] md:text-xl">
@@ -158,7 +158,7 @@ export default function Home() {
         >
           <Image src={pexels2m} alt="pexels2m" className="h-screen " />
           <motion.h1 
-           initial={{opacity:0,y:250}}
+           initial={{opacity:0,y:150}}
            whileInView={{opacity:1,y:0}}
            transition={{duration:1}}
           className="text-white absolute  font-[times-new-roman] w-[80%] md:w-[40%] font-medium text-[22px] md:text-xl text-center">
