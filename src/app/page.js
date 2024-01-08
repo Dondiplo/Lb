@@ -27,8 +27,8 @@ const TypewriterText = ({ text }) => {
           key={index}
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: index * 0.3 }}
-          className="font-[times-new-roman]"
+          transition={{ duration: 1, delay: index * 0.2 }}
+          className="font-[times-new-roman] font-medium text-[30px]"
         >
           {word} {index !== words.length - 1 && ' '}
         </motion.span>
