@@ -4,3 +4,30 @@ h1{
 }
 
 
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+      }
+    
+      100% {
+        transform: translateX(calc(250px * 7));
+      }
+  }
+  
+  @keyframes scrollRight {
+    0% {
+        transform: translateX(0);
+      }
+    
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+  }
+  
+  #left {
+    animation: scrollLeft 50s linear infinite;
+  }
+  
+  #right {
+    animation: scrollRight 50s linear infinite;
+  }

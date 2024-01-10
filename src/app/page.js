@@ -10,55 +10,75 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import star from "public/star.svg";
+import head from "public/head.svg";
 
-const TypewriterText = ({ text }) => {
-  const words = text.split(' ');
 
-  return (
-    <motion.h1
-      initial={{ opacity: 0, y: 150 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2 }}
-      className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[30px]"
-    >
-      {words.map((word, index) => (
-        <motion.span
-          key={index}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: index * 0.2 }}
-          className="font-[times-new-roman] font-medium text-[30px]"
-        >
-          {word} {index !== words.length - 1 && ' '}
-        </motion.span>
-      ))}
-    </motion.h1>
-  );
-};
 
 export default function Home() {
-  
   return (
     <div>
-      <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth">
+      <main className="hidden md:block snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth ">
         <div>
           <Nav />
         </div>
-        <div className="z-[5]  fixed  md:top-[50%] right-5 md:right-10 text-white  h-72">
-          <FaArrowUp className="opacity-60" />
-          <span className="pl-[6px]  opacity-60">|</span>
 
-          <FaArrowDown className="animate-pulse" />
-        </div>
         <section
           id="bg"
-          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: "url(/pexel1.png)" }}
+          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center overflow-hidden whitespace-nowrap"
+          style={{ backgroundImage: "url(/pexel1.svg)" }}
         >
-          <TypewriterText text="Hi 👋🏽, I’m Tega" />
+          <div className="z-[5]  absolute  md:top-[80%] right-5 md:right-10 text-white  h-72">
+            <FaArrowUp className="opacity-60" />
+            <span className="pl-[6px]  opacity-60">|</span>
 
+            <FaArrowDown className="animate-pulse" />
+          </div>
+          <h1 className="font-[times-new-roman] font-medium text-[30px] text-white absolute top-[20%]">
+            Hi 👋🏽, I’m Tega
+          </h1>
 
+          <div
+            id="left"
+            className="text-[200px]  font-[700] flex  font-[times-new-roman] text-white absolute top-[20%] "
+          >
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
+            <Image src={star} alt="star"  className="z-20"/>
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              IDEATE
+            </h1>{" "}
+            <Image src={star} alt="star"  className="z-20"/>
+            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
+            <Image src={star} alt="star"  className="z-20"/>
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
+            <Image src={star} alt="star" className="z-20" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
+            <Image src={star} alt="star"  className="z-20"/>
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              INNOVATE{" "}
+            </h1>{" "}
+          </div>
+          <div
+            id="right"
+            className="text-[200px]  font-[700] flex font-[times-new-roman] text-white absolute top-[40%] "
+          >
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
+            <Image src={star} alt="star" className="z-20" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              IDEATE
+            </h1>{" "}
+            <Image src={star} alt="star" className="z-30" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
+            <Image src={star} alt="star" className="z-30" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
+            <Image src={star} alt="star" className="z-30" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
+            <Image src={star} alt="star" className="z-30" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              INNOVATE{" "}
+            </h1>{" "}
+          </div>
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
 
@@ -67,21 +87,19 @@ export default function Home() {
           className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: "url(/pexels.png)" }}
         >
-          
-          <TypewriterText text="I’m a Product Designer with over 5 years of professional design
-            experience. I’ve worked on a variety of products ranging from
-            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩." />
-          <div className="absolute inset-0 bg-black opacity-90"></div>
-        </section>
+          <div className="z-[5]  absolute  md:top-[50%] right-5 md:right-10 text-white  h-72">
+            <FaArrowUp className="opacity-60" />
+            <span className="pl-[6px]  opacity-60">|</span>
 
-        <section
-          id="bg3"
-          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: "url(/pexels2.png)" }}
-        >
-         <TypewriterText text="You get to see a few of my favorite projects, some from a few years
-            back, others more recently designs. Welcome to my portfolio and
-            happy touring ✌🏼" />
+            <FaArrowDown className="animate-pulse" />
+          </div>
+          <Image src={head} alt="head" className="absolute top-[20%] z-20" />
+          <h1 className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[30px]">
+            I’m a Product Designer with over 5 years of professional design
+            experience. I’ve worked on a variety of products ranging from
+            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
+          </h1>
+<h2 id="right" className="text-[200px] font-[700] font-[times-new-roman] text-white opacity-[94%] absolute top-[65%] overflow-hidden">IDEATE.CREATE.INNOVATE</h2>
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
@@ -111,7 +129,70 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen  fixed"
           />
-           <TypewriterText text="Hi 👋🏽, I’m Tega" />
+          <h1 className="font-[times-new-roman] font-medium text-[30px] text-white absolute top-[20%]">
+            Hi 👋🏽, I’m Tega
+          </h1>
+
+          <div
+            id="left"
+            className="text-[120px]  font-[700] flex  font-[times-new-roman] text-white absolute top-[25%] "
+          >
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              IDEATE
+            </h1>{" "}
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              INNOVATE{" "}
+            </h1>{" "}
+          </div>
+          <div
+            id="right"
+            className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[40%] "
+          >
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              IDEATE
+            </h1>{" "}
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              INNOVATE{" "}
+            </h1>{" "}
+          </div>
+          <div
+            id="left"
+            className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[55%] "
+          >
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              IDEATE
+            </h1>{" "}
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
+            <Image src={star} alt="star" />
+            <h1 className="opacity-[64%] font-[times-new-roman]">
+              INNOVATE{" "}
+            </h1>{" "}
+          </div>
 
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
@@ -126,23 +207,11 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-         
-         <TypewriterText text="I’m a Product Designer with over 5 years of professional design
+<h1>I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
-            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩." />
+            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.</h1>
 
           <div className="absolute inset-0 bg-black opacity-90"></div>
-        </section>
-
-        <section
-          id="bg3"
-          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
-        >
-          <Image src={pexels2m} alt="pexels2m" className="h-screen " />
-          <TypewriterText text="You get to see a few of my favorite projects, some from a few years
-            back, others more recently designs. Welcome to my portfolio and
-            happy touring ✌🏼" />
-          <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
     </div>
