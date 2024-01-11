@@ -6,11 +6,11 @@ import Nav from "@/components/nav/Nav";
 import pexelsm from "public/pixelsm.png";
 import pexels1m from "public/pixels1m.jpg";
 import pexels2m from "public/pexels2m.jpg";
-import Aos from "aos";
+
 import "aos/dist/aos.css";
 import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
-import { motion } from "framer-motion";
+
 import star from "public/star.svg";
 import head from "public/head.svg";
 
@@ -26,7 +26,7 @@ export default function Home() {
 
         <section
           id="bg"
-          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center overflow-hidden whitespace-nowrap"
+          className="snap-start min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center "
           style={{ backgroundImage: "url(/pexel1.svg)" }}
         >
           <div className="z-[5]  absolute  md:top-[80%] right-5 md:right-10 text-white  h-72">
@@ -99,7 +99,7 @@ export default function Home() {
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
           </h1>
-<h2 id="right" className="text-[200px] font-[700] font-[times-new-roman] text-white opacity-[94%] absolute top-[65%] overflow-hidden">IDEATE.CREATE.INNOVATE</h2>
+{/* <h2 id="right" className="text-[200px] font-[700] font-[times-new-roman] text-white opacity-[94%] absolute top-[65%] overflow-hidden">IDEATE.CREATE.INNOVATE</h2> */}
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         <section
           id="bg"
-          className="snap-center min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center"
+          className="snap-center min-h-screen flex justify-center relative items-center bg-fixed bg-no-repeat bg-cover bg-center w-screen overflow-hidden"
           // style={{ backgroundImage: "url(/pixelsm.png)" }}
         >
           <Image
@@ -207,7 +207,8 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-<h1>I’m a Product Designer with over 5 years of professional design
+          <Image src={head } alt="head" className="absolute top-[20%] z-20"/>
+<h1 className="text-white w-[80%] font-[times-new-roman] absolute font-[700] text-[15px] text-center">I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.</h1>
 
