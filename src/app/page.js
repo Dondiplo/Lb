@@ -14,7 +14,7 @@ import { FaArrowDown } from "react-icons/fa6";
 import star from "public/star.svg";
 import head from "public/head.svg";
 
-const words = ["DESIGN", "IDEATE", "INNOVATE"];
+const words = ["DESIGN", "IDEATE", "INNOVATE","DESIGN" , "IDEATE"];
 
 export default function Home() {
   return (
@@ -39,7 +39,8 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div id="left" className="text-[200px] font-[700] flex font-[times-new-roman] text-white absolute top-[20%]">
+<div className="absolute top-[20%] flex space-x-6">
+          <div id="left" className="text-[200px] font-[700] flex font-[times-new-roman] text-white ">
       {words.map((word, index) => (
         <React.Fragment  key={index}>
           <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
@@ -51,15 +52,47 @@ export default function Home() {
       ))}
       
     </div>
-    <div id="right" className="text-[200px] font-[700] flex font-[times-new-roman] text-white absolute top-[40%]">
+
+    <div id="left" className="text-[200px] font-[700] flex font-[times-new-roman] text-white ">
+      {words.map((word, index) => (
+        <React.Fragment  key={index}>
+          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          {index < words.length - 1 && (
+            <Image src={star} alt="star" className="z-20" />
+          )}
+        </React.Fragment>
+        
+      ))}
+      
+    </div>
+    </div>
+
+    <div className="absolute top-[40%] flex">
+    <div id="right" className="text-[200px] font-[700] flex font-[times-new-roman] text-white ">
+      
       {words.map((word, index) => (
         <React.Fragment key={index}>
           <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          
           {index < words.length - 1 && (
             <Image src={star} alt="star" className="z-20" />
           )}
         </React.Fragment>
       ))}
+    </div>
+
+    <div id="right" className=" pl-4 text-[200px] font-[700] flex font-[times-new-roman] text-white ">
+      
+      {words.map((word, index) => (
+        <React.Fragment key={index}>
+          <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          
+          {index < words.length - 1 && (
+            <Image src={star} alt="star" className="z-20" />
+          )}
+        </React.Fragment>
+      ))}
+    </div>
     </div>
           <div className="absolute inset-0 bg-black opacity-40"></div>
         </section>
