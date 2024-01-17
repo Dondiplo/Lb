@@ -3,31 +3,32 @@ h1{
     z-index: 7;
 }
 
+section{
+  overflow: hidden;
+}
 
-@keyframes scrollLeft {
-    0% {
-        transform: translateX(0);
-      }
-    
-      100% {
-        transform: translateX(calc(250px * 7));
-      }
+@keyframes slide {
+  from{
+transform: translateX(0);
   }
-  
-  @keyframes scrollRight {
-    0% {
-        transform: translateX(0);
-      }
-    
-      100% {
-        transform: translateX(calc(-250px * 7));
-      }
+  to{
+transform: translateX(-100%);
   }
-  
-  #left {
-    animation: scrollLeft 50s linear infinite;
+}
+
+
+@keyframes slider {
+  from{
+transform: translateX(0);
   }
-  
-  #right {
-    animation: scrollRight 50s linear infinite;
+  to{
+transform: translateX(100%);
   }
+}
+
+#left{
+  animation: 15s slide infinite linear;
+}
+#right{
+  animation: 15s slider infinite linear;
+}

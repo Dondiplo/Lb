@@ -14,7 +14,7 @@ import { FaArrowDown } from "react-icons/fa6";
 import star from "public/star.svg";
 import head from "public/head.svg";
 
-
+const words = ["DESIGN", "IDEATE", "INNOVATE"];
 
 export default function Home() {
   return (
@@ -39,47 +39,29 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div
-            id="left"
-            className="text-[200px]  font-[700] flex  font-[times-new-roman] text-white absolute top-[20%] "
-          >
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
-            <Image src={star} alt="star"  className="z-20"/>
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              IDEATE
-            </h1>{" "}
-            <Image src={star} alt="star"  className="z-20"/>
-            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
-            <Image src={star} alt="star"  className="z-20"/>
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
+          <div id="left" className="text-[200px] font-[700] flex font-[times-new-roman] text-white absolute top-[20%]">
+      {words.map((word, index) => (
+        <React.Fragment  key={index}>
+          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          {index < words.length - 1 && (
             <Image src={star} alt="star" className="z-20" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
-            <Image src={star} alt="star"  className="z-20"/>
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              INNOVATE{" "}
-            </h1>{" "}
-          </div>
-          <div
-            id="right"
-            className="text-[200px]  font-[700] flex font-[times-new-roman] text-white absolute top-[40%] "
-          >
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
+          )}
+        </React.Fragment>
+        
+      ))}
+      
+    </div>
+    <div id="right" className="text-[200px] font-[700] flex font-[times-new-roman] text-white absolute top-[40%]">
+      {words.map((word, index) => (
+        <React.Fragment key={index}>
+          <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          {index < words.length - 1 && (
             <Image src={star} alt="star" className="z-20" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              IDEATE
-            </h1>{" "}
-            <Image src={star} alt="star" className="z-30" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
-            <Image src={star} alt="star" className="z-30" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
-            <Image src={star} alt="star" className="z-30" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
-            <Image src={star} alt="star" className="z-30" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              INNOVATE{" "}
-            </h1>{" "}
-          </div>
-          <div className="absolute inset-0 bg-black opacity-80"></div>
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+          <div className="absolute inset-0 bg-black opacity-40"></div>
         </section>
 
         <section
@@ -93,7 +75,7 @@ export default function Home() {
 
             <FaArrowDown className="animate-pulse" />
           </div>
-          <Image src={head} alt="head" className="absolute top-[20%] z-20" />
+          <Image src={head} alt="head" className="absolute top-[23%] z-20" />
           <h1 className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[30px]">
             I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
@@ -194,7 +176,7 @@ export default function Home() {
             </h1>{" "}
           </div>
 
-          <div className="absolute inset-0 bg-black opacity-80"></div>
+          <div className="absolute inset-0 bg-black opacity-60"></div>
         </section>
 
         <section
@@ -207,7 +189,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <Image src={head } alt="head" className="absolute top-[20%] z-20"/>
+          <Image src={head } alt="head" className="absolute top-[24%] z-20"/>
 <h1 className="text-white w-[80%] font-[times-new-roman] absolute font-[700] text-[15px] text-center">I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.</h1>
