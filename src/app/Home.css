@@ -27,8 +27,8 @@ transform: translateX(100%);
 }
 
 #left{
-  animation: 30s slide infinite linear;
+  animation: 35s slide infinite linear;
 }
 #right{
-  animation: 30s slider infinite linear;
+  animation: 35s slider infinite linear;
 }
