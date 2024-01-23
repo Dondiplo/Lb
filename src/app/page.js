@@ -144,7 +144,7 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen  fixed"
           />
-          <h1 className="font-[times-new-roman] font-medium text-[30px] text-white absolute top-[20%]">
+          <h1 className="font-[times-new-roman] font-medium text-[26px] text-white absolute top-[20%]">
             Hi 👋🏽, I’m Tega
           </h1>
 
