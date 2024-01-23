@@ -152,61 +152,42 @@ export default function Home() {
             id="left"
             className="text-[120px]  font-[700] flex  font-[times-new-roman] text-white absolute top-[25%] "
           >
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              IDEATE
-            </h1>{" "}
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              INNOVATE{" "}
-            </h1>{" "}
-          </div>
+           {words.map((word, index) => (
+        <React.Fragment  key={index}>
+          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          {index < words.length - 1 && (
+            <Image src={star} alt="star" className="z-20" />
+          )}
+        </React.Fragment>
+        
+      ))}</div>
           <div
             id="right"
             className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[40%] "
           >
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              IDEATE
-            </h1>{" "}
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              INNOVATE{" "}
-            </h1>{" "}
+            {words.map((word, index) => (
+        <React.Fragment  key={index}>
+          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          {index < words.length - 1 && (
+            <Image src={star} alt="star" className="z-20" />
+          )}
+        </React.Fragment>
+        
+      ))}
           </div>
           <div
             id="left"
             className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[55%] "
           >
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>{" "}
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              IDEATE
-            </h1>{" "}
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">INNOVATE</h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">DESIGN </h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">IDEATE </h1>
-            <Image src={star} alt="star" />
-            <h1 className="opacity-[64%] font-[times-new-roman]">
-              INNOVATE{" "}
-            </h1>{" "}
+            {words.map((word, index) => (
+        <React.Fragment  key={index}>
+          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+          {index < words.length - 1 && (
+            <Image src={star} alt="star" className="z-20" />
+          )}
+        </React.Fragment>
+        
+      ))}
           </div>
 
           <div className="absolute inset-0 bg-black opacity-60"></div>
