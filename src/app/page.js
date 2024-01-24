@@ -6,13 +6,12 @@ import Nav from "@/components/nav/Nav";
 import pexelsm from "public/pixelsm.png";
 import pexels1m from "public/pixels1m.jpg";
 import pexels2m from "public/pexels2m.jpg";
-
 import "aos/dist/aos.css";
 import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
-
 import star from "public/star.svg";
 import head from "public/head.svg";
+
 
 const words = ["DESIGN", "IDEATE", "INNOVATE","DESIGN" , "IDEATE"];
 
@@ -68,6 +67,7 @@ export default function Home() {
     </div>
 
     <div className="absolute top-[40%] flex">
+      
     <div id="right" className="text-[200px] font-[700] flex font-[times-new-roman] text-white ">
       
       {words.map((word, index) => (

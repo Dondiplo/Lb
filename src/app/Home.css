@@ -8,27 +8,29 @@ section{
 }
 
 @keyframes slide {
-  from{
-transform: translateX(0);
+  from {
+    transform: translateX(0);
   }
-  to{
-transform: translateX(-100%);
+  to {
+    transform: translateX(-100%);
   }
 }
-
 
 @keyframes slider {
-  from{
-transform: translateX(0);
+  from {
+    transform: translateX(0);
   }
-  to{
-transform: translateX(100%);
+  to {
+    transform: translateX(100%);
   }
 }
 
-#left{
-  animation: 45s slide infinite linear;
+#left {
+  animation: 45s slide linear infinite; /* Removed 'infinite' */
+  animation-fill-mode: forwards;
 }
-#right{
-  animation: 45s slider infinite linear;
+
+#right {
+  animation: 45s slider linear infinite; /* Removed 'infinite' */
+  animation-fill-mode: forwards;
 }
