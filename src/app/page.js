@@ -11,9 +11,9 @@ import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
 import star from "public/star.svg";
 import head from "public/head.svg";
+import texts from "public/text4.png";
 
-
-const words = ["DESIGN", "IDEATE", "INNOVATE","DESIGN" , "IDEATE"];
+const words = ["DESIGN", "IDEATE", "INNOVATE", "DESIGN", "IDEATE"];
 
 export default function Home() {
   return (
@@ -38,62 +38,21 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-<div className="absolute top-[20%] flex space-x-6">
-          <div id="left" className="text-[200px] font-[700] flex font-[times-new-roman] text-white ">
-      {words.map((word, index) => (
-        <React.Fragment  key={index}>
-          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-          {index < words.length - 1 && (
-            <Image src={star} alt="star" className="z-20" />
-          )}
-        </React.Fragment>
-        
-      ))}
-      
-    </div>
+          <div
+            id="left"
+            className="  flex absolute top-[20%] h-[40%] w-[140%] "
+          >
+            <Image src={texts} alt="text" />
+            <Image src={texts} alt="text" />
+          </div>
 
-    <div id="left" className="text-[200px] font-[700] flex font-[times-new-roman] text-white ">
-      {words.map((word, index) => (
-        <React.Fragment  key={index}>
-          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-          {index < words.length - 1 && (
-            <Image src={star} alt="star" className="z-20" />
-          )}
-        </React.Fragment>
-        
-      ))}
-      
-    </div>
-    </div>
+          <div id="right" className="absolute top-[40%] flex  h-[40%] w-[140%]">
+           
 
-    <div className="absolute top-[40%] flex">
-      
-    <div id="right" className="text-[200px] font-[700] flex font-[times-new-roman] text-white ">
-      
-      {words.map((word, index) => (
-        <React.Fragment key={index}>
-          <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-          
-          {index < words.length - 1 && (
-            <Image src={star} alt="star" className="z-20" />
-          )}
-        </React.Fragment>
-      ))}
-    </div>
+            <Image src={texts} alt="text" />
+            <Image src={texts} alt="text" />
+          </div>
 
-    <div id="right" className=" pl-4 text-[200px] font-[700] flex font-[times-new-roman] text-white ">
-      
-      {words.map((word, index) => (
-        <React.Fragment key={index}>
-          <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-          
-          {index < words.length - 1 && (
-            <Image src={star} alt="star" className="z-20" />
-          )}
-        </React.Fragment>
-      ))}
-    </div>
-    </div>
           <div className="absolute inset-0 bg-black opacity-40"></div>
         </section>
 
@@ -109,12 +68,12 @@ export default function Home() {
             <FaArrowDown className="animate-pulse" />
           </div>
           <Image src={head} alt="head" className="absolute top-[23%] z-20" />
-          <h1 className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[30px]">
+          <h1 className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[26px]">
             I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
           </h1>
-{/* <h2 id="right" className="text-[200px] font-[700] font-[times-new-roman] text-white opacity-[94%] absolute top-[65%] overflow-hidden">IDEATE.CREATE.INNOVATE</h2> */}
+          {/* <h2 id="right" className="text-[200px] font-[700] font-[times-new-roman] text-white opacity-[94%] absolute top-[65%] overflow-hidden">IDEATE.CREATE.INNOVATE</h2> */}
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </section>
       </main>
@@ -148,46 +107,36 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div
-            id="left"
-            className="text-[120px]  font-[700] flex  font-[times-new-roman] text-white absolute top-[25%] "
-          >
-           {words.map((word, index) => (
-        <React.Fragment  key={index}>
-          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-          {index < words.length - 1 && (
-            <Image src={star} alt="star" className="z-20" />
-          )}
-        </React.Fragment>
-        
-      ))}</div>
+          <div id="left" className="flex absolute top-[25%]">
+            <Image src={texts} alt="text" className="w-[400px] h-[400px]" />
+            <Image src={texts} alt="text" className="w-[400px] h-[400px]" />
+          </div>
+
           <div
             id="right"
             className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[40%] "
           >
             {words.map((word, index) => (
-        <React.Fragment  key={index}>
-          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-          {index < words.length - 1 && (
-            <Image src={star} alt="star" className="z-20" />
-          )}
-        </React.Fragment>
-        
-      ))}
+              <React.Fragment key={index}>
+                <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+                {index < words.length - 1 && (
+                  <Image src={star} alt="star" className="z-20" />
+                )}
+              </React.Fragment>
+            ))}
           </div>
           <div
             id="left"
             className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[55%] "
           >
             {words.map((word, index) => (
-        <React.Fragment  key={index}>
-          <h1  className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-          {index < words.length - 1 && (
-            <Image src={star} alt="star" className="z-20" />
-          )}
-        </React.Fragment>
-        
-      ))}
+              <React.Fragment key={index}>
+                <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
+                {index < words.length - 1 && (
+                  <Image src={star} alt="star" className="z-20" />
+                )}
+              </React.Fragment>
+            ))}
           </div>
 
           <div className="absolute inset-0 bg-black opacity-60"></div>
@@ -203,10 +152,12 @@ export default function Home() {
             alt="pexels1m"
             className="h-screen md:hidden md:h-screen "
           />
-          <Image src={head } alt="head" className="absolute top-[24%] z-20"/>
-<h1 className="text-white w-[80%] font-[times-new-roman] absolute font-[700] text-[15px] text-center">I’m a Product Designer with over 5 years of professional design
+          <Image src={head} alt="head" className="absolute top-[24%] z-[8]" />
+          <h1 className="text-white w-[80%] font-[times-new-roman] absolute font-[700] text-[15px] text-center">
+            I’m a Product Designer with over 5 years of professional design
             experience. I’ve worked on a variety of products ranging from
-            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.</h1>
+            Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
+          </h1>
 
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </section>

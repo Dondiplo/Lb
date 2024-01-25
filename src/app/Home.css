@@ -7,30 +7,42 @@ section{
   overflow: hidden;
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
+
+
+
+
+@keyframes slide{
+  from{
+transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%);
+  to{
+transform: translateX(-100%);
   }
 }
 
 @keyframes slider {
   from {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(100%);
   }
 }
 
-#left {
-  animation: 45s slide linear infinite; /* Removed 'infinite' */
-  animation-fill-mode: forwards;
+
+#left{
+  animation: 40s slide infinite linear;
+  flex-shrink: 0; /* Prevent images from shrinking within the flex container */
+ 
+
+  
 }
 
+
+
+
 #right {
-  animation: 45s slider linear infinite; /* Removed 'infinite' */
+  animation: 40s slider linear infinite; /* Removed 'infinite' */
   animation-fill-mode: forwards;
+  
 }
