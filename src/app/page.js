@@ -47,8 +47,6 @@ export default function Home() {
           </div>
 
           <div id="right" className="absolute top-[40%] flex  h-[40%] w-[140%]">
-           
-
             <Image src={texts} alt="text" />
             <Image src={texts} alt="text" />
           </div>
@@ -107,36 +105,18 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div id="left" className="flex absolute top-[25%]">
-            <Image src={texts} alt="text" className="w-[400px] h-[400px]" />
-            <Image src={texts} alt="text" className="w-[400px] h-[400px]" />
+          <div id="left" className="flex absolute top-[25%] h-[20%] w-[200%]">
+            <Image src={texts} alt="text"  />
+            <Image src={texts} alt="text" className="" />
           </div>
 
-          <div
-            id="right"
-            className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[40%] "
-          >
-            {words.map((word, index) => (
-              <React.Fragment key={index}>
-                <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-                {index < words.length - 1 && (
-                  <Image src={star} alt="star" className="z-20" />
-                )}
-              </React.Fragment>
-            ))}
+          <div id="right" className="  flex absolute top-[40%] h-[20%] w-[200%] ">
+            <Image src={texts} alt="text" />
+            <Image src={texts} alt="text"  />
           </div>
-          <div
-            id="left"
-            className="text-[120px]  font-[700] flex font-[times-new-roman] text-white absolute top-[55%] "
-          >
-            {words.map((word, index) => (
-              <React.Fragment key={index}>
-                <h1 className="opacity-[64%] font-[times-new-roman]">{word}</h1>
-                {index < words.length - 1 && (
-                  <Image src={star} alt="star" className="z-20" />
-                )}
-              </React.Fragment>
-            ))}
+          <div id="left" className="  flex  absolute top-[55%] h-[20%] w-[200%] ">
+            <Image src={texts} alt="text"  />
+            <Image src={texts} alt="text"/>
           </div>
 
           <div className="absolute inset-0 bg-black opacity-60"></div>
