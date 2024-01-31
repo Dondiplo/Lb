@@ -12,6 +12,7 @@ import { FaArrowDown } from "react-icons/fa6";
 import star from "public/star.svg";
 import head from "public/head.svg";
 import texts from "public/text4.png";
+import textre from "public/textre.png";
 
 const words = ["DESIGN", "IDEATE", "INNOVATE", "DESIGN", "IDEATE"];
 
@@ -65,14 +66,23 @@ export default function Home() {
 
             <FaArrowDown className="animate-pulse" />
           </div>
+
           <Image src={head} alt="head" className="absolute top-[23%] z-20" />
           <h1 className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[26px]">
             I’m a Product Designer with over 6 years of professional design
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
           </h1>
+          <div
+            id="left"
+            className="absolute bottom-[-10%]  h-[50%] w-[400%] flex "
+          >
+            {" "}
+            <Image src={textre} alt="textre" />
+            <Image src={textre} alt="textre"/>
+          </div>
           {/* <h2 id="right" className="text-[200px] font-[700] font-[times-new-roman] text-white opacity-[94%] absolute top-[65%] overflow-hidden">IDEATE.CREATE.INNOVATE</h2> */}
-          <div className="absolute inset-0 bg-black opacity-80"></div>
+          <div className="absolute inset-0 bg-black opacity-40"></div>
         </section>
       </main>
 
@@ -105,18 +115,24 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div id="left" className="flex absolute top-[25%] h-[20%] w-[300%]">
-            <Image src={texts} alt="text"  />
+          <div id="left" className="flex absolute top-[25%] h-[23%] w-[300%]">
+            <Image src={texts} alt="text" />
             <Image src={texts} alt="text" className="" />
           </div>
 
-          <div id="right" className="  flex absolute top-[40%] h-[20%] w-[300%] ">
+          <div
+            id="right"
+            className="  flex absolute top-[40%] h-[23%] w-[300%] "
+          >
             <Image src={texts} alt="text" />
-            <Image src={texts} alt="text"  />
+            <Image src={texts} alt="text" />
           </div>
-          <div id="left" className="  flex  absolute top-[55%] h-[20%] w-[300%] ">
-            <Image src={texts} alt="text"  />
-            <Image src={texts} alt="text"/>
+          <div
+            id="left"
+            className="  flex  absolute top-[55%] h-[23%] w-[300%] "
+          >
+            <Image src={texts} alt="text" />
+            <Image src={texts} alt="text" />
           </div>
 
           <div className="absolute inset-0 bg-black opacity-60"></div>
@@ -138,8 +154,15 @@ export default function Home() {
             experience. I’ve worked on a variety of products ranging from
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
           </h1>
-
-          <div className="absolute inset-0 bg-black opacity-90"></div>
+          <div
+            id="left"
+            className="absolute bottom-[-5%]  h-[30%] w-[400%] flex "
+          >
+            {" "}
+            <Image src={textre} alt="textre" />
+            <Image src={textre} alt="textre"/>
+          </div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </section>
       </main>
     </div>
