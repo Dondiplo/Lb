@@ -40,13 +40,13 @@ export default function Home() {
 
           <div
             id="left"
-            className="  flex absolute top-[20%] h-[40%] w-[140%] "
+            className="  flex absolute top-[20%] h-[40%] w-[200%] "
           >
             <Image src={texts} alt="text" />
             <Image src={texts} alt="text" />
           </div>
 
-          <div id="right" className="absolute top-[40%] flex  h-[40%] w-[140%]">
+          <div id="right" className="absolute top-[40%] flex  h-[40%] w-[200%]">
             <Image src={texts} alt="text" />
             <Image src={texts} alt="text" />
           </div>
@@ -105,16 +105,16 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div id="left" className="flex absolute top-[25%] h-[20%] w-[200%]">
+          <div id="left" className="flex absolute top-[25%] h-[20%] w-[300%]">
             <Image src={texts} alt="text"  />
             <Image src={texts} alt="text" className="" />
           </div>
 
-          <div id="right" className="  flex absolute top-[40%] h-[20%] w-[200%] ">
+          <div id="right" className="  flex absolute top-[40%] h-[20%] w-[300%] ">
             <Image src={texts} alt="text" />
             <Image src={texts} alt="text"  />
           </div>
-          <div id="left" className="  flex  absolute top-[55%] h-[20%] w-[200%] ">
+          <div id="left" className="  flex  absolute top-[55%] h-[20%] w-[300%] ">
             <Image src={texts} alt="text"  />
             <Image src={texts} alt="text"/>
           </div>
