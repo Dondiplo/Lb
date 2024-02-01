@@ -117,14 +117,14 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div  className="flex absolute top-[20%] h-[43%] w-[600%] z-[30]">
+          <div  className="flex absolute top-[20%] h-[43%] w-[600%] z-[8]">
             <Image src={texts} alt="text" id="left"/>
             <Image src={texts} alt="text" id="left"/>
           </div>
 
           <div
            
-            className="  flex absolute top-[40%] h-[43%] w-[600%] z-[30]"
+            className="  flex absolute top-[40%] h-[43%] w-[600%] z-[8]"
           >
             <Image src={texts} alt="text"  id="right"/>
             <Image src={texts} alt="text"  id="right"/>
@@ -152,7 +152,7 @@ export default function Home() {
           </h1>
           <div
             
-            className="absolute bottom-[-5%]  h-[30%] w-[850%] flex  z-[30]"
+            className="absolute bottom-[-5%]  h-[30%] w-[850%] flex  z-[8]"
           >
             {" "}
             <Image src={textre} alt="textre" id="left"/>
