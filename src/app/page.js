@@ -77,7 +77,7 @@ export default function Home() {
           </h1>
           <div
            
-            className="absolute bottom-[-10%]  h-[50%] w-[500%] flex z-[30]"
+            className="absolute bottom-[-10%]  h-[40%] w-[500%] flex z-[30]"
           >
             {" "}
             <Image src={textre} alt="textre" id="left" />
