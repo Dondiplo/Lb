@@ -41,7 +41,7 @@ export default function Home() {
 
           <div
             id=""
-            className="   flex absolute top-[20%]  z-[30]  h-[50%] w-[300%]"
+            className="   flex absolute top-[18%]  z-[30]  h-[50%] w-[300%]"
           >
 
             <Image src={texts} alt="text" id="left" className=""/>
@@ -63,10 +63,10 @@ export default function Home() {
           style={{ backgroundImage: "url(/pexels.png)" }}
         >
           <div className="z-[5]  absolute  md:top-[50%] right-5 md:right-10 text-white  h-72">
-            <FaArrowUp className="opacity-60" />
+            <FaArrowUp className=" animate-pulse" />
             <span className="pl-[6px]  opacity-60">|</span>
 
-            <FaArrowDown className="animate-pulse" />
+            <FaArrowDown className="opacity-60" />
           </div>
 
           <Image src={head} alt="head" className="absolute top-[23%] z-20" />
