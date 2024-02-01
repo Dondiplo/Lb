@@ -41,7 +41,7 @@ export default function Home() {
 
           <div
             id=""
-            className="   flex absolute top-[18%]  z-[30]  h-[50%] w-[230%]"
+            className="   flex absolute top-[18%]  z-[30]  h-[50%] w-[200%]"
           >
 
             <Image src={texts} alt="text" id="left" className=""/>
@@ -77,7 +77,7 @@ export default function Home() {
           </h1>
           <div
            
-            className="absolute bottom-[-10%]  h-[50%] w-[400%] flex z-[30]"
+            className="absolute bottom-[-10%]  h-[50%] w-[500%] flex z-[30]"
           >
             {" "}
             <Image src={textre} alt="textre" id="left" />
@@ -152,7 +152,7 @@ export default function Home() {
           </h1>
           <div
             
-            className="absolute bottom-[-5%]  h-[30%] w-[650%] flex  z-[30]"
+            className="absolute bottom-[-5%]  h-[30%] w-[850%] flex  z-[30]"
           >
             {" "}
             <Image src={textre} alt="textre" id="left"/>
