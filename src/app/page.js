@@ -40,16 +40,18 @@ export default function Home() {
           </h1>
 
           <div
-            id="left"
-            className="  flex absolute top-[20%] h-[50%] w-[300%] z-[30]"
+            id=""
+            className="   flex absolute top-[20%]  z-[30]  h-[50%] w-[300%]"
           >
-            <Image src={texts} alt="text" />
-            <Image src={texts} alt="text" />
+
+            <Image src={texts} alt="text" id="left" className=""/>
+            <Image src={texts} alt="text"  id="left"/>
           </div>
 
-          <div id="right" className="absolute top-[40%] flex  h-[50%] w-[300%] z-[30]">
-            <Image src={texts} alt="text" />
-            <Image src={texts} alt="text" />
+          <div  className=" top-[40%] absolute flex  h-[50%] w-[300%] z-[30]">
+            <Image src={texts} alt="text" id="right" />
+            <Image src={texts} alt="text" id="right" />
+            
           </div>
 
           <div className="absolute inset-0 bg-black opacity-40"></div>
@@ -74,12 +76,12 @@ export default function Home() {
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
           </h1>
           <div
-            id="left"
+           
             className="absolute bottom-[-10%]  h-[50%] w-[400%] flex z-[30]"
           >
             {" "}
-            <Image src={textre} alt="textre" />
-            <Image src={textre} alt="textre"/>
+            <Image src={textre} alt="textre" id="left" />
+            <Image src={textre} alt="textre"  id="left"/>
           </div>
           {/* <h2 id="right" className="text-[200px] font-[700] font-[times-new-roman] text-white opacity-[94%] absolute top-[65%] overflow-hidden">IDEATE.CREATE.INNOVATE</h2> */}
           <div className="absolute inset-0 bg-black opacity-90"></div>
@@ -115,17 +117,17 @@ export default function Home() {
             Hi 👋🏽, I’m Tega
           </h1>
 
-          <div id="left" className="flex absolute top-[20%] h-[43%] w-[600%] z-[30]">
-            <Image src={texts} alt="text" />
-            <Image src={texts} alt="text" className="" />
+          <div  className="flex absolute top-[20%] h-[43%] w-[600%] z-[30]">
+            <Image src={texts} alt="text" id="left"/>
+            <Image src={texts} alt="text" id="left"/>
           </div>
 
           <div
-            id="right"
+           
             className="  flex absolute top-[40%] h-[43%] w-[600%] z-[30]"
           >
-            <Image src={texts} alt="text" />
-            <Image src={texts} alt="text" />
+            <Image src={texts} alt="text"  id="right"/>
+            <Image src={texts} alt="text"  id="right"/>
           </div>
           
 
@@ -149,12 +151,12 @@ export default function Home() {
             Financial Technology, E-Commerce, EduTech, Luxury Retail etc 🤩.
           </h1>
           <div
-            id="left"
+            
             className="absolute bottom-[-5%]  h-[30%] w-[650%] flex  z-[30]"
           >
             {" "}
-            <Image src={textre} alt="textre" />
-            <Image src={textre} alt="textre"/>
+            <Image src={textre} alt="textre" id="left"/>
+            <Image src={textre} alt="textre" id="left"/>
           </div>
           <div className="absolute inset-0 bg-black opacity-90"></div>
         </section>
