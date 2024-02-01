@@ -69,7 +69,7 @@ export default function Home() {
             <FaArrowDown className="opacity-60" />
           </div>
 
-          <Image src={head} alt="head" className="absolute top-[23%] z-20" />
+          <Image src={head} alt="head" className="absolute top-[27%] z-20" />
           <h1 className="text-white absolute w-[80%] font-[times-new-roman] text-center font-medium text-[26px]">
             I’m a Product Designer with over 6 years of professional design
             experience. I’ve worked on a variety of products ranging from
