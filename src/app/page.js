@@ -41,14 +41,14 @@ export default function Home() {
 
           <div
             id=""
-            className="   flex absolute top-[18%]  z-[30]  h-[50%] w-[300%]"
+            className="   flex absolute top-[18%]  z-[30]  h-[50%] w-[230%]"
           >
 
             <Image src={texts} alt="text" id="left" className=""/>
             <Image src={texts} alt="text"  id="left"/>
           </div>
 
-          <div  className=" top-[40%] absolute flex  h-[50%] w-[300%] z-[30]">
+          <div  className=" top-[40%] absolute flex  h-[50%] w-[230%] z-[30]">
             <Image src={texts} alt="text" id="right" />
             <Image src={texts} alt="text" id="right" />
             
